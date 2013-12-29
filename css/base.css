@@ -19,5 +19,70 @@
 	src: url('../fonts/gotham-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-light-webfont.woff') format('woff'), url('../fonts/gotham-bold-webfont.ttf') format('truetype'), url('../fonts/gotham-light-webfont.svg#gotham-light-webfont') format('svg');
 }
 
-body { font-family:"Gotham"; }
+body { font-family:"Gotham"; padding-top:40px; }
+a:hover { text-decoration:none; }
 
+/*header bar */
+header * { transition:all ease 0.2s; }
+header.navbar-inverse {  background-color:#000; color:#fff; line-height:40px; padding:0; min-height: 40px; border: 0;}
+header .block { float:left; padding:0 10px; height:40px;}
+header .block a { color:white; text-transform:uppercase; }
+header .block.register { background-color:#cc092f; }
+header .block.block2 { width: 210px; border-right:2px solid #262626;}
+header .block.block2 a { line-height:12px; font-size:12px; display:block; text-align:center; padding-top:8px;  }
+header .block.search { border-right:2px solid #262626; }
+header .block.search a { display:block; width:60px; background: transparent url(../images/sprite.png) no-repeat -100px 9px; height:40px; }
+header .block.social a {  display:block; width:40px; background: transparent url(../images/sprite.png) no-repeat 12px 10px; height:40px; float: left; opacity:0.5;}
+header .block.social a:hover { opacity:1; }
+header .block.social { width:150px;}
+header .block.social a.youtube { background-position: -30px 10px; }
+header .block.social a.twitter { background-position: -69px 10px; }
+header .block.right { float:right; font-size:11px; color:#666;}
+header .block.right a { color:#666;  }
+header .block.right a:hover { color:#b9b9b9; }
+header .block.right a.red { color:#cc092f; }
+
+
+/* top bar */
+#top-bar { margin:20px 0; }
+#top-bar .logo { float:left; width:54px; height:74px; }
+#top-bar .logo a { width:100%; height:100%; background: transparent url(../images/sprite.png) no-repeat 0px -27px;  display: block;}
+
+/* navigation bar */
+nav { margin-bottom:20px; }
+nav ul, nav li { list-style:none; padding:0; margin:0; }
+nav .container { display:table; }
+nav ul { width: 100%; display:table-row; }
+nav li { display:table-cell; text-align: center; background-color:#cc092f; height:36px; line-height:36px; border-right:1px solid #de5f78;}
+nav li.last { border-right:0; }
+nav li a { display:block; color:white; font-size: 14px; text-transform: uppercase;}
+
+/*spotlight*/
+
+.slideshow { height:376px; overflow:hidden; width:100%; position:relative;}
+.slideshow > .slide { position:absolute; width:100%; height:100%; background-color:#e3e4e4;}
+.slideshow > .slide > .image { position:absolute; left:0; top:0; width:668px; font-size:0; line-height:0; height:100%; display: block;}
+.slideshow > .slide > .image img { width:100%; height:100%; }
+.slideshow > .slide > .info { position:absolute; right:0; top:0; width:324px; height:100%; }
+.slideshow > .slide > .info .title { margin-top:30px; background-color:#00732f; padding: 20px 30px 20px 50px; display: block; margin-left: -14px; font-size: 24px; line-height: 24px; text-transform: uppercase; color: white; text-align: right; font-family: "Gotham-bold";}
+.slideshow > .slide > .info p { padding:26px 25px; font-family:Arial; font-size:16px; line-height:22px; text-align:right; }
+.slideshow > .arrows { position:absolute; bottom:0; right:30px; height:50px; width:101px; }
+.slideshow > .arrows a { display:block; width:50px; height:50px; background: #cc092f url(../images/sprite.png) no-repeat -148px 15px; float:left; }
+.slideshow > .arrows a.prev { margin-right:1px; }
+.slideshow > .arrows a.next { background-position: -198px 15px; }
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer { background-color:#000; color:white; text-transform:uppercase; border-bottom:10px solid #cc092f;}
+footer a { color:white; }
+footer .block1 { float:left; width:668px;}
+footer .block2 { float:left; width:324px; background-color:#cc092f; height:60px;}
+footer .block1 .links { font-family:"Gotham-bold"; font-size:11px; line-height:12px; padding-top:15px; }
+footer .block1 .copyright { font-family:"Myriad Pro" Tahoma; font-size:11px; line-height:12px; padding-top:8px; }
