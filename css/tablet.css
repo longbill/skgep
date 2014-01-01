@@ -32,7 +32,6 @@
 	#top-bar .banner img { width:100%;}
 	#top-bar .logo { height: 57px; width: 40px;}
 	#top-bar .logo a { background-size: 221px; background-position: 0 -22px; }
-	nav li a { }
 	nav li { padding: 0 12px;}
 	
 	.slideshow > .slide > .info .title { margin-top:23px; padding:13px 15px; font-size:20px; line-height:20px;}
