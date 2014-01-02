@@ -121,7 +121,7 @@ SK.initSlideshow = function(dom)
 		try{ clearTimeout(timer);}catch(e){}
 		timer = setTimeout(function()
 		{
-			next();
+			slide(1);
 			initTimer();
 		},interval);
 	}
@@ -139,7 +139,7 @@ SK.initSlideshow = function(dom)
 		initTimer();
 	}
 
-	$slides.find('.arrows > .fa').click(function(evt)
+	$slides.find('.arrows > a').click(function(evt)
 	{
 		evt.preventDefault();
 		var isNext = $(this).is('.next');

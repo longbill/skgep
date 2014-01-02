@@ -12,21 +12,24 @@
 	.font24 { font-size:20px;}
 	.icon { -webkit-transform:scale(0.7); -ms-transform:scale(0.7); transform:scale(0.7);  transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;}
 	.calendar { -webkit-transform:scale(0.9); -ms-transform:scale(0.9); transform:scale(0.9);  transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;}
+	.fa.fa-angle-left { background-size:18px; height:12px; }
+	.white .fa.fa-angle-left { background-position:0 -131px; }
+	nav .slidedown .block.block1 > li a:hover .fa { background-position:0 -30px; }
+	nav .slidedown .head40 .fa { top:9px; background-position:0 -131px;}
 	
-	
-	body { padding-top:35px; font-size:11px;}
-	header .block { padding:0; height: 35px;}
+	body { padding-top:185px; font-size:11px;}
+	header .line1 .block { padding:0; height: 35px;}
 	.head40 { line-height: 30px !important; height: 30px;}
 	.head40 .fa { font-size:20px;}
 	.spotlight .slideshow { height:287px; }
 	header.navbar-inverse { height: 35px; line-height:35px; min-height: 35px;} 
-	header .block.register  { font-size:12px; padding:0 5px;}
-	header .block.block2 a{ padding-top: 6px; }
-	header .block.search a { margin:0; width:44px; line-height:35px;}
-	header .block.head-social a { height:35px; line-height:35px;}
-	header .search-form { width: 386px; height: 35px;}
-	header .search-form input { width: 300px; margin-top: 8px;}
-	header .search-form button.search { margin-top:3px }
+	header .line1 .block.register  { font-size:12px; padding:0 5px;}
+	header .line1 .block.block2 a{ padding-top: 6px; }
+	header .line1 .block.search a { margin:0; width:44px; line-height:35px;}
+	header .line1 .block.head-social a { height:35px; line-height:35px;}
+	header .line1 .search-form { width: 386px; height: 35px;}
+	header .line1 .search-form input { width: 300px; margin-top: 8px;}
+	header .line1 .search-form button.search { margin-top:3px }
 	
 	#top-bar .banner { width:374px;}
 	#top-bar .banner img { width:100%;}
@@ -38,7 +41,8 @@
 	.spotlight .slideshow > .slide > .info .title { margin-top:23px; padding:13px 15px; font-size:20px; line-height:20px;}
 	.spotlight .slideshow > .slide > .info p { font-size:12px; line-height:18px; padding: 15px 20px;}
 	
-	.arrows a { width:40px; height:40px; line-height:40px; }
+	.arrows a { width:40px; height:40px; line-height:40px; background-position:15px -105px;}
+	.arrows a.prev { background-position:15px -66px; }
 	.spotlight .slideshow > .arrows { height:40px; right:20px; width:81px;}
 	.events-block .middle { width:264px;}
 	
