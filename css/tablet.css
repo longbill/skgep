@@ -19,6 +19,7 @@
 	
 	body { padding-top:185px; font-size:11px;}
 	header .line1 .block { padding:0; height: 35px;}
+	header .line1 .close-search { padding:8px 0; }
 	.head40 { line-height: 30px !important; height: 30px;}
 	.head40 .fa { font-size:20px;}
 	.spotlight .slideshow { height:287px; }
@@ -47,7 +48,7 @@
 	.spotlight .slideshow > .arrows { height:40px; right:20px; width:81px;}
 	.events-block .middle { width:264px;}
 	
-	.events-block .left,.events-block .right,.events-block .middle { height:420px;}
+	.events-block .left,.events-block .right,.events-block .middle { height:420px; overflow: hidden;}
 	.events-block .has-head .head { background-size:100%; }
 	.events-block .middle .dark { padding: 11px 13px 10px 0;}
 	.events-block .middle .light { padding: 10px 10px; line-height: 16px;}

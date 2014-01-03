@@ -8,7 +8,8 @@ $(function()
 		SK.initSlideshow(this);
 	});
 	$('input[placeholder],textarea[placeholder]').placeholder();
-
+	SK.resetMediaUpdates();
+	$(window).bind('resize',SK.resetMediaUpdates);
 });
 
 
@@ -91,6 +92,13 @@ SK.initFooter = function()
 	{
 		$('footer .newsletter .tab.tab1').hide();
 		$('footer .newsletter .tab.tab2').show();
+		var input = $('footer .newsletter .tab.tab2 input')[0];
+		$(input).placeholder();
+		input.focus();
+		setTimeout(function()
+		{
+			input.blur();
+		},10);
 	});
 	$('footer .newsletter .tab.tab2 .close').click(function()
 	{
@@ -195,7 +203,67 @@ SK.initSlideshow = function(dom)
 
 
 
+SK.resetMediaUpdates = function()
+{
+	var windowWidth = $(window).width();
+	var containerWidth = $('header .container').width();
+	var containerItems = 3;
+	var marginWidth = 10;
+	if (containerWidth == 758) // if tablet
+	{
+		containerWidth = 658;
+		containerItems = 2;
+	}
 
+
+	if (windowWidth < 758 ) //if mobile
+	{
+		containerItems = 1;
+		windowWidth = containerWidth;
+		marginWidth = 0;
+	}
+
+
+	$('.media-block').each(function()
+	{
+		var itemWidth = $(this).find('.media-item').width()+marginWidth;
+		var $self = $(this);
+		var totalColumns = $self.attr('data-total-columns') || 0;
+		scrollFix();
+
+		$self.find('.arrows > a').unbind('.abc').bind('click.abc',function(evt)
+		{
+			evt.preventDefault();
+			var previous = $self.attr('data-previous-columns') || 0;
+			previous = parseInt(previous,10);
+			if ($(this).is('.next'))
+			{
+				if (previous + containerItems >= totalColumns)
+				{
+					previous = -1;
+				}
+				$self.attr('data-previous-columns',previous+1);
+			}
+			else
+			{
+				if (previous <= 0)
+				{
+					previous = totalColumns - containerItems + 1;
+				}
+				$self.attr('data-previous-columns',previous-1);
+			}
+			scrollFix();
+		});
+
+		function scrollFix()
+		{
+			var previous = $self.attr('data-previous-columns') || 0;
+			var left = (windowWidth - containerWidth)/2 - itemWidth * parseInt(previous,10);
+			var $inner = $self.find('.media-items-wrapper');
+			$inner.stop().animate({left:left},300);
+		}
+	});
+};
 
 
 

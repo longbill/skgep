@@ -66,9 +66,8 @@
 	.events-block .has-head .name { margin-right:235px;}
 	
 	.media-items { width:460px; margin:0 auto; }
-	.media-items .media-items-wrapper { width:100%;}
-	.media-items .media-item { width:100%; margin:0; display:none;}
-	.media-items .media-item:nth-child(1),.media-items .media-item:nth-child(2) { display:block;}
+	.media-items .media-items-wrapper { width: 4600px;}
+	.media-items .media-item { width: 460px; margin:0; float:left;}
 	.media-item > .thumb { height:auto;}
 	.media-item > .thumb img { height:auto;}
 	.series-block .block  { float:none !important; height: auto;}
