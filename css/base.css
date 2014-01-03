@@ -119,10 +119,11 @@ header .line1 .block.head-social a:hover { opacity: 1;}
 header .line1 .block.head-social { width: 143px;}
 header .line1 .block.head-social a.youtube { background-position: -30px 10px; }
 header .line1 .block.head-social a.twitter { background-position: -69px 10px; }
-header .line1 .block.right { float:right; font-size:11px; color:#666;}
-header .line1 .block.right a { color:#666;  }
+header .line1 .block.right { float:right; font-size:11px; color: #9E9E9E;}
+header .line1 .block.right a { color: #B6B6B6;  padding: 0 5px;}
 header .line1 .block.right a:hover { color:#b9b9b9; }
-header .line1 .line1 .block .red { color: #cc092f !important; }
+header .line1 .block .red { color: #cc092f !important; }
+header .line1 .block .white { color: #fff !important; }
 header.is-default .line1 .show-search { display:none; }
 header.is-search .line1 .show-search { display:block; }
 header.is-search .line1 .show-default { display:none; }
