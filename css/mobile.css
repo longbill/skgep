@@ -11,6 +11,7 @@
 	.col3-2.margin10,.col3-2.margin-rb10 ,.col3-2.margin-r10, .col2-1.margin-r10,.col3-1.margin-r10{ width: auto; float:none; margin:0;}
 	.arrows { width:135px; height:67px;}
 	.arrows a { width:67px; height:67px; background-position: 28px -137px; background-size: 30px;}
+	.indicators a { width:67px; height:67px; line-height:67px; font-size:30px;}
 	.arrows a.prev { background-position: 24px -83px; }
 	.block-title { height:67px; line-height:67px !important; padding:0 60px 0 0; width: 325px; float: right;}
 	.block-title .icon { top:16px;}
@@ -35,8 +36,8 @@
 	header.is-search .block-english,header.is-search .block-menu { display:none;}
 	header .line1 .close-search { border-right:1px solid #555; line-height:50px; font-size: 25px;} 
 	header .search-form button.search .fa.fa-search { top:8px }
-	#top-bar .banner { width:397px;}
-	#top-bar .banner img { width:100%;}
+	#top-bar .banner { width:397px; height: 61px;}
+	#top-bar .banner img { width: auto;}
 	#top-bar .logo { height:61px; width:44px;}
 	#top-bar .logo a { background-size: 238px; background-position: 0 -24px;}
 	.spotlight .slideshow { height:326px; overflow:hidden; position:relative;}
@@ -95,6 +96,7 @@
 	.messages-block .slides-wrapper { width: 385px; border-right:0; }
 	.messages-block .message {  height:94px; line-height:20px; overflow:hidden; vertical-align: middle; position:relative;}
 	.messages-block .message .message-inner .time { white-space:nowrap;}
+	.messages-block .block-title { width: 256px; line-height: 25px !important; padding-top: 9px;}
 	
 	.social { height:auto; }
 	.social.instagram > .content { padding-bottom:3.5%; }
@@ -130,4 +132,6 @@
 	.mobile-menu .line3 a.cell1 { font-size:12px; line-height:14px; padding-top:6px; padding-right:10px; width:200px;}
 	.mobile-menu .line3 a.cell2 { width:164px; line-height:40px !important; background-color:#cc092f; margin-left:10px; text-align:center;  }
 	.mobile-menu .line3 a:hover { color:white; background-color:#cc092f; }
+	
+	.messages-block .indicators { width:204px; position: absolute; left: 0; top: 0;}
 }

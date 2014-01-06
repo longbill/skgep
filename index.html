@@ -10,9 +10,11 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/tablet.css">
 	<link rel="stylesheet" href="css/mobile.css">
+	<script src="js/skrollr.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
+	<script src="js/skrollr.ie.min.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -67,7 +69,7 @@
 		</div>
 		<div id="top-bar" class="clearfix line2">
 			<div class="container">
-				<div class="logo"><a href="#"></a></div>
+				<div class="logo"><a href="/"><img src="images/logo.png" alt=""></a></div>
 				<div class="banner pull-right">
 					<img src="images/top-banner.gif" alt="">
 				</div>
@@ -147,7 +149,7 @@
 	</div>
 	<div class="events-block">
 		<div class="container">
-			<div class="left has-head col3-1">
+			<div class="left has-head col3-1" data-0="left:-400px;" data-400="left:0px;">
 				<div class="head" style="background-image:url(images/head1.png);"></div>
 				<span class="yin">”</span>
 				<div class="words font14 white">
@@ -210,7 +212,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="right has-head col3-1">
+			<div class="right has-head col3-1" data-0="right:-400px;" data-400="right:0px;">
 				<div class="head" style="background-image:url(images/head2.png);"></div>
 				<span class="yin">”</span>
 				<div class="words white font14">
@@ -964,7 +966,7 @@
 
 
 
-	<div class="messages-block slideshow" data-type="vertical" data-interval="5000">
+	<div class="messages-block slideshow" data-type="vertical">
 		<div class="container clearfix">
 			<div class="block-title col3-1 dark bfont font20">
 				EXCELLENCE MESSAGES<b class="icon icon-message"></b>
@@ -987,9 +989,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="arrows">
-				<a href="#" class="prev"></a>
-				<a href="#" class="next"></a>
+			<div class="indicators">
+				<a href="#" class="slide-indicator active" data-slide="1">1</a>
+				<a href="#" class="slide-indicator" data-slide="2">2</a>
+				<a href="#" class="slide-indicator" data-slide="3">3</a>
 			</div>
 		</div>
 	</div>

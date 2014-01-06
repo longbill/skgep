@@ -45,6 +45,7 @@
 	
 	.arrows a { width:40px; height:40px; line-height:40px; background-position:15px -105px;}
 	.arrows a.prev { background-position:15px -66px; }
+	.indicators a { width:40px; height:40px; line-height: 40px; font-size: 20px;}
 	.spotlight .slideshow > .arrows { height:40px; right:20px; width:81px;}
 	.events-block .middle { width:264px;}
 	
@@ -91,7 +92,7 @@
 	.series-block .block.green .slides-wrapper .tab .tab-inner { padding: 20px 20px 0 0px; line-height: 23px;}
 	
 	.messages-block { height:40px; line-height:40px;}
-	.messages-block .slides-wrapper { width:389px; height:40px;}
+	.messages-block .slides-wrapper { width: 347px; height:40px;}
 	.messages-block .message {  font-size:15px; height:40px; }
 	.messages-block .arrows { width: 81px; }
 	.messages-block .download { width:42px; height: 40px; }
@@ -117,4 +118,9 @@
 	nav .slidedown .block.block1 > li a .fa { line-height:28px;}
 	nav .slidedown { height:auto;}
 	
+	#top-bar .banner { height:57px; }
+	#top-bar.small { padding: 7px 0;}
+	#top-bar.small .logo { height: 57px; width: 41px;}
+	#top-bar.small .banner { height: 57px; }	
+	.messages-block .indicators { width:123px; }
 }
