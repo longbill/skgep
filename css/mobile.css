@@ -36,7 +36,7 @@
 	header.is-search .block-english,header.is-search .block-menu { display:none;}
 	header .line1 .close-search { border-right:1px solid #555; line-height:50px; font-size: 25px;} 
 	header .search-form button.search .fa.fa-search { top:8px }
-	#top-bar .banner { width:397px; height: 61px;}
+	#top-bar .banner { width:397px; height: 41px;}
 	#top-bar .banner img { width: auto;}
 	#top-bar .logo { height:61px; width:44px;}
 	#top-bar .logo a { background-size: 238px; background-position: 0 -24px;}

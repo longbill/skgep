@@ -13,7 +13,7 @@ $(function()
 
 	$(window).bind('scroll',function()
 	{
-		if ($(window).scrollTop() > 20)
+		if ($(window).scrollTop() > 50)
 		{
 			$('#top-bar').addClass('small');
 		}
@@ -37,8 +37,9 @@ SK.isIE = !!navigator.userAgent.match(/Trident/i);
 
 SK.initHead = function()
 {
-	$('header .click-to-show-search-form').click(function()
+	$('header .click-to-show-search-form').click(function(evt)
 	{
+		evt.preventDefault();
 		if (SK.isTouchDevice)
 		{
 			$('header').removeClass('is-default').addClass('is-search');

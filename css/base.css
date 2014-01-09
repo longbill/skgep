@@ -5,18 +5,12 @@
 	src: url('../fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-medium-webfont.woff') format('woff'), url('../fonts/gotham-medium-webfont.ttf') format('truetype'), url('../fonts/gotham-medium-webfont.svg#gotham-medium-webfont') format('svg');
 }
 
-@font-face 
-{
-	font-family: 'Gotham-bold';
-	src: url('../fonts/gotham-bold-webfont.eot');
-	src: url('../fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-bold-webfont.woff') format('woff'), url('../fonts/gotham-bold-webfont.ttf') format('truetype'), url('../fonts/gotham-bold-webfont.svg#gotham-bold-webfont') format('svg');
-}
 
 @font-face 
 {
 	font-family: 'Gotham-light';
 	src: url('../fonts/gotham-light-webfont.eot');
-	src: url('../fonts/gotham-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-light-webfont.woff') format('woff'), url('../fonts/gotham-bold-webfont.ttf') format('truetype'), url('../fonts/gotham-light-webfont.svg#gotham-light-webfont') format('svg');
+	src: url('../fonts/gotham-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gotham-light-webfont.woff') format('woff'), url('../fonts/gotham-light-webfont.ttf') format('truetype'), url('../fonts/gotham-light-webfont.svg#gotham-light-webfont') format('svg');
 }
 
 
@@ -35,7 +29,7 @@ a img { border:0;}
 .fa.fa-times:before { content:''; }
 .fa.fa-times { background: transparent url(../images/angles.png) no-repeat 0px -236px; height:15px; width:15px; position:relative; top:2px; }
 
-.bfont { font-family: "Gotham-bold"; text-transform:uppercase; line-height:1 !important;}
+.bfont { font-family: Arial; font-weight:bold; text-transform:uppercase; line-height:1 !important;}
 .font12 { font-size:12px;}
 .font14 { font-size:14px;}
 .font16 { font-size:16px;}
@@ -46,7 +40,7 @@ a img { border:0;}
 .white, a.white, .white a{ color:white;}
 a.black:hover,.black a:hover { color:#555; }
 a.white:hover, .white a:hover{ color: #ccc;}
-.bold { font-family:"Gotham-bold";}
+.bold { font-family:"Arial"; font-weight:bold;}
 .light { font-family:"Gotham-light";}
 .upper { text-transform:uppercase;}
 .relative { position:relative;}
@@ -69,11 +63,12 @@ a.white:hover, .white a:hover{ color: #ccc;}
 .grey { background-color:#e3e4e4; }
 .green { background-color:#00732f; color:white; }
 .green a { color:white;}
+a.green:hover { color:#eee; }
 .tleft { text-align:left; }
 .tcenter { text-align:center; }
 
-.head40 { position: relative; padding: 0 5% 0 0;height: 40px; line-height: 40px !important;}
-.head50 { position: relative;padding: 15px 20px 15px 0;height: 50px; font-size: 20px;line-height: 20px;font-family: "Gotham-bold"; }
+.head40 { position: relative; padding: 0 5% 0 0;height: 40px; line-height: 40px !important; display: block;}
+.head50 { position: relative;padding: 15px 20px 15px 0;height: 50px; font-size: 20px;line-height: 20px;font-family: "Arial"; font-weight:bold; }
 
 .head40 .fa,.head40 .icon, .head50 .fa,.head50 .icon { position:absolute; left: 5%; }
 .head40 .fa { font-size: 22px; top:0; height:100%; line-height: inherit;}
@@ -117,6 +112,7 @@ header .line1 .block a { color:white; text-transform: uppercase;}
 header .line1 .block.register { background-color:#cc092f; }
 header .line1 .block.block2 { width: 210px; border-right:2px solid #262626;}
 header .line1 .block.block2 a { line-height: 1; font-size:12px; display:block; text-align:center; padding-top:8px;  }
+header .line1 .block.block2 a:hover { font-weight:bold; }
 header .line1 .block.search { border-right:2px solid #262626; }
 header .line1 .block.search a { opacity: 0.5; display:block; width: 80px; margin: 0 -10px; text-align: center; font-size: 20px; color: white; line-height: inherit;}
 header .line1 .block.search a:hover { opacity:1; }
@@ -128,7 +124,8 @@ header .line1 .block.head-social a.twitter { background-position: -69px 10px; }
 header .line1 .block.right { float:right; font-size:11px; color: #9E9E9E;}
 header .line1 .block.right a { color: #B6B6B6;  padding: 0 5px;}
 header .line1 .block.right a:hover { color:#b9b9b9; }
-header .line1 .block .red { color: #cc092f !important; }
+header .line1 .block .greenb { color: #00732f !important; }
+header .line1 .block .greenb:hover { font-weight:bold; }
 header .line1 .block .white { color: #fff !important; }
 header.is-default .line1 .show-search { display:none; }
 header.is-search .line1 .show-search { display:block; }
@@ -258,6 +255,7 @@ footer .block2 .tab1 a { display:block; margin-left: 20%; width: 41%; text-align
 
 
 .messages-block { margin-bottom:20px; height:50px; line-height: 50px;}
+.messages-block .block-title:hover { color:white;}
 .messages-block .container { background-color:#e3e4e4; }
 .messages-block .slides-wrapper { float:right; width: 465px; height:50px; overflow:hidden; position:relative;  border-right: 1px solid #b6b6b6;}
 .messages-block .slides-wrapper .slide { position:absolute; right:0; top:1000px; }
@@ -272,7 +270,7 @@ footer .block2 .tab1 a { display:block; margin-left: 20%; width: 41%; text-align
 
 
 
-.media-items { overflow:hidden; }
+.media-items { overflow:hidden; position: relative;}
 .media-items .media-items-wrapper { width: 3340px; position: relative;}
 .media-item { float:left; background-color:#e3e4e4; height:262px; position:relative; color:black !important; overflow:hidden;}
 .media-item  .slides-wrapper { position:relative; top:0; transition:top ease .2s; }
@@ -338,8 +336,8 @@ footer .newsletter .tab.tab2 form input::-webkit-input-placeholder { color:black
 
 #top-bar { transition:all ease 0.2s;}
 #top-bar * { transition:all ease 0.2s; }
-#top-bar.small { padding: 10px 0;}
+#top-bar.small { padding: 0; height: 0; overflow: hidden;}
 #top-bar.small .logo {height: 60px; width: 41px;}
-#top-bar .banner { height:75px; }
-#top-bar.small .banner { height:60px; }
+#top-bar .banner { height: 60px; }
+#top-bar.small .banner { height: 10px; }
 #top-bar .banner img  { max-height:100%; max-width:100%;}

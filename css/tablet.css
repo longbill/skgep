@@ -34,7 +34,7 @@
 	header .line1 .block.right a { padding:0; }
 	
 	#top-bar .banner { width:374px;}
-	#top-bar .banner img { width:100%;}
+	#top-bar .banner img { width: auto;}
 	#top-bar .logo { height: 57px; width: 40px;}
 	#top-bar .logo a { background-size: 221px; background-position: 0 -22px; }
 	nav ul.menu > li { padding: 0 12px;}
@@ -118,9 +118,9 @@
 	nav .slidedown .block.block1 > li a .fa { line-height:28px;}
 	nav .slidedown { height:auto;}
 	
-	#top-bar .banner { height:57px; }
-	#top-bar.small { padding: 7px 0;}
-	#top-bar.small .logo { height: 57px; width: 41px;}
-	#top-bar.small .banner { height: 57px; }	
+	#top-bar .banner { height: 45px; }
+	#top-bar.small { padding: 0;}
+	#top-bar.small .logo { height: 20px; width: 20px;}
+	#top-bar.small .banner { height: 20px; width:auto;}	
 	.messages-block .indicators { width:123px; }
 }
