@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL ^ E_NOTICE);
+
+include('lib/lorem.php');
 
 
 function rand_choose($s)

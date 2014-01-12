@@ -31,11 +31,14 @@ a img { border:0;}
 
 .bfont { font-family: Arial; font-weight:bold; text-transform:uppercase; line-height:1 !important;}
 .font12 { font-size:12px;}
+.font13 { font-size:13px;}
 .font14 { font-size:14px;}
 .font16 { font-size:16px;}
 .font18 { font-size:18px;}
 .font20 { font-size:20px;}
+.font22 { font-size:22px;}
 .font24 { font-size:24px;}
+.font28 { font-size:28px;}
 .black,a.black,.black a { color:black;}
 .white, a.white, .white a{ color:white;}
 a.black:hover,.black a:hover { color:#555; }
@@ -67,7 +70,7 @@ a.white:hover, .white a:hover{ color: #ccc;}
 a.green:hover { color:#eee; }
 .tleft { text-align:left; }
 .tcenter { text-align:center; }
-.green-text a,a.green-text { color:#00732f;}
+.green-text,.green-text a,a.green-text { color:#00732f;}
 .green-text a:hover,a.green-text:hover { color:black;}
 
 .head40 { position: relative; padding: 0 5% 0 0;height: 40px; line-height: 40px !important; display: block;}
@@ -90,7 +93,7 @@ a.green:hover { color:#eee; }
 
 .table-wrapper { display:table; height:100%; width:100%;}
 .middle-wrapper { display:table-cell; vertical-align:middle;}
-
+.block-title .middle-wrapper { line-height:1;}
 /* global components */
 .arrows a { display:block; width:50px; height:50px; float:left; line-height: 50px; color: white; background: #cc092f url(../images/angles.png) no-repeat 21px -100px; outline: none;}
 .arrows a.prev { margin-right:1px; background-position: 20px -61px;}
@@ -139,13 +142,16 @@ ul.link-list > li.has-sub-items > ul > li > a { padding:12px 12% 12px 0; line-he
 ul.link-list > li.has-sub-items > ul > li > a:hover,
 ul.link-list > li.has-sub-items > ul > li.active > a,
 ul.link-list:hover > li.has-sub-items > ul > li.active > a:hover { background:#cc092f url(../images/angle-left-white.png) no-repeat 95% 50%; color:white; }
-ul.link-list:hover > li.has-sub-items > ul > li.active > a { background:transparent none; color:black; }
+/* ul.link-list:hover > li.has-sub-items > ul > li.active > a { background:transparent none; color:black; }  */
 ul.link-list > li.has-sub-items.open > a { background-color:#f7f7f7; background-image:url(../images/angle-bottom.png); font-size:17px; }
 ul.link-list > li.has-sub-items.open > a:hover { background-image:url(../images/angle-bottom-white.png);}
 ul.with-left-angle > li > a { background-image: url(../images/angle-left.png); background-repeat:no-repeat; background-position: 5% 50%; }
 
-ul.hover-red-bg > li > a:hover,ul.link-list > li.has-sub-items.open > a:hover { background-color:#cc092f; color:white; }
-ul.hover-red-bg.with-left-angle > li > a:hover { background-image: url(../images/angle-left-white.png); }
+ul.hover-red-bg > li > a:hover,
+ul.link-list > li.has-sub-items.open > a:hover,
+ul.hover-red-bg > li.active > a{ background-color:#cc092f; color:white; }
+ul.hover-red-bg.with-left-angle > li > a:hover,
+ul.hover-red-bg.with-left-angle > li.active > a{ background-image: url(../images/angle-left-white.png); }
 
 
 .slideshow.image-slider { position:relative; margin:0 auto; width: 597px; height: 386px; overflow: hidden; background-color: black;}
@@ -439,5 +445,28 @@ footer .newsletter .tab.tab2 form input::-webkit-input-placeholder { color:black
 
 .categories-wrapper .category-right { list-style:none; margin: 0 0 0 27%; padding: 0;}
 .categories-wrapper .category-right a { font:bold 14px / 1.7 "Arial"; }
+
+.accordion-block .block-title { width:auto; float:none;  padding: 0 4% 0 14%; background: black url(../images/cross-white.png) no-repeat 2% 50%; cursor:pointer;}
+.accordion-content-wrapper { background-color:white; display:none; }
+.accordion-content-wrapper .accordion-content { padding:30px; font: 13px / 1.54 Arial; color:black;}
+.accordion-content-wrapper img { max-width:100%;}
+.accordion-block.open .accordion-content-wrapper { display:block;}
+.accordion-block.open .block-title { background-image:url(../images/minus-white.png); }
+
+.illustration { height:518px; text-align:center;}
+
+.winner-block { padding: 0 30px 20px 30px; border-bottom:1px solid #ccc; background-color:white;}
+.winner-block .winner-title { line-height: 1; padding: 1em 0 .5em;}
+.winner-block .winner-name { margin: .5em 0;}
+.winner-block .winner-item { position:relative; padding-right:76px; min-height:60px; margin-top: .5em;}
+.winner-block .winner-item .winner-logo { position:absolute; right:0; top:0;}
+
+ul.participating { list-style:none; margin: 0; padding:20px 30px;}
+ul.participating li { padding:4px 0; }
+ul.participating a { font:bold 14px / 1 "Arial"; }
+
+
+
+
 
 

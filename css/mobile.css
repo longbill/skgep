@@ -162,4 +162,11 @@
 	.categories-wrapper .category-item { padding-right:20px;}
 	.categories-wrapper .category-item .category-left { position:static;width:auto; text-align:right; line-height:30px !important; }
 	.categories-wrapper .category-right { padding:0; margin:0; }
+	
+	.accordion-block .block-title { background-size:25px }
+	.accordion-content-wrapper .accordion-content { padding:20px;}
+	.illustration { height:336px;}
+	.winner-block { padding: 0 20px 10px 20px;}
+	ul.participating { padding:10px 20px;}
+	ul.participating li { padding:8px 0; } 
 }

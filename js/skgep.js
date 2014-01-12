@@ -5,6 +5,7 @@ $(function()
 	SK.initFooter();
 	SK.initFunctionButtons();
 	SK.initSidebar();
+	SK.initAccordions();
 	$('.slideshow').each(SK.initSlideshow);
 	$('.stepshow').each(SK.initStepshow);
 	$('input[placeholder],textarea[placeholder]').placeholder();
@@ -429,6 +430,29 @@ SK.resetMediaUpdates = function()
 };
 
 
+
+SK.initAccordions = function()
+{
+	$('.accordion-block').each(function()
+	{
+		var $content = $(this).find('.accordion-content-wrapper');
+		var $title = $(this).find('.block-title');
+		var $self = $(this);
+		$title.click(function(evt)
+		{
+			evt.preventDefault();
+			$self.toggleClass('open');
+			if ($self.is('.open'))
+			{
+				$content.hide().slideDown();
+			}
+			else
+			{
+				$content.show().slideUp();
+			}
+		});
+	});
+};
 
 
 

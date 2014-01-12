@@ -5,11 +5,15 @@
 	.col3-2 { width:511px; }
 	.col3-2.margin10,.col3-2.margin-rb10 ,.col3-2.margin-r10{ width: 501px; }
 	.font12 { font-size:12px;}
+	.font13 { font-size:12px;}
 	.font14 { font-size:12px;}
 	.font16 { font-size:14px;}
 	.font18 { font-size:16px;}
 	.font20 { font-size: 16px;}
+	.font22 { font-size:18px;}
 	.font24 { font-size:20px;}
+	.font28 { font-size:26px;}
+	
 	.icon { -webkit-transform:scale(0.7); -ms-transform:scale(0.7); transform:scale(0.7);  transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;}
 	.calendar { -webkit-transform:scale(0.9); -ms-transform:scale(0.9); transform:scale(0.9);  transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;}
 	.fa.fa-angle-left { background-size:18px; height:12px; }
@@ -146,4 +150,7 @@
 	.category-block .block-title > a.more { line-height: 40px !important; background: #cc092f url(../images/angle-left-white.png) no-repeat 10px 50%; padding-right: 16px; font-size: 12px; padding-left: 27px;}
 	.categories-wrapper .category-right a { font-size:12px;}
 	.categories-wrapper .category-item { padding-right:20px;}
+	.accordion-content-wrapper .accordion-content { padding:20px;}
+	ul.participating { padding:10px 20px;}
+	.illustration { height:376px;}
 }
