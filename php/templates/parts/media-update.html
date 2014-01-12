@@ -1,0 +1,22 @@
+<div class="media-block" data-previous-columns="1" data-total-columns="10">
+	<div class="container title">
+		<div class="block-title col3-1 dark bfont font20">
+			MEDIA UPDATES<b class="icon icon-media"></b>
+		</div>
+		<div class="arrows">
+			<a href="#" class="prev"></a>
+			<a href="#" class="next"></a>
+		</div>
+	</div>
+	<div class="media-items">
+		<div class="media-items-wrapper clearfix" data-bottom-top="margin-left:900px;" data-bottom="margin-left:0px;">
+			{foreach(range(1,20) as $i)}
+				{if($i%2)}
+			<!-- INCLUDE parts/media-photo.html -->
+				{else}
+			<!-- INCLUDE parts/media-video.html -->
+				{/if}
+			{/foreach}
+		</div>
+	</div>
+</div>

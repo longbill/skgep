@@ -3,10 +3,10 @@ $(function()
 	SK.initHead();
 	SK.initMenu();
 	SK.initFooter();
-	$('.slideshow').each(function()
-	{
-		SK.initSlideshow(this);
-	});
+	SK.initFunctionButtons();
+	SK.initSidebar();
+	$('.slideshow').each(SK.initSlideshow);
+	$('.stepshow').each(SK.initStepshow);
 	$('input[placeholder],textarea[placeholder]').placeholder();
 	SK.resetMediaUpdates();
 	$(window).bind('resize',SK.resetMediaUpdates);
@@ -34,6 +34,44 @@ $(function()
 SK = {};
 SK.isTouchDevice = ("createTouch" in document);
 SK.isIE = !!navigator.userAgent.match(/Trident/i);
+
+
+SK.initFunctionButtons = function()
+{
+	$('.page-text-size').each(function()
+	{
+		$(this).find('b[data-size]').click(function(evt)
+		{
+			evt.preventDefault();
+			var size = $(this).attr('data-size');
+			var selector = $(this).parent().attr('data-for');
+			$(selector).css('font-size',size);
+			$(this).siblings('.active').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+};
+
+
+SK.initSidebar = function()
+{
+	$('.link-list').each(function()
+	{
+		$(this).find('li.has-sub-items > a').click(function(evt)
+		{
+			evt.preventDefault();
+			var li = $(this).parent().toggleClass('open');
+			if (li.is('.open'))
+			{
+				li.children('ul').hide().slideDown();
+			}
+			else
+			{
+				li.children('ul').show().slideUp();
+			}
+		});
+	});
+};
 
 SK.initHead = function()
 {
@@ -134,9 +172,9 @@ SK.initFooter = function()
 
 
 
-SK.initSlideshow = function(dom)
+SK.initSlideshow = function()
 {
-	var $slides = $(dom);
+	var $slides = $(this);
 	var animationType = $slides.attr('data-type');
 	var interval = $slides.attr('data-interval');
 	var animationTime = $slides.attr('data-animation-time') || 300;
@@ -257,6 +295,73 @@ SK.initSlideshow = function(dom)
 
 	if ($slides.find('.slide.active').length == 0) $slides.find('.slide').eq(0).addClass('active');
 
+};
+
+
+SK.initStepshow = function()
+{
+	var $slides = $(this);
+	var $inner = $slides.find('.stepshow-inner');
+	var animationType = $slides.attr('data-type');
+	var interval = $slides.attr('data-interval');
+	var animationTime = $slides.attr('data-animation-time') || 300;
+	var animating = false;
+
+	var itemSelector = $slides.attr('data-item');
+	var totalItems = $inner.find(itemSelector).length;
+	var containerWidth = $slides.find('.stepshow-container').width();
+	
+	var $item = $inner.find(itemSelector).eq(0);
+	var itemWidth = $item.width() + parseInt($item.css('margin-right') || 0) + parseInt($item.css('margin-left') || 0);
+	var itemHeight = $item.height() + parseInt($item.css('margin-top') || 0) + parseInt($item.css('margin-bottom') || 0);
+	var itemsOnScreen = Math.round(containerWidth / itemWidth);
+
+	function slide(isNext)
+	{
+		var current = $slides.attr('data-current') || 1;
+		current = parseInt(current,10);
+		if (totalItems - current < itemsOnScreen && isNext) return;//current = 0;
+		if (current <= 1 && !isNext) return;//current = totalItems - itemsOnScreen + 2;
+		current += isNext ? 1 : -1;
+		slideTo(current);
+	}
+
+	function slideTo(index)
+	{
+		if (animating) return;
+		animating = true;
+		animate(index-1,function()
+		{
+			$slides.attr('data-current',index);
+			animating = false;
+		});
+	}
+
+	function animate(index,cb)
+	{
+		if (animationType == 'horizontal')
+		{
+			$inner.animate({left: -1*itemWidth*index },animationTime,cb);
+		}
+		else if (animationType == 'vertical')
+		{
+			var h = $dom.height();
+			$inner.animate({'top': -1*itemHeight*index },animationTime,cb);
+		}
+		else
+		{
+			cb();
+		}
+	}
+
+	$slides.find('.arrows > a').click(function(evt)
+	{
+		evt.preventDefault();
+		var isNext = $(this).is('.next');
+		slide(isNext);
+	});
+
+	if (!$slides.attr('data-current')) $slides.attr('data-current','1');
 };
 
 

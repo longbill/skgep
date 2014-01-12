@@ -19,7 +19,7 @@ foreach($files as $f)
 {
 	if ($f == 'list.html') continue;
 	$html[] = '<p><a href="'.$f.'">'.$f.'</a></p>';
-	echo $f."\n";
+	echo $f."<br>";
 }
 
 file_put_contents('../list.html',join($html,''));
