@@ -15,6 +15,7 @@
 	.font28 { font-size:26px;}
 	
 	.icon { -webkit-transform:scale(0.7); -ms-transform:scale(0.7); transform:scale(0.7);  transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;}
+	.icon.icon-print,.icon.icon-mail {-webkit-transform:scale(1); -ms-transform:scale(1); transform:scale(1); }
 	.calendar { -webkit-transform:scale(0.9); -ms-transform:scale(0.9); transform:scale(0.9);  transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;}
 	.fa.fa-angle-left { background-size:18px; height:12px; }
 	.white .fa.fa-angle-left { background-position:0 -131px; }
@@ -48,6 +49,8 @@
 	header .line1 .search-form button.search { margin-top:3px }
 	header .line1 .block.right a { padding:0; }
 	
+	.social-share-buttons .share-button.linkedin { width:115px; }
+	
 	#top-bar .banner { width:374px;}
 	#top-bar .banner img { width: auto;}
 	#top-bar .logo { height: 57px; width: 40px;}
@@ -66,7 +69,7 @@
 	
 	.events-block .left,.events-block .right,.events-block .middle { height:420px; overflow: hidden;}
 	.events-block .has-head .head { background-size:100%; }
-	.events-block .middle .dark { padding: 11px 13px 10px 0;}
+	.events-block .middle .line1 { padding: 11px 13px 10px 0;}
 	.events-block .middle .light { padding: 10px 10px; line-height: 16px;}
 	.events-block .middle .line2 { height:148px;}
 	.events-block .middle .seemore { padding-right:10px; margin-bottom: 0; padding-bottom: 10px;}
