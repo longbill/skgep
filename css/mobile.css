@@ -11,7 +11,7 @@
 	.col3-2.margin10,.col3-2.margin-rb10 ,.col3-2.margin-r10, .col2-1.margin-r10,.col3-1.margin-r10{ width: auto; float:none; margin:0;}
 	.arrows { width:135px; height:67px;}
 	.arrows a { width:67px; height:67px; background-position: 28px -137px; background-size: 30px;}
-	.indicators a { width:67px; height:67px; line-height:67px; font-size:30px;}
+	.indicators a { width: 68px; height:67px; line-height:67px; font-size:30px;}
 	.arrows a.prev { background-position: 24px -83px; }
 	.block-title { height:67px; line-height:67px !important; padding:0 60px 0 0; width: 325px; float: right;}
 	.block-title .icon { top:16px;}
