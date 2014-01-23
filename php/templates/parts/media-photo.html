@@ -12,10 +12,17 @@
 		</div>
 		<div class="slide hover">
 			<div class="thumb4">
+				<?php $r = rand(1,9); ?>
 				<img src="http://lorempixel.com/162/91/city/1" alt="">
+				{if($r > 1)}
 				<img src="http://lorempixel.com/162/91/city/2" alt="">
+				{if($r > 2)}
 				<img src="http://lorempixel.com/162/91/city/3" alt="">
+				{if($r > 3)}
 				<img src="http://lorempixel.com/162/91/city/4" alt="">
+				{/if}
+				{/if}
+				{/if}
 			</div>
 			<div class="info red">
 				<div class="viewmore bfont font18 white">

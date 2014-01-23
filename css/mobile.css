@@ -154,7 +154,7 @@
 	.page-information .function-button .icon { margin-top:1px; }
 	.page-information .function-button .icon-mail { margin-top:3px; }
 	.page-text-size b { margin:0 10px;}
-	.page-information .social-share-buttons { margin-right:0; height: 60px;  display: -webkit-flex;display: flex; justify-content:center; flex-wrap: wrap;  margin-top: 30px; border-top:1px solid #ccc;}
+	.page-information .social-share-buttons { margin-right:0; height: 60px;  display: -webkit-flex;display: flex; justify-content:center; flex-wrap: wrap;  margin-top: 30px; border-top:1px solid #ccc; margin-left: 0;}
 	.page-information.bottom .social-share-buttons {  margin-top: 0px; border-top:0;}
 	.page-information .social-share-buttons .share-button { margin: 0 10px 10px;}
 	.mobile-page-title{ padding: 21px; text-align: center;}
