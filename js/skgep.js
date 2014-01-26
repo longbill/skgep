@@ -103,13 +103,8 @@ SK.initHead = function()
 
 	if (SK.isTouchDevice)
 	{
-		var $viewportMeta = $('meta[name="viewport"]');
-		var isPad = true;
-		if (screen.width < 768)
-		{
-			isPad = false;
-			$viewportMeta.attr('content', 'width=480,initial-scale=0.666,maximum-scale=0.666,user-scalable=no');
-		}
+		SK.resetViewPort();
+		$(window).resize(SK.resetViewPort);
 	}
 
 
@@ -130,6 +125,23 @@ SK.initHead = function()
 	});
 };
 
+SK.resetViewPort = function()
+{
+	var $viewportMeta = $('meta[name="viewport"]');
+	if (screen.width >= 768)
+	{
+		$viewportMeta.attr('content', 'width=device-width,minimum-scale=1,user-scalable=yes');
+	}
+	else if (screen.width < 768 && screen.width >= 480)
+	{
+		$viewportMeta.attr('content', 'width=device-width,minimum-scale=1,user-scalable=yes');
+	}
+	else
+	{
+		var p = screen.width / 480;
+		$viewportMeta.attr('content', 'width=480,initial-scale='+p+',user-scalable=no');
+	}
+};
 
 SK.initMenu = function()
 {

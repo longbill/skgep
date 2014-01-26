@@ -72,6 +72,7 @@ a.green:hover { color:#eee; }
 .tcenter { text-align:center; }
 .green-text,.green-text a,a.green-text { color:#00732f;}
 .green-text a:hover,a.green-text:hover { color:black;}
+.red { color:#cc092f;}
 
 .head40 { position: relative; padding: 0 5% 0 0;height: 40px; line-height: 40px !important; display: block;}
 .head50 { position: relative;padding: 15px 20px 15px 0;height: 50px; font-size: 20px;line-height: 20px;font-family: "Arial"; font-weight:bold; }
@@ -470,8 +471,16 @@ ul.participating { list-style:none; margin: 0; padding:20px 30px;}
 ul.participating li { padding:4px 0; }
 ul.participating a { font:bold 14px / 1 "Arial"; }
 
-
-
-
+.input-group { display:block; margin-bottom:20px; height:50px; line-height:50px; }
+.input-group.buttons-line { border-top:1px solid #ccc; padding-top:20px; height:70px;}
+.input-group label { float:right; width:110px; }
+.input-group .text-input { line-height:1; float:right; height:50px; padding:15px 5px; margin:0; border:none; background-color:#e3e4e4; width: 393px; font-size: 20px; text-align: right;}
+.input-group .button-input { border:none; padding:0 25px;margin:0; display:block; float:right; margin-left:20px; font-size:16px; color:white; text-transform:uppercase; font-weight:bold; font-family:Arial; height:40px; line-height:40px; background-color:black;}
+.input-group .button-input.red-button { background-color:#cc092f; }
+.input-group .help-text { float:right; padding-right:20px;}
+.login-content-inner { padding:20px 30px 0 0;}
+.login-content .container { background-color:white;}
+.login-content form { margin-top:30px;}
+.login-content form .input-group { padding-right:30px;}
 
 

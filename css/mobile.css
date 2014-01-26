@@ -18,6 +18,8 @@
 	.head40 { height:57px; line-height:57px !important;}
 	.head40 .fa { font-size:30px;}
 	
+	header > .line2 { padding-bottom:0; }
+	
 	.hidden-mobile { display: none !important;}
 	.visible-mobile { display:block; }
 	header .line1 .block { height:50px;}
@@ -175,4 +177,12 @@
 	ul.participating li { padding:8px 0; } 
 	.winner-block .winner-item .winner-logo img { width:52px; height:52px;}
 	.winner-block .winner-item .bold.font14 { line-height:17px !important;}
+	.login-content-inner { padding-right:20px; }
+	.login-content form { margin-top:10px;}
+	.input-group { height:auto; margin-bottom:20px; position:relative;}
+	.login-content form .input-group { padding-right:20px;}
+	.input-group .text-input { float:none; width:420px; height:66px; }
+	.input-group label { line-height:40px;}
+	.input-group .help-text { position:absolute; top:0; right:100px; line-height:40px; }
+	.input-group.buttons-line label { display:none;}
 }

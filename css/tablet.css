@@ -156,4 +156,7 @@
 	.accordion-content-wrapper .accordion-content { padding:20px;}
 	ul.participating { padding:10px 20px;}
 	.illustration { height:376px;}
+	
+	.input-group { height:40px; line-height:40px;}
+	.input-group .text-input { height:40px;}
 }
