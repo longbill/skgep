@@ -1,0 +1,19 @@
+<script>
+var addthis_config = {"data_track_addressbar":true};
+addthis_config.data_track_addressbar = false;
+
+(function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=longbill';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+
+//fix add this close issue
+$(document).delegate('#at3winheaderclose,#at3lb','click',function()
+{
+	setTimeout(function()
+	{
+		$('#at3win').hide();
+	},500);
+});
+</script>
