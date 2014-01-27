@@ -8,6 +8,7 @@ $(function()
 	SK.initAccordions();
 	SK.initLoginButton();
 	SK.initSelects();
+	SK.initTab();
 
 	$('.slideshow').each(SK.initSlideshow);
 	$('.stepshow').each(SK.initStepshow);
@@ -520,6 +521,25 @@ SK.initSelects = function()
 	});
 };
 
+
+SK.initTab = function()
+{
+	$('.tab-container').each(function()
+	{
+		var container = $(this);
+		var contentWrapper = container.find('.tab-content-wrapper');
+		var head = container.find('.tab-head');
+		head.find('.tab').click(function()
+		{
+			if ($(this).is('.active')) return;
+			head.find('.tab.active').removeClass('active');
+			$(this).addClass('active');
+			var className = $(this).attr('data-for');
+			contentWrapper.find('.tab.active').removeClass('active');
+			contentWrapper.find('.tab.'+className).addClass('active');
+		});
+	});
+};
 
 
 

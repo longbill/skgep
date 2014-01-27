@@ -74,6 +74,7 @@ a.green:hover { color:#eee; }
 .green-text,.green-text a,a.green-text { color:#00732f;}
 .green-text a:hover,a.green-text:hover { color:black;}
 .red { color:#cc092f;}
+.border-b { border-bottom:1px solid #ccc;}
 
 .head40 { position: relative; padding: 0 5% 0 0;height: 40px; line-height: 40px !important; display: block;}
 .head50 { position: relative;padding: 15px 20px 15px 0;height: 50px; font-size: 20px;line-height: 20px;font-family: "Arial"; font-weight:bold; }
@@ -88,8 +89,8 @@ a.green:hover { color:#eee; }
 .page-content .inner-content > div { margin:20px 0;}
 .page-content .inner-content img { max-width:100%; height:auto;}
 .page-information { border-bottom:1px solid #ccc;  padding:20px; padding-right:30px; background-color: white;}
-.page-information .social-share-buttons { padding: 15px 0 0; margin-right:-20px; line-height: 20px; height: 50px; margin-left: -30px;}
-.page-information .social-share-buttons * { box-sizing:content-box; }
+.social-share-buttons { padding: 15px 0 0; margin-right:-20px; line-height: 20px; height: 50px; margin-left: -30px;}
+.social-share-buttons * { box-sizing:content-box; }
 .page-information.bottom .social-share-buttons { padding:0;}
 .page-information.bottom { border-top:1px solid #ccc; border-bottom:0;}
 .page-content .page-learn-more { float:none; display:block; margin-bottom:10px;}
@@ -119,8 +120,8 @@ a.green:hover { color:#eee; }
 .icon.icon-message { background-position:-70px -170px; width:30px; height:30px;}
 .icon.icon-download { background-position:0 -215px; width:30px; height:30px;}
 .icon.icon-newsletter { background-position:-70px -29px;  width:30px; height:30px;}
-.icon.icon-mail { background-position:-5px -320px;  width:16px; height:12px;}
-.icon.icon-print { background-position:-4px -295px;  width:18px; height:16px; margin-bottom:-2px;}
+.icon.icon-mail { background-position: 0px -378px;  width:16px; height:12px;}
+.icon.icon-print { background-position: 0px -352px;  width:18px; height:16px; margin-bottom:-2px;}
 
 
 .calendar { height:80px; width:58px; background: #b2b2b2 url(../images/sprite.png) no-repeat -113px -35px; text-align:center;} 
@@ -431,10 +432,11 @@ footer .newsletter .tab.tab2 form input::-webkit-input-placeholder { color:black
 .green-blocks-section .green-hover-block .title { font-size:16px; }
 
 
-.page-information .function-button { float:right; padding:0 10px; height:20px; line-height:20px; border-right:1px solid #ccc; text-transform:uppercase; color:#666; font-size:12px; }
-.page-information a.function-button:hover { color:black;}
-.page-information .function-button .fa { color:black;  font-size:150%;}
-.page-information .function-button.page-text-size { border-right:0; padding-right: 0;}
+.page-tools .function-button { float:right; padding:0 10px; height:20px; line-height:20px; border-right:1px solid #ccc; text-transform:uppercase; color:#666; font-size:12px; }
+.page-tools a.function-button:hover { color:black;}
+.page-tools .function-button .fa { color:black;  font-size:150%;}
+.page-tools .function-button.page-text-size { border-right:0; padding-right: 0;}
+
 .page-text-size b { color:black; position:relative; top: -1px; padding:0 2px; cursor:pointer;}
 .page-text-size b.bigger { font-size:16px;}
 .page-text-size b.normal { font-size:14px; }
@@ -499,10 +501,10 @@ ul.participating a { font:bold 14px / 1 "Arial"; }
 .events-list-page-filter form button { border:none;}
 
 .events-list-container { margin-right:-40px; }
-.events-list-container .event-item { float:left; width:233px; height:236px; margin:0 20px 20px 0; background-color:white; padding:20px;}
-.events-list-container .event-item .calendar { float:right; clear:both; }
-.events-list-container .event-item .title { clear:both; display: block; padding-top: 22px; height:100px; overflow:hidden; line-height:16px !important;}
-.events-list-container .event-item .name { display: block; }
+.event-item { float:left; width:233px; height:236px; margin:0 20px 20px 0; background-color:white; padding:20px;}
+.event-item .calendar { float:right; clear:both; }
+.event-item .title { clear:both; display: block; padding-top: 22px; height:100px; overflow:hidden; line-height:16px !important;}
+.event-item .name { display: block; }
 
 .pagination-section .arrows { float:left;}
 .pagination-section .pages { float:right;}
@@ -537,6 +539,61 @@ ul.participating a { font:bold 14px / 1 "Arial"; }
 .events-manage-table .with-icon.icon-view { background-position: 42px -285px; }
 .events-manage-table .with-icon.icon-edit { background-position: 42px -315px; }
 
+.content-left-column { width: 233px; float:left; }
+.content-right-column { width:75.5%; float:right;}
+.event-detail-section .block-title { width:auto; float:none; display: block; padding-right: 20px;}
+.event-detail-section .content-left-column .event-item { margin:0 0 20px 0;}
 
+.block.event-detail { background-color:white;}
+.block.event-detail .block-head { padding: 0 30px 30px 0; border-bottom:1px solid #ccc;}
+.block.event-detail .block-content { padding: 30px 110px 20px 30px; position:relative;}
+.block.event-detail .calendar { right:30px; top:30px; position:absolute; }
+.block.event-detail h2 { padding:0; margin:0; line-height:1 !important; font-family: Arial; font-weight: bold;}
+.block.event-detail .info { line-height: 40px !important; }
+.block.event-detail .desc { font:normal 13px / 1.53 Arial; color:black;}
 
+.button.big { height:50px; line-height:50px; padding:0 50px;  font-size:20px; background-color:#cc092f; color:white;}
+.button.big.active { color:black; background-color:#e3e4e4;}
+.event-detail-section .accordion-block .tab-head .button{ float:right; margin-right:10px; }
+.event-detail-section .accordion-block .tab-head .button:first-child { margin-right:0;}
+.event-detail-section .accordion-block .tab-content-wrapper .tab { display:none;}
+.event-detail-section .accordion-block .tab-content-wrapper .tab.active { display:block;}
 
+.event-agenda-line { width: 521px; border-bottom:1px solid #ccc; line-height:1.1; position:relative; padding-bottom: 15px;}
+.event-agenda-line .title { line-height: 1.2; padding: 20px 0 15px; }
+.event-agenda-line .time { position:absolute; right:-165px; top: 50%; width: 165px; font-size: 18px; font-weight: bold; color: #00732f; font-family: Arial; margin-top: -9px;}
+.event-agenda-line.last { border-bottom:0; }
+
+.media-item.small { width:210px; height: 198px;}
+.media-item.small .thumb { height:120px; }
+.media-item.small .info { height:78px; padding-top: 5px;}
+.media-item.small .thumb4  {height: 120px;}
+.media-item.small:hover .slides-wrapper { top:-198px; }
+.media-item.small .info .title { line-height:16px; height:48px; }
+.media-item.small.photo .slide.hover .info .viewmore { margin-top: 25px; }
+.media-item.small .slide.hover .info .viewmore { margin-top: 15px; }
+.media-item.small .slide.hover .info .description { line-height:1; } 
+
+.event-detail-section .small-media-wrapper .media-item{ margin-right: 29px; }
+.event-detail-section .small-media-wrapper .media-item:last-child { margin-right:0;}
+.event-detail-section .accordion-block.documents .accordion-content { padding: 10px 30px 10px 0; border-bottom:1px solid #ccc; }
+.event-detail-section .accordion-block.speakers .accordion-content { padding-bottom:20px;border-bottom:1px solid #ccc; }
+
+.download-line { display:block; height:40px; line-height:40px; position:relative; padding-right:40px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.download-line .icon { position:absolute; right:0; top:5px;}
+
+.speakers-wrapper { margin-right:-30px; }
+.speakers-wrapper .speaker { float:right; width:121px; margin-right:21px;}
+.speakers-wrapper .speaker .avatar img{ width:100%; height:auto;}
+.speakers-wrapper .speaker .name { height: 50px; line-height:15px; overflow:hidden; padding-top:5px; padding-right: 2px;}
+.accordion-block.more-events .accordion-content-wrapper .accordion-content { padding:0; }
+.accordion-block.more-events .block-title { background-image:none; cursor:default; }
+
+.block.event-register { border-top:1px solid #ccc; margin-right:-80px; margin-top: 10px;}
+.block.event-register .block-content { padding-right:80px; padding-top: 0; padding-bottom: 0;}
+.block.event-register h2 { padding: 16px 0;}
+
+.block.event-register .block.participant .block-content { padding:0;}
+.block.event-register .block.participant { border-bottom:1px solid #ccc; width:504px; float:right;}
+.block.event-register .block.participant .title { height:60px; line-height:60px; font-size:22px; color: #00732f ; text-transform:uppercase; font-weight:bold;}
+.block.event-register .input-group.buttons-line { border-top:0; margin-bottom: 0; height: 60px;}

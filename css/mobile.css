@@ -153,13 +153,13 @@
 	
 	.events-slider-block .title-line {width: auto;}
 	.page-information { padding-right:0; padding-lefT:0;}
-	.page-information .function-button { width:33%; text-align:center; font-size:0; }
-	.page-information .function-button .icon { margin-top:1px; }
-	.page-information .function-button .icon-mail { margin-top:3px; }
+	.page-tools .function-button { width:33%; text-align:center; font-size:0; }
+	.page-tools .function-button .icon { margin-top:1px; }
+	.page-tools .function-button .icon-mail { margin-top:3px; }
 	.page-text-size b { margin:0 10px;}
-	.page-information .social-share-buttons { margin-right:0; height: 60px;  display: -webkit-flex;display: flex; justify-content:center; flex-wrap: wrap;  margin-top: 30px; border-top:1px solid #ccc; margin-left: 0;}
+	.social-share-buttons { margin-right:0; height: 60px;  display: -webkit-flex;display: flex; justify-content:center; flex-wrap: wrap;  margin-top: 30px; border-top:1px solid #ccc; margin-left: 0;}
 	.page-information.bottom .social-share-buttons {  margin-top: 0px; border-top:0;}
-	.page-information .social-share-buttons .share-button { margin: 0 10px 10px;}
+	.social-share-buttons .share-button { margin: 0 10px 10px;}
 	.mobile-page-title{ padding: 21px; text-align: center;}
 	.page-title { padding: 21px; }
 	.page-content { margin-left:0;}
@@ -188,10 +188,14 @@
 	.input-group.buttons-line label { display:none;}
 	.events-login-wrapper { top:20%;}
 	.events-list-container { margin-right:0;}
-	.events-list-container .event-item { padding-right: 92px; float:none; width:auto; height: auto; position:relative; padding-top: 30px; padding-bottom: 30px; margin: 0 0 10px 0;}
-	.events-list-container .event-item .calendar { position:absolute; right:20px; top:30px; }
-	.events-list-container .event-item .name { float:none; font-size:13px;font-weight:bold;}
-	.events-list-container .event-item .title { padding:0; min-height: 68px; font-size:20px; line-height:1 !important; height: auto;}
+
+	.event-item { padding-right: 92px; float:none; width:auto; height: auto; position:relative; padding-top: 30px; padding-bottom: 30px; margin: 0 0 10px 0;}
+	.event-item .calendar { position:absolute; right:20px; top:30px; }
+	.event-item .name { float:none; font-size:13px;font-weight:bold;}
+	.event-item .title { padding:0; min-height: 68px; font-size:20px; line-height:1 !important; height: auto;}
+
+
+
 	.pagination-section .pages { width: 273px; height:67px; overflow:hidden;}
 	.pagination-section .pages a { width:67px; height:67px; line-height:67px; font-size:24px;}
 	.events-list-page-filter .select-wrapper select { height:67px; line-height:67px; }
@@ -219,4 +223,29 @@
 	.events-manage-table .tr .cell:nth-child(4) .line{ display:none;}
 	.events-manage-table .tr .cell.last .title { font-size:18px; }
 	.events-manage-table .tr .cell:nth-child(4) div { display:inline;}
+	
+	.content-right-column { float:none;width:100%; }
+	.event-agenda-line { width:auto; padding-top:40px; }
+	.event-agenda-line .time { right:0; top:25px; margin-top:0; }
+	.speakers-wrapper .speaker { width:136px; margin-right: 26px; margin-bottom: 10px;}
+	.event-detail-section .accordion-block.speakers .accordion-content { padding: 30px 0 0 0; }
+	.speakers-wrapper { margin-right:-26px; }
+	.event-detail-section .accordion-block.documents .accordion-content { padding-right:0; }
+	.event-detail-section .accordion-block.media .accordion-content { padding:0; }
+	.event-detail-section .accordion-block.media .media-item { float:none; width:auto; display: block; margin: 0; height: 352px;}
+	.media-item.small .thumb { height:259px; }
+	.media-item.small:hover .slides-wrapper{ top:0; }
+	.media-item.small .info { height:93px; padding-top: 15px;}
+	.media-item.small .info .title { padding-top:5px; font-size:16px; line-height:20px; height:40px; overflow:hidden; }
+	.content-left-column { float:none; width:auto; }
+	.accordion-block.more-events .block-title { cursor:pointer; background-image:url(../images/cross-white.png); }
+	.accordion-block.more-events.open .block-title { background-image:url(../images/minus-white.png); }
+	.event-detail-section .content-left-column .event-item { margin:0; border-bottom:1px solid #ccc; }
+	.block.event-register .block.participant { width: 422px; margin-right: -90px; }
+	.block.participant .input-group { height:60px; margin:0; }
+	.block.participant .input-group label { float:right; line-height:50px;}
+	.block.participant .input-group .text-input { float:right; width:304px; height:50px;}
+	.event-detail-section.register .input-group.buttons-line {
+    margin-right: -90px;
+}
 }
