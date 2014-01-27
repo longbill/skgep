@@ -6,6 +6,9 @@ $(function()
 	SK.initFunctionButtons();
 	SK.initSidebar();
 	SK.initAccordions();
+	SK.initLoginButton();
+	SK.initSelects();
+
 	$('.slideshow').each(SK.initSlideshow);
 	$('.stepshow').each(SK.initStepshow);
 	$('input[placeholder],textarea[placeholder]').placeholder();
@@ -112,6 +115,7 @@ SK.initHead = function()
 	$('header .line1 .block.block-menu').click(function(evt)
 	{
 		evt.preventDefault();
+		var btn = $(this);
 		if ($(this).hasClass('active'))
 		{
 			$(this).removeClass('active');
@@ -122,6 +126,16 @@ SK.initHead = function()
 			$(this).addClass('active');
 			$('header .mobile-menu').slideDown();
 		}
+
+		setTimeout(function()
+		{
+			$(window).bind('click.menu touchend.menu',function()
+			{
+				btn.removeClass('active');
+				$('header .mobile-menu').slideUp();
+				$(window).unbind('.menu');
+			});
+		},0);
 	});
 };
 
@@ -467,6 +481,44 @@ SK.initAccordions = function()
 };
 
 
+SK.initLoginButton = function()
+{
+	$('.events-login-wrapper .actions').click(function(evt)
+	{
+		evt.preventDefault();
+		var btn = $(this);
+		if (btn.is('.active'))
+		{
+			btn.removeClass('active');
+			return;
+		}
+		btn.addClass('active');
+		setTimeout(function()
+		{
+			$(window).bind('click.loginbutton touchend.loginbutton scroll.loginbutton',function()
+			{
+				btn.removeClass('active');
+				$(window).unbind('.loginbutton');
+			});
+		},0);
+	});
+};
+
+
+SK.initSelects = function()
+{
+	$('select.sync-value-select').each(function()
+	{
+		var dom = $( $(this).attr('data-for') );
+		var select = $(this);
+		if (dom.length == 0) return;
+		dom.html( select.find('option:selected').html() );
+		select.bind('change',function()
+		{
+			dom.html( select.find('option:selected').html() );
+		});
+	});
+};
 
 
 

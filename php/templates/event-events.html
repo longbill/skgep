@@ -1,0 +1,69 @@
+<!-- INCLUDE parts/head.html -->
+<body>
+	<!-- INCLUDE parts/header.html -->
+
+
+	<!-- INCLUDE parts/events-page-name-with-login.html -->
+	
+	<div class="events-list-page-filter margin-b20">
+		<div class="container title">
+			<form action="" method="get">
+				<button type="submit" class="block-title col3-1 dark bfont font20">
+					filter by year
+				</button>
+				<div class="select-wrapper">
+					<select name="year" class="sync-value-select" data-for="#events-list-filter-year-select">
+						<option value="all">All Years</option>
+						<option value="2010">2010</option>
+						<option value="2012">2012</option>
+						<option value="2014">2014</option>
+					</select>
+					<div class="select-value font16" id="events-list-filter-year-select">All Years</div>
+					<div class="arrows">
+						<a href="#" class="down"></a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="events-list-content margin-b20">
+		<div class="container">
+			<div class="events-list-container clearfix">
+				{foreach(range(1,12) as $i)}
+				<div class="event-item">
+					<div class="event-item-inner">
+						<div class="calendar">
+							<div class="date">4</div>
+							<div class="month">OCT</div>
+							<div class="year">2013</div>
+						</div>
+						<a class="title bfont font16" href="#">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</a>
+						<div class="name">Zabeel Palace Dubai</div>
+					</div>
+				</div>
+				{/foreach}
+			</div>
+		</div>
+	</div>
+
+	<div class="pagination-section margin-b20">
+		<div class="container">
+			<div class="arrows">
+				<a href="#" class="prev"></a>
+				<a href="#" class="next"></a>
+			</div>
+			<div class="pages">
+				<a href="#" class="active">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- INCLUDE parts/footer.html -->
+</body>
+</html>

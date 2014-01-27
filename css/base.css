@@ -47,6 +47,7 @@ a.white:hover, .white a:hover{ color: #ccc;}
 .light { font-family:"Gotham-light";}
 .upper { text-transform:uppercase;}
 .relative { position:relative;}
+.center { text-align:center; }
 
 .angle-text.angle-left { height:14px; line-height:14px !important; display:inline-block; padding-left:14px; background-image:url(../images/angles.png); background-repeat:no-repeat; background-position:0 0; }
 .white .angle-text.angle-left { background-position:0 -161px; }
@@ -99,6 +100,7 @@ a.green:hover { color:#eee; }
 /* global components */
 .arrows a { display:block; width:50px; height:50px; float:left; line-height: 50px; color: white; background: #cc092f url(../images/angles.png) no-repeat 21px -100px; outline: none;}
 .arrows a.prev { margin-right:1px; background-position: 20px -61px;}
+.arrows a.down { background-position: 15px -410px; }
 .indicators a { display:block; width:50px; height:50px; float:left; border-right: 1px solid white; line-height: 50px; text-align: center; font-size: 24px; color: white; background-color: #cc092f; outline: none;}
 .indicators a.active { background-color: #e3e4e4; color: black;}
 
@@ -122,7 +124,7 @@ a.green:hover { color:#eee; }
 
 
 .calendar { height:80px; width:58px; background: #b2b2b2 url(../images/sprite.png) no-repeat -113px -35px; text-align:center;} 
-.calendar .date { font-size:16px; font-weight:bold; font-family:Tahoma; line-height:16px; margin-top:22px; margin-bottom:9px;}
+.calendar .date { font-size:16px; font-weight:bold; font-family:Tahoma; line-height:16px; padding-top: 22px; margin-bottom:9px;}
 .calendar .month, .calendar .year { font-family:"Arial"; font-weight:bold; font-size:13px;  line-height:13px;}
 
 .social-share-buttons { clear:both; height:22px; }
@@ -482,5 +484,59 @@ ul.participating a { font:bold 14px / 1 "Arial"; }
 .login-content .container { background-color:white;}
 .login-content form { margin-top:30px;}
 .login-content form .input-group { padding-right:30px;}
+
+.button { height:40px; line-height:40px; padding:0 35px; background-color:#e3e4e4; text-align:center; display:table; text-transform:uppercase; font-size:16px; font-weight:bold; font-family:Arial; color:#cc092f; cursor:pointer; }
+.button.white-button { background-color:white; color:#cc092f; }
+
+
+.events-login-wrapper { position:absolute; left:3%; top:24%; }
+.events-list-content .container { overflow:hidden;}
+.events-list-page-filter .arrows { float:right; width: auto;}
+.events-list-page-filter .select-wrapper { float:right; position:relative;}
+.events-list-page-filter .select-wrapper select { position:absolute; left:0; right:0;top:0; bottom:0; border:none; -webkit-appearance:none; opacity:0; filter: alpha(opacity=0); cursor:pointer; height:50px; width:100%; line-height:50px;}
+.events-list-page-filter .select-wrapper .select-value { cursor:pointer;float:right; width:200px; background-color:#e3e4e4; height:50px; line-height:50px;padding-right:20px;}
+.events-list-page-filter .block-title { width:233px; padding-right:30px; }
+.events-list-page-filter form button { border:none;}
+
+.events-list-container { margin-right:-40px; }
+.events-list-container .event-item { float:left; width:233px; height:236px; margin:0 20px 20px 0; background-color:white; padding:20px;}
+.events-list-container .event-item .calendar { float:right; clear:both; }
+.events-list-container .event-item .title { clear:both; display: block; padding-top: 22px; height:100px; overflow:hidden; line-height:16px !important;}
+.events-list-container .event-item .name { display: block; }
+
+.pagination-section .arrows { float:left;}
+.pagination-section .pages { float:right;}
+.pagination-section .pages a { float:right; height:50px; width:50px;text-align:center; border-right:1px solid white; background-color:#cc092f; line-height:50px; color:white; font-size:20px; font-family:Arial; font-weight:bold;}
+.pagination-section .pages a.active { color:black; background-color:#e3e4e4; cursor:default; }
+
+.events-login-wrapper .avatar { float:left; width:40px; height:40px; line-height:0;}
+.events-login-wrapper .avatar img { width:100%; height:100%;}
+.events-login-wrapper .actions { width:40px;background-color:white; float:left;margin-left:1px; height:40px; position:relative; }
+.events-login-wrapper .actions .submenus { padding:1px 0 0; width:205px;display:none;  position:absolute; top:40px; left:0; list-style:none; margin: 0; z-index: 10;}
+.events-login-wrapper .actions .down { display:block; width:100%; height:100%; background: transparent url(../images/angles.png) no-repeat 10px -511px; }
+/* .events-login-wrapper .actions:hover .down, */
+.events-login-wrapper .actions.active .down{ background-color:#e3e4e4; background-position:10px -552px; }
+/* .events-login-wrapper .actions:hover .submenus, */
+.events-login-wrapper .actions.active .submenus{ display:block;}
+.events-login-wrapper .actions .submenus li {background-color:#e3e4e4; line-height:38px; border-bottom:1px solid white; margin:0; }
+.events-login-wrapper .actions .submenus li a { display:block; padding:0 20px; font-family:Arial; background: transparent url(../images/angles.png) no-repeat 18px 12px; }
+.events-login-wrapper .actions .submenus li a:hover { background-color:#cc092f; color:white; font-weight:bold; background-position: 18px -149px;}
+.events-login-wrapper .welcome { float:left; color:white; padding-left:10px; line-height:20px; font-family: Arial; font-size: 14px; text-align: left;}
+.events-login-wrapper .welcome b { display:block; font-size: 16px; font-weight: bold;}
+
+.events-manage-content .container { padding:0 20px; background-color:white;}
+.events-manage-content .pagination-section { padding:20px 0; }
+.events-manage-table { display:table; width:100%; }
+.events-manage-table .tr { margin:0; position:relative; clear:both; display:table-row; border-bottom:1px solid #ccc; }
+.events-manage-table .tr .cell { display:table-cell; vertical-align: middle; border-bottom:1px solid #ccc; position:relative; padding: 20px;}
+.events-manage-table .tr .cell .line { position:absolute; width:1px; top:20px; bottom:20px; background-color:#ccc; right:0; }
+.events-manage-table .tr.head .cell { padding:0 20px 5px 20px; font: bold 16px / 16px Arial; text-transform:uppercase; }
+.events-manage-table .tr .cell .calendar { position:absolute; right:0px; top:50%; margin-top:-40px;}
+.events-manage-table .tr .cell.last { padding-right:75px;}
+.events-manage-table .with-icon { background:transparent url(../images/sprite.png) no-repeat 0 0; display:block; height:30px; line-height:30px; padding-right:38px; }
+.events-manage-table .with-icon.icon-view { background-position: 42px -285px; }
+.events-manage-table .with-icon.icon-edit { background-position: 42px -315px; }
+
+
 
 

@@ -1,0 +1,79 @@
+<!-- INCLUDE parts/head.html -->
+<body>
+	<!-- INCLUDE parts/header.html -->
+
+
+	<!-- INCLUDE parts/events-page-name-with-login.html -->
+	
+	<div class="events-manage-content">
+		<div class="container">
+			<div class="events-manage-table">
+				
+				<div class="tr head clearfix">
+					<div class="cell"></div>
+					<div class="cell"><br>registrations</div>
+					<div class="cell"><br>participants</div>
+					<div class="cell">closing<br>registration</div>
+					<div class="cell"><br>event name</div>
+				</div>
+			
+				{foreach(range(1,5) as $i)}
+				<div class="tr clearfix">
+					<div class="cell">
+						<a href="#" class="with-icon icon-view">View</a>
+						<a href="#" class="with-icon icon-edit">Edit</a>
+						<div class="line"></div>
+					</div>
+					<div class="cell center">
+						<div class="visible-mobile">Registrations:</div>
+						12 / 25
+						<div class="line"></div>
+					</div>
+					<div class="cell">
+						<div class="nowrap">Abdulah Khalfan</div>
+						<div class="nowrap">Chunlong</div>
+						<div class="nowrap">Februry Khalfan</div>
+						<div class="nowrap">Abdulah Khalfan</div>
+						<div class="nowrap">Chunlong</div>
+						<span class="more red">...</span>
+						<div class="line"></div>
+					</div>
+					<div class="cell">
+						<div class="visible-mobile">Closing Registration:</div>
+						<div class="nowrap">February 01, 2014</div>
+						<div class="line"></div>
+					</div>
+					<div class="cell last">
+						<div class="calendar">
+							<div class="date">4</div>
+							<div class="month">OCT</div>
+							<div class="year">2013</div>
+						</div>
+						<a class="title" href="#">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</a>
+					</div>
+				</div>
+				{/foreach}
+			</div>
+
+			<div class="pagination-section clearfix">
+				<div class="arrows">
+					<a href="#" class="prev"></a>
+					<a href="#" class="next"></a>
+				</div>
+				<div class="pages">
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<!-- INCLUDE parts/footer.html -->
+</body>
+</html>

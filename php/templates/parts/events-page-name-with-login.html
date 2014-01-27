@@ -1,0 +1,25 @@
+<div class="full-page-name margin-b20">
+	<div class="container relative">
+		<h1 class="page-title green upper">{$page_name}</h1>
+		{if(!$login)}
+		<div class="events-login-wrapper">
+			<a href="event-login.html" class="button login white-button">login</a>
+		</div>
+		{else}
+		<div class="events-login-wrapper">
+			<div class="avatar"><img src="images/avatar.jpg" alt=""></div>
+			<div class="actions">
+				<a href="#" class="down"></a>
+				<ul class="submenus">
+					<li><a href="#" class="upper font14">manage events</a></li>
+					<li><a href="#" class="upper font14">edit profile</a></li>
+					<li><a href="#" class="upper font14">log out</a></li>
+				</ul>
+			</div>
+			<div class="welcome">
+				Welcome,<b>Chunlong</b>
+			</div>
+		</div>
+		{/if}
+	</div>
+</div>

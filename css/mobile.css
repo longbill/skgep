@@ -13,6 +13,7 @@
 	.arrows a { width:67px; height:67px; background-position: 28px -137px; background-size: 30px;}
 	.indicators a { width: 68px; height:67px; line-height:67px; font-size:30px;}
 	.arrows a.prev { background-position: 24px -83px; }
+	.arrows a.down { background-position: 21px -560px; }
 	.block-title { height:67px; line-height:67px !important; padding:0 60px 0 0; width: 325px; float: right;}
 	.block-title .icon { top:16px;}
 	.head40 { height:57px; line-height:57px !important;}
@@ -185,4 +186,37 @@
 	.input-group label { line-height:40px;}
 	.input-group .help-text { position:absolute; top:0; right:100px; line-height:40px; }
 	.input-group.buttons-line label { display:none;}
+	.events-login-wrapper { top:20%;}
+	.events-list-container { margin-right:0;}
+	.events-list-container .event-item { padding-right: 92px; float:none; width:auto; height: auto; position:relative; padding-top: 30px; padding-bottom: 30px; margin: 0 0 10px 0;}
+	.events-list-container .event-item .calendar { position:absolute; right:20px; top:30px; }
+	.events-list-container .event-item .name { float:none; font-size:13px;font-weight:bold;}
+	.events-list-container .event-item .title { padding:0; min-height: 68px; font-size:20px; line-height:1 !important; height: auto;}
+	.pagination-section .pages { width: 273px; height:67px; overflow:hidden;}
+	.pagination-section .pages a { width:67px; height:67px; line-height:67px; font-size:24px;}
+	.events-list-page-filter .select-wrapper select { height:67px; line-height:67px; }
+	.events-list-page-filter .select-wrapper .select-value { height:67px; line-height:67px;}
+	.events-list-page-filter .block-title {padding-right:0px; width:193px; }
+	
+	.events-manage-table .tr.head { display:none;}
+	.events-manage-table,
+	.events-manage-table .tr,
+	.events-manage-table .tr .cell { display:block; position:relative;}
+	
+	.events-manage-table .tr { padding-top: 110px; padding-right: 76px; border-bottom: 0;}
+	.events-manage-table .tr .cell { border-bottom:0; padding:20px 5px; float:none; display:table-cell; }
+	.events-manage-table .tr .cell.last { position:absolute; top:0; width:100%; border-top:1px solid #ccc; height: 113px; padding-top: 30px; padding-bottom:0;}
+	.events-manage-table .tr .cell.last .calendar { top:30px; margin-top:0;}
+	.events-manage-table .tr .cell:first-child { padding-left:0;}
+	.events-manage-table .with-icon { padding-right:30px; width:60px; }
+	.events-manage-table .with-icon.icon-view { background-position: 34px -285px; }
+	.events-manage-table .with-icon.icon-edit { background-position: 34px -315px; }
+	.events-manage-table .tr .cell:nth-child(1) { width: 90px; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+	.events-manage-table .tr .cell:nth-child(2) { display:none;}
+	.events-manage-table .tr .cell:nth-child(3) { width: 260px; border-top:1px solid #ccc; border-bottom:1px solid #ccc;}
+	.events-manage-table .tr .cell:nth-child(4) { display:block;  }
+	.events-manage-table .tr .cell:nth-child(3) .line,
+	.events-manage-table .tr .cell:nth-child(4) .line{ display:none;}
+	.events-manage-table .tr .cell.last .title { font-size:18px; }
+	.events-manage-table .tr .cell:nth-child(4) div { display:inline;}
 }

@@ -63,6 +63,7 @@
 	
 	.arrows a { width:40px; height:40px; line-height:40px; background-position:15px -105px;}
 	.arrows a.prev { background-position:15px -66px; }
+	.arrows a.down { background-position: 10px -415px; }
 	.indicators a { width:40px; height:40px; line-height: 40px; font-size: 20px;}
 	.spotlight .slideshow > .arrows { height:40px; right:20px; width:81px;}
 	.events-block .middle { width:264px;}
@@ -72,7 +73,7 @@
 	.events-block .middle .line1 { padding: 11px 13px 10px 0;}
 	.events-block .middle .light { padding: 10px 10px; line-height: 16px;}
 	.events-block .middle .line2 { height:148px;}
-	.events-block .middle .seemore { padding-right:10px; margin-bottom: 0; padding-bottom: 10px;}
+	.events-block .middle .seemore { padding-right:10px; margin-bottom: 0; padding-bottom: 10px; padding-top: 0;}
 	.events-block .middle .seemore a { font-family:"Gotham"; line-height: 24px !important;}
 	.events-slider-block .title-line {}
 	.block-title { height:40px; padding: 13px 50px 0px 0;}
@@ -159,4 +160,17 @@
 	
 	.input-group { height:40px; line-height:40px;}
 	.input-group .text-input { height:40px;}
+	.events-login-wrapper { top:21%; left:2%;}
+	.events-list-container .event-item { margin-right:29px;}
+	.pagination-section .pages a { width:40px; height:40px; line-height:40px; font-size:18px; }
+	.events-list-page-filter .select-wrapper .select-value { height:40px; line-height:40px;}
+	.events-list-page-filter .block-title { padding-top:0; }
+	
+	.events-manage-table .with-icon { padding-right:30px; }
+	.events-manage-table .with-icon.icon-view { background-position: 34px -285px; }
+	.events-manage-table .with-icon.icon-edit { background-position: 34px -315px; }
+
+	.events-manage-table .tr.head .cell { font-size:14px; padding-left:10px; padding-right:10px; }
+	.events-manage-content .container { padding:0;}
+	.events-manage-table .tr .cell .calendar { right:5px; }
 }
