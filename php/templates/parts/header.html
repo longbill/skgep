@@ -58,12 +58,12 @@
 	<nav class="hidden-mobile line3">
 		<div class="container">
 			<ul class="upper font14 white menu">
-				<li class="first"><a href="#">media center</a></li>
+				<li class="first {if($nav=='media')}on{/if}"><a href="#">media center</a></li>
 				<li><a href="#" class="nowrap">e-library</a></li>
-				<li><a href="#">events</a></li>
+				<li {if($nav=='event')}class="on"{/if}><a href="#">events</a></li>
 				<li><a href="#">initiatives</a></li>
 				<li><a href="#">studies</a></li>
-				<li>
+				<li {if($nav=='award')}class="on"{/if}>
 					<a href="#">emirates award</a>
 					<!-- INCLUDE parts/slidedown.html -->
 				</li>

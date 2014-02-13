@@ -1,0 +1,93 @@
+<!-- INCLUDE parts/head.html -->
+<body>
+	<!-- INCLUDE parts/header.html -->
+
+
+	<div class="full-page-name margin-b20">
+		<div class="container">
+			<h1 class="page-title green upper">{$page_name}</h1>
+		</div>
+	</div>
+
+	<div class="left-right-section">
+		<div class="container clearfix">
+			<div class="contentbar col3-2">
+				<div class="page-content">
+					<div class="events-list-page-filter margin-b20 on-media-page clearfix">
+						<form action="" method="get">
+							<button type="submit" class="block-title col3-1 dark bfont font20">
+								filter by year
+							</button>
+							<div class="select-wrapper">
+								<select name="year" class="sync-value-select" data-for="#events-list-filter-year-select">
+									<option value="all">All Years</option>
+									<option value="2010">2010</option>
+									<option value="2012">2012</option>
+									<option value="2014">2014</option>
+								</select>
+								<div class="select-value font16" id="events-list-filter-year-select">All Years</div>
+								<div class="arrows">
+									<a href="#" class="down"></a>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="media-center-items-wrapper responsive-media clearfix">
+						{if($page == 'media-gallery')}
+							{foreach(range(1,14) as $i)}
+								<!-- INCLUDE parts/media-photo.html -->
+							{/foreach}
+						{elseif($page == 'media-press')}
+							{foreach(range(1,14) as $i)}
+								<!-- INCLUDE parts/media-news.html -->
+							{/foreach}
+						{elseif($page == 'media-video-gallery')}
+							{foreach(range(1,14) as $i)}
+								<!-- INCLUDE parts/media-video.html -->
+							{/foreach}
+						{else}
+						<!-- INCLUDE parts/media-photo.html -->
+						<!-- INCLUDE parts/media-video.html -->
+						<!-- INCLUDE parts/media-news.html -->
+						<!-- INCLUDE parts/media-video.html -->
+						<!-- INCLUDE parts/media-photo.html -->
+						<!-- INCLUDE parts/media-video.html -->
+						<!-- INCLUDE parts/media-photo.html -->
+						<!-- INCLUDE parts/media-video.html -->
+						<!-- INCLUDE parts/media-photo.html -->
+						<!-- INCLUDE parts/media-video.html -->
+						<!-- INCLUDE parts/media-photo.html -->
+						<!-- INCLUDE parts/media-video.html -->
+						<!-- INCLUDE parts/media-photo.html -->
+						<!-- INCLUDE parts/media-video.html -->
+						{/if}
+					</div>
+
+					<div class="pagination-section margin-b20 margin-t10">
+						<div class="clearfix">
+							<div class="arrows">
+								<a href="#" class="prev"></a>
+								<a href="#" class="next"></a>
+							</div>
+							<div class="pages">
+								<a href="#" class="active">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<a href="#">5</a>
+								<a href="#">6</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- INCLUDE parts/media-sidebar.html -->
+		</div>
+	</div>
+
+
+	<!-- INCLUDE parts/footer.html -->
+	<!-- INCLUDE parts/share-scripts.html -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="sidebar col3-1">
+	<ul class="link-list with-left-angle hover-red-bg margin-b20 hidden-mobile">
+		<li {if($page=='media-center')}class="active"{/if}>
+			<a href="media-center.html">media center</a>
+		</li>
+		<li {if($page=='media-press')}class="active"{/if}>
+			<a href="media-press.html">press news</a>
+		</li>
+		<li {if($page=='media-gallery' || $page=='media-photo-gallery-detail')}class="active"{/if}>
+			<a href="media-gallery.html">photo gallery</a>
+		</li>
+		<li {if($page=='media-video-gallery'||$page=='media-video-gallery-detail')}class="active"{/if}>
+			<a href="media-video-gallery.html">video gallery</a>
+		</li>
+		<li {if($page=='media-testimonial')}class="active"{/if}>
+			<a href="media-testimonial.html">testimonials</a>
+		</li>
+		<li class="last"><a href="#">logo usage guidelines</a></li>
+	</ul>
+	<!-- INCLUDE parts/events-slider.html -->
+</div>

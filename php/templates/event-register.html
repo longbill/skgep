@@ -29,32 +29,37 @@
 								<h2 class="font28">Register participants for this event</h2>
 								<div class="event-desc font12">This event is by invitation only and you have an allotted number of participants. If you are a confirmed representative your registration shall be accepted.</div>
 								
-								<form action="" method="post" class="clearfix">
+								<form action="" method="post" class="clearfix" id="register-form">
 
 									<div class="clearfix">
-										{foreach(range(1,3) as $i)}
+										{foreach(range(1,5) as $i)}
 										<div class="block participant">
 											<div class="block-content">
 												<div class="title">participant {$i}</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Full Name</label>
-													<input type="text" class="text-input">
+													<input type="text" name="a" class="text-input">
+													<div class="help-text error">Please input Full Name</div>
 												</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Job Title</label>
-													<input type="text" class="text-input">
+													<input type="text" name="b" class="text-input">
+													<div class="help-text error">Please input job title</div>
 												</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Department</label>
-													<input type="text" class="text-input">
+													<input type="text" name="c" class="text-input">
+													<div class="help-text error">Please input department</div>
 												</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Mobile Number</label>
-													<input type="text" class="text-input">
+													<input type="text" name="d" class="text-input">
+													<div class="help-text error">Please input mobile number</div>
 												</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Email Address</label>
-													<input type="email" class="text-input">
+													<input type="email" name="e" class="text-input">
+													<div class="help-text error">Please input valid email address</div>
 												</div>
 											</div>
 										</div>
@@ -115,6 +120,37 @@
 
 	<!-- INCLUDE parts/footer.html -->
 	<!-- INCLUDE parts/share-scripts.html -->
+
+
+	<script>
+	$(function()
+	{
+		$('#register-form').bind('submit',function(evt)
+		{
+			var valid = check_register_form(this);
+			if (!valid) evt.preventDefault();
+		});
+	})
+
+	function check_register_form(f)
+	{
+		var valid = true;
+		$(f).find('[name]').each(function()
+		{
+			var v = $.trim($(this).val());
+			if (v == '')
+			{
+				valid = false;
+				$(this).parents('.input-group').eq(0).find('.error').show();
+			}
+			else
+			{
+				$(this).parents('.input-group').eq(0).find('.error').hide();
+			}
+		});
+		return valid;
+	}
+	</script>
 </body>
 </html>
 
