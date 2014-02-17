@@ -200,8 +200,8 @@ header > .line3 { background-color:white; }
 header .line1 .block { float:left; padding: 0 10px; height: 40px;}
 header .line1 .block a { color:white; text-transform: uppercase;}
 header .line1 .block.register { background-color:#cc092f; height: 30px; margin-top: 5px; line-height: 30px;}
-header .line1 .block.block2 { width: 210px; border-right:2px solid #262626; padding: 0;}
-header .line1 .block.block2 a { line-height: 1; font-size:12px; display:block; text-align:center; padding-top:8px;  }
+header .line1 .block.block2 { width: 210px; border-right:2px solid #262626; padding: 0; display: table-row;}
+header .line1 .block.block2 a { line-height: 1; cursor:text; font-size:12px; display:block; text-align:center;  word-break: break-all;}
 header .line1 .block.search { border-right:2px solid #262626; }
 header .line1 .block.search a { opacity: 0.5; display:block; width: 80px; margin: 0 -10px; text-align: center; font-size: 20px; color: white; line-height: inherit;}
 header .line1 .block.search a:hover { opacity:1; }

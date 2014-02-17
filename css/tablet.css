@@ -41,7 +41,7 @@
 	.spotlight .slideshow { height:287px; }
 	header.navbar-inverse { height: 35px; line-height:35px; min-height: 35px;} 
 	header .line1 .block.register  { font-size:12px; padding:0 5px; margin-top: 2px;}
-	header .line1 .block.block2 a{ padding-top: 6px; }
+	header .line1 .block.block2 a{ }
 	header .line1 .block.search a { margin:0; width:44px; line-height:35px; background-position: 11px -187px;}
 	header .line1 .block.head-social a { height:35px; line-height:35px;}
 	header .line1 .search-form { width: 386px; height: 35px;}
