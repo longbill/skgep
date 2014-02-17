@@ -14,6 +14,7 @@
 						<!-- INCLUDE parts/page-tools.html -->
 						<!-- INCLUDE parts/social-buttons.html -->
 					</div>
+					<!-- INCLUDE parts/email-to-friend.html -->
 					<div class="block-content">
 						<div class="calendar">
 							<div class="date">4</div>
@@ -29,14 +30,14 @@
 								<h2 class="font28">Register participants for this event</h2>
 								<div class="event-desc font12">This event is by invitation only and you have an allotted number of participants. If you are a confirmed representative your registration shall be accepted.</div>
 								
-								<form action="" method="post" class="clearfix" id="register-form">
+								<form action="" method="post" class="clearfix" id="register-form" onsubmit="return SK.check_form(this);">
 
 									<div class="clearfix">
 										{foreach(range(1,5) as $i)}
 										<div class="block participant">
 											<div class="block-content">
 												<div class="title">participant {$i}</div>
-												<div class="input-group clearfix">
+												<div class="input-group clearfix required">
 													<label>Full Name</label>
 													<input type="text" name="a" class="text-input">
 													<div class="help-text error">Please input Full Name</div>
@@ -121,36 +122,6 @@
 	<!-- INCLUDE parts/footer.html -->
 	<!-- INCLUDE parts/share-scripts.html -->
 
-
-	<script>
-	$(function()
-	{
-		$('#register-form').bind('submit',function(evt)
-		{
-			var valid = check_register_form(this);
-			if (!valid) evt.preventDefault();
-		});
-	})
-
-	function check_register_form(f)
-	{
-		var valid = true;
-		$(f).find('[name]').each(function()
-		{
-			var v = $.trim($(this).val());
-			if (v == '')
-			{
-				valid = false;
-				$(this).parents('.input-group').eq(0).find('.error').show();
-			}
-			else
-			{
-				$(this).parents('.input-group').eq(0).find('.error').hide();
-			}
-		});
-		return valid;
-	}
-	</script>
 </body>
 </html>
 

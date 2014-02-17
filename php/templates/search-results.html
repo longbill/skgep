@@ -1,0 +1,75 @@
+<!-- INCLUDE parts/head.html -->
+<body>
+	<!-- INCLUDE parts/header.html -->
+
+	<div class="full-page-name margin-b20 extra-page search-results">
+		<div class="container clearfix">
+		 <h1 class="page-title green upper">search results</h1>
+			<div class="contentbar col3-2">
+				<div class="page-content">
+					<div class="search-page-results-form clearfix">
+						<form action="?" method="get" class="search-form">
+							<button type="submit" class="search"><i class="fa fa-search"></i>SEARCH</button>
+							<input type="text" name="q" placeholder="What are you looking for? Type here...">
+						</form>
+					</div>
+					<div class="search-results arial">
+						<div class="search-result">
+							<div class="inner font28 bold result-page-title">1 - 10 of 54 search results for loremipsum</div>
+						</div>
+						{foreach(range(1,10) as $i)}
+						<div class="search-result">
+							<div class="inner">
+								<div class="font22 bold result-title">{phpsum(5,10)}</div>
+								<div class="font13">
+									Donec facilisis tortor dui, at ornare leo iaculis ut. Suspendisse elit tortor, bibendum eget aliquet eu, sempe onec facilisis tortor dui, at ornarornare purus.
+									<br>
+									<br>
+									http://www.skgep.gov.ae/en/media/news/skgep-organizes-prime-minister-medals-forum.aspx?lang=ar-AE
+								</div>
+							</div>
+						</div>
+						{/foreach}
+					</div>
+					<div class="pagination-section clearfix margin-t20">
+						<div class="arrows">
+							<a href="#" class="prev"></a>
+							<a href="#" class="next"></a>
+						</div>
+						<div class="pages">
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar col3-1">
+			 <h4>
+			  CONTACT US
+			 </h4>
+			 <div class="contact-enquiry">
+			  <p>
+			   Shiekh Khalifa Government Excellence Program Prime Minister's Office - Ministry of Cabinet Affairs Level 40 - Emirates Towers - Shiekh Zayed Road
+			  </p>
+			  <p>
+			   P.O.Box 212000, Dubai, UAE <br /> Telephone: 00 !9714 330 4433 <br /> Fax: 00 !9714!330 4044 <br /> Email:!<a href="mailto:info@skgep.gov.ae">info@skgep.gov.ae</a>
+			  </p>
+			  <div class="map">
+			   <a href="contact-us.html">
+			    <img src="images/map.gif" alt="" />
+			   </a>
+			  </div>
+			  <input class="enquiry" type="button" value="Do you have any questions?">
+			 </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- INCLUDE parts/footer.html -->	
+
+</body>
+</html>

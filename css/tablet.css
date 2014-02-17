@@ -234,7 +234,7 @@
  .publications-library ul li, .e-library ul li{width:250px;}
  .publications-more-copy-slide, .e-library-more-copy-slide{right:19px;}
  .publications-more-copy, .e-library-more-copy{margin-right:19px;}
- .faqs-page .col3-2{width:511px;}
+ .faqs-page .col3-2{}
 	.block.event-register .block.participant { width:390px; }
 	.events-list-page-filter.on-media-page .select-wrapper .select-value { width: 228px; }
 	.page-content .inner-content .news-image { margin: 20px -20px; }
@@ -255,5 +255,9 @@
 	nav .slidedown.simple { width:330px; padding:20px;}
 	nav .slidedown.simple.study { width:450px; }
 	.events-list-page-filter.award-filter .select-wrapper .select-value { width: 228px;}
-
+	.register-form .input-group .help-text { line-height:40px; }
+	.block.email-to-friend .block-title a.close { width:40px; height:40px; }
+	.search-page-results-form input {width: 360px;  }
+	.search-result { padding:10px 20px;}
+	.result-page-title { font-size:22px; }
 }

@@ -10,6 +10,7 @@ $(function()
 	SK.initSelects();
 	SK.initTab();
 	SK.initPhotoGallery();
+	SK.initEmailToFriend();
 
 	$('.slideshow').each(SK.initSlideshow);
 	$('.stepshow').each(SK.initStepshow);
@@ -642,6 +643,55 @@ SK.initPhotoGallery = function()
 };
 
 
+SK.check_form = function(f)
+{
+	var valid = true;
+	$(f).find('[name]').each(function()
+	{
+		var group = $(this).parents('.input-group');
+		if (!group.is('.required')) return;
+		var v = $.trim($(this).val());
+		if (v == '')
+		{
+			valid = false;
+			$(this).parents('.input-group').eq(0).find('.error').show();
+		}
+		else
+		{
+			$(this).parents('.input-group').eq(0).find('.error').hide();
+		}
+	});
+	return valid;
+};
+
+
+SK.initEmailToFriend = function()
+{
+	$('.function-button.email-page-button').click(function(evt)
+	{
+		evt.preventDefault();
+		$(this).addClass('active');
+		$('.email-to-friend').show();
+		$('.page-content').addClass('has-overlay');
+		setTimeout(function()
+		{
+			$('.email-to-friend').find('input').eq(0).focus();
+		},100);
+	});
+
+	$('.email-to-friend').find('.close').click(function(evt)
+	{
+		evt.preventDefault();
+		$('.function-button.email-page-button').removeClass('active');
+		$('.email-to-friend').hide();
+		$('.page-content').removeClass('has-overlay');
+	});
+
+	$('.email-to-friend').find('input[type=reset]').click(function()
+	{
+		$('.email-to-friend').find('.close').trigger('click');
+	});
+};
 
 
 

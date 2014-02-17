@@ -183,7 +183,7 @@
 	.login-content form { margin-top:10px;}
 	.input-group { height:auto; margin-bottom:20px; position:relative;}
 	.login-content form .input-group { padding-right:20px;}
-	.input-group .text-input { float:none; width:420px; height:66px; }
+	.input-group .text-input { float:none; width:420px; height:66px; display: inline-block;}
 	.input-group label { line-height:40px;}
 	.input-group .help-text { position:absolute; top:0; right:100px; line-height:40px; }
 	.input-group.buttons-line label { display:none;}
@@ -273,9 +273,9 @@
 	#video-gallery-detail-big-image { margin-bottom:-21px;}
 	.page-information.bottom { padding-bottom:10px; }
 /*** Styles added Abdul Wahhab ***/
-	.faqs-page .col3-2, .publications-page .col3-2, .e-library-page .col3-2{width:auto;}
+	.extra-page .col3-2, .faqs-page .col3-2, .publications-page .col3-2, .e-library-page .col3-2{width:auto;float: none;}
 	.publications-page .col3-2, .e-library-page .col3-2{width:auto;max-height:1447px;overflow:hidden;}
-	.faqs-page .col3-1, .publications-page .col3-1, .e-library-page .col3-1{width:auto;}
+	.extra-page .col3-1,.faqs-page .col3-1, .publications-page .col3-1, .e-library-page .col3-1{width:auto; float:none;}
 	.publications-library ul li, .e-library ul li{width:230px;}
 	.publications-more-copy, .e-library-more-copy{margin-right:9px;}
     .publications-more-copy-slide,	.e-library-more-copy-slide{right:9px;}
@@ -322,4 +322,8 @@
 	#video-gallery-detail-big-image { margin-bottom:-21px;}
 	.page-information.bottom { padding-bottom:10px; }
 	.events-list-page-filter.award-filter .select-wrapper .select-value { width: 200px; }
+	.register-form .input-group .help-text { position: absolute; line-height:40px; left: 20px; top: 0; text-align: left;}
+	.block.email-to-friend .block-title { float:none; width:auto; }
+	.block.email-to-friend .block-title a.close { width: 67px; height: 67px;}
+	.search-page-results-form input {width: 330px;  }
 }

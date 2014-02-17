@@ -1,0 +1,39 @@
+<div class="block email-to-friend">
+	<div class="block-title bfont dark font20">
+		Email to Friend
+		<a href="#" class="close"></a>
+	</div>
+	<div class="block-content">
+		<div class="login-content-inner">
+			<div class="title1 font28 bold black">Login to your account</div>
+			<div class="title2 font12">You must login to register participants for and manage events.</div>
+		</div>
+		<form action="" method="post" onsubmit="return SK.check_form(this);">
+			<div class="input-group clearfix required">
+				<label>*Your name</label>
+				<input type="text" name="name" class="text-input">
+				<div class="help-text error">Please input your name!</div>
+			</div>
+			<div class="input-group clearfix required">
+				<label>*Your e-mail</label>
+				<input type="email" name="email" class="text-input">
+				<div class="help-text error">Please input your e-mail!</div>
+			</div>
+			<div class="input-group clearfix required">
+				<label>*Recipient's e-mail</label>
+				<input type="email" name="r-email" class="text-input">
+				<div class="help-text error">Please input recipient's e-mail!</div>
+			</div>
+			<div class="input-group clearfix required">
+				<label>*Message</label>
+				<textarea class="text-input" name="message"></textarea>
+				<div class="help-text error">Please input your message!</div>
+			</div>
+			<div class="input-group clearfix buttons-line">
+				<label>&nbsp;</label>
+				<input type="submit" value="Submit" class="button-input red-button">
+				<input type="reset" value="Cancel" class="button-input">
+			</div>
+		</form>
+	</div>
+</div>
