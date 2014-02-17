@@ -272,4 +272,5 @@
 	.strange-block .slide-items-wrapper { height:208px; }
 	#video-gallery-detail-big-image { margin-bottom:-21px;}
 	.page-information.bottom { padding-bottom:10px; }
+	.events-list-page-filter.award-filter .select-wrapper .select-value { width: 200px; }
 }

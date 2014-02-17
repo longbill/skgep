@@ -15,12 +15,41 @@
 		<div class="container clearfix">
 			<div class="contentbar col3-2">
 				<h1 class="page-title green upper">winners</h1>
+
+				
+
+
+
 				<div class="page-content">
 					<div class="page-information">
 						<!-- INCLUDE parts/page-tools.html -->
 						<!-- INCLUDE parts/social-buttons.html -->
 					</div>
 					
+
+					<div class="events-list-page-filter margin-b20 margin-t20 award-filter">
+						<div class="container title">
+							<form action="" method="get">
+								<button type="submit" class="block-title col3-1 dark bfont font20">
+									filter by year
+								</button>
+								<div class="select-wrapper">
+									<select name="year" class="sync-value-select" data-for="#events-list-filter-year-select">
+										<option value="all">All Years</option>
+										<option value="2010">2010</option>
+										<option value="2012">2012</option>
+										<option value="2014">2014</option>
+									</select>
+									<div class="select-value font16" id="events-list-filter-year-select">All Years</div>
+									<div class="arrows">
+										<a href="#" class="down"></a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+
 					<div class="accordion-block margin-b10 open">
 						<div class="block-title bfont dark font20">
 							<div class="table-wrapper">

@@ -219,4 +219,9 @@
 	.photo-gallery-block { width:251px; }
 	#video-gallery-detail-big-image { margin-bottom:-21px;}
 	#top-bar { padding:10px 0;}
+	nav .slidedown .block.block2 { width: 49%; }
+	nav .slidedown.simple { width:330px; padding:20px;}
+	nav .slidedown.simple.study { width:450px; }
+	.events-list-page-filter.award-filter .select-wrapper .select-value { width: 228px;}
+
 }

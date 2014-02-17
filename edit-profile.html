@@ -51,7 +51,7 @@
 				<a class="cell" href="#">home</a>
 			</div>
 			<ul>
-				<li><a href="./">about the program</a></li>
+				<li><a href="#">about the program</a></li>
 				<li><a href="#">program pillars</a></li>
 				<li><a href="#">emirates award</a></li>
 				<li><a href="#">studies</a></li>
@@ -76,41 +76,12 @@
 		<nav class="hidden-mobile line3">
 			<div class="container">
 				<ul class="upper font14 white menu">
-					<li class="first ">
-						<a href="#">media center</a>
-						<div class="slidedown simple">
-							<ul class="block block1">
-								<li><a href="media-timeline.html"><i class="fa fa-angle-left"></i><span>press news</span></a></li>
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>photo gallery</span></a></li>
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>video gallery</span></a></li>
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>testimonials</span></a></li>
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>logo usage guidelines</span></a></li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<a href="#" class="nowrap">e-library</a>
-						<div class="slidedown simple">
-							<ul class="block block1">
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>publications</span></a></li>
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>articles</span></a></li>
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>books</span></a></li>
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>newsletter</span></a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="on"><a href="#">events</a></li>
+					<li class="first"><a href="#">media center</a></li>
+					<li><a href="#" class="nowrap">e-library</a></li>
+					<li><a href="#">events</a></li>
 					<li><a href="#">initiatives</a></li>
+					<li><a href="#">studies</a></li>
 					<li>
-						<a href="#">studies</a>
-						<div class="slidedown simple study">
-							<ul class="block block1">
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>customer satisfaction</span></a></li>
-								<li><a href="#"><i class="fa fa-angle-left"></i><span>employee's opinions</span></a></li>
-							</ul>
-						</div>
-					</li>
-					<li >
 						<a href="#">emirates award</a>
 						<div class="slidedown">
 							<ul class="block block1">
@@ -145,38 +116,92 @@
 
 
 
-	<div class="full-page-name">
-		<div class="container">
-			<h1 class="page-title green upper">events</h1>
-		</div>
-	</div>
-	
-	<div class="login-content margin-b20">
-		<div class="container">
-			<div class="login-content-inner">
-				<div class="title1 font28 bold black">Login to your account</div>
-				<div class="title2 font12">You must login to register participants for and manage events.</div>
+	<div class="full-page-name margin-b20 edit-profile-page">
+		<div class="container relative">
+			<h1 class="page-title green upper">edit profile</h1>
+			<div class="events-login-wrapper">
+				<div class="avatar"><img src="images/avatar.jpg" alt=""></div>
+				<div class="actions">
+					<a href="#" class="down"></a>
+					<ul class="submenus">
+						<li><a href="#" class="upper font14">manage events</a></li>
+						<li><a href="#" class="upper font14">edit profile</a></li>
+						<li><a href="#" class="upper font14">log out</a></li>
+					</ul>
+				</div>
+				<div class="welcome">
+					Welcome,<b>Chunlong</b>
+				</div>
 			</div>
-			<form action="">
-				<div class="input-group clearfix">
-					<label>Email Address</label>
-					<input type="email" class="text-input">
-				</div>
-				<div class="input-group clearfix">
-					<label>Password</label>
-					<input type="password" class="text-input">
-					<div class="help-text">
-						<a href="#" class="red">Forgot?</a>
-					</div>
-				</div>
-				<div class="input-group clearfix buttons-line">
-					<label></label>
-					<input type="submit" value="Submit" class="button-input red-button">
-					<input type="reset" value="Cancel" class="button-input">
-				</div>
-			</form>
+			
+			<div class="contentbar col3-3">
+			 <div class="edit-profile-form">
+			  <fieldset>
+					 <label>
+					  Full Name
+					 </label>
+					 <input type="text" placeholder="Full Name" />
+					 <div class="help-text error">Please input Full Name</div>
+					</fieldset>
+					<fieldset>
+					 <label>
+					  Job Title
+					 </label>
+					 <input type="text" placeholder="Job Title" />
+					 <div class="help-text error">Please input Job Title</div>
+					</fieldset>
+					<fieldset>
+					 <label>
+					  Company Name
+					 </label>
+					 <div class="company-logo">
+					  <img src="images/company-logo.png" alt="" />
+					 </div>
+					 <span>Name of the Company</span>
+					</fieldset>
+					<fieldset>
+					 <label>
+					  Department
+					 </label>
+					 <input type="text" placeholder="Department" />
+					 <div class="help-text error">Please input Department</div>
+					</fieldset>
+					<fieldset>
+					 <label>
+					  Mobile Number
+					 </label>
+					 <input type="text" placeholder="05x xxxxxxx" />
+					 <div class="help-text error">Please input Mobile Number</div>
+					</fieldset>
+					
+					<fieldset>
+					 <label>
+					  Email Address
+					 </label>
+					 <span>username@email.com</span>
+					</fieldset>
+					<fieldset>
+					 <label>
+					  New Password
+					 </label>
+					 <input type="password" placeholder="New Password" />
+					 <div class="help-text error">Please input New Password</div>
+					</fieldset>
+					<fieldset>
+					 <label>
+					  Confirm New Password
+					 </label>
+					 <input type="password" placeholder="Confirm New Password" />
+					 <div class="help-text error">Please input New Password</div>
+					</fieldset>
+					<div class="save-edit-profile-form">
+					  <input type="button" id="save" value="SAVE" />
+					  <input type="button" id="cancel" value="CANCEL" />
+					 </div>
+			 </div>
+			</div>
 		</div>
-	</div>
+	</div> 
 
 	<footer>
 		<a class="back-to-top visible-mobile white" href="#">
