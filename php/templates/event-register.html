@@ -32,29 +32,34 @@
 								<form action="" method="post" class="clearfix">
 
 									<div class="clearfix">
-										{foreach(range(1,3) as $i)}
+										{foreach(range(1,5) as $i)}
 										<div class="block participant">
 											<div class="block-content">
 												<div class="title">participant {$i}</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Full Name</label>
 													<input type="text" class="text-input">
+													<div class="help-text error">Please input Full Name</div>
 												</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Job Title</label>
 													<input type="text" class="text-input">
+													<div class="help-text error">Please input job title</div>
 												</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Department</label>
 													<input type="text" class="text-input">
+													<div class="help-text error">Please input department</div>
 												</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Mobile Number</label>
 													<input type="text" class="text-input">
+													<div class="help-text error">Please input mobile number</div>
 												</div>
-												<div class="input-group">
+												<div class="input-group clearfix">
 													<label>Email Address</label>
 													<input type="email" class="text-input">
+													<div class="help-text error">Please input valid email address</div>
 												</div>
 											</div>
 										</div>
