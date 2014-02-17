@@ -6,10 +6,10 @@
 		<li {if($page=='media-press')}class="active"{/if}>
 			<a href="media-press.html">press news</a>
 		</li>
-		<li {if($page=='media-gallery')}class="active"{/if}>
+		<li {if($page=='media-gallery' || $page=='media-photo-gallery-detail')}class="active"{/if}>
 			<a href="media-gallery.html">photo gallery</a>
 		</li>
-		<li {if($page=='media-video-gallery')}class="active"{/if}>
+		<li {if($page=='media-video-gallery'||$page=='media-video-gallery-detail')}class="active"{/if}>
 			<a href="media-video-gallery.html">video gallery</a>
 		</li>
 		<li {if($page=='media-testimonial')}class="active"{/if}>

@@ -235,7 +235,7 @@
 	.event-detail-section .accordion-block.media .accordion-content { padding:0; }
 	.event-detail-section .accordion-block.media .media-item { float:none; width:auto; display: block; margin: 0; height: 352px;}
 	.media-item.small .thumb { height:259px; }
-	.media-item.small: .slides-wrapper{ top:0; }
+	.media-item.small:hover .slides-wrapper{ top:0; }
 	.media-item.small .info { height:93px; padding-top: 15px;}
 	.media-item.small .info .title { padding-top:5px; font-size:16px; line-height:20px; height:40px; overflow:hidden; }
 	.content-left-column { float:none; width:auto; }
@@ -295,4 +295,31 @@
 	.articles-more-copy{margin-right:9px;}
 	.articles-more-copy-slide{right:9px;}
 	
+	.event-detail-section.register .input-group.buttons-line {margin-right: -90px;}
+	.events-list-page-filter.on-media-page .select-wrapper .select-value { width: 200px; }
+	.page-content .inner-content .news-image { margin: 20px -20px; }
+	.testi-item.has-image > .left { float:none; width:auto; }
+	.testi-item.has-image > .right { display:none;}
+	.testi-item { margin:0 20px;}
+	.page-content.testi-wrapper { border-bottom:1px solid #ccc; }
+	.testi-pagination { margin:20px 0 20px 0px; }
+	.page-information.only-share  { padding-bottom:10px; }
+	.page-information.only-share .social-share-buttons{ padding-top:20px; padding-bottom:0px;}
+	.photo-gallery-slideshow .arrows { height:0; }
+	.photo-gallery-slideshow { height:172px; width:460px;  margin-left: -20px !important;}
+	.photo-gallery-slideshow .arrows > a { top:54px; left:0;}
+	.photo-gallery-slideshow .arrows > a.next { right:0;}
+	.photo-gallery-block { width:307px; }
+	.block.strange-block { margin:20px 0; }
+	.strange-block .block-head .arrows { width:auto;}
+	.strange-block .block-head .arrows > a { width: 225px; }
+	.strange-block .block-head { height:60px;}
+	.strange-block .media-item { width:225px; float:left; margin-right:10px; height: 208px;}
+	.strange-block .media-item .thumb { height:125px; }
+	.strange-block .media-item .info { height:83px; padding-top: 10px;}
+	.strange-block .media-item .info .title { padding-top:3px; font-size:14px; line-height:14px; height:46px; overflow:hidden; }
+	.strange-block .slide-items-wrapper { height:208px; }
+	#video-gallery-detail-big-image { margin-bottom:-21px;}
+	.page-information.bottom { padding-bottom:10px; }
+	.events-list-page-filter.award-filter .select-wrapper .select-value { width: 200px; }
 }

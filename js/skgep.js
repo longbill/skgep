@@ -125,6 +125,7 @@ SK.initHead = function()
 		{
 			$(this).removeClass('active');
 			$('header .mobile-menu').slideUp();
+			canOpenMobileMenu = true;
 			return;
 		}
 		else
@@ -135,13 +136,24 @@ SK.initHead = function()
 
 		setTimeout(function()
 		{
-			$('body').bind('click.aaa touchend.aaa',function()
+			$('body').bind('touchend.aaa',function(evt)
 			{
-				btn.removeClass('active');
-				$('header .mobile-menu').slideUp();
-				$(this).unbind('.aaa');
-				canOpenMobileMenu = false;
-				setTimeout(function(){ canOpenMobileMenu = true;} ,1000);
+				if ($(evt.target).is('a'))
+				{
+					setTimeout(aaa,1000);
+				}
+				else
+				{
+					aaa();
+				}
+				function aaa()
+				{
+					btn.removeClass('active');
+					$('header .mobile-menu').slideUp();
+					$(this).unbind('.aaa');
+					canOpenMobileMenu = false;
+					setTimeout(function(){ canOpenMobileMenu = true;} ,1000);
+				}
 			});
 		},0);
 	});
@@ -168,28 +180,55 @@ SK.resetViewPort = function()
 SK.initMenu = function()
 {
 	var canOpen = true;
-	$('nav ul.menu > li').bind('mouseenter click',function()
+	var lis = $('nav ul.menu > li').bind(SK.isTouchDevice ? 'touchstart' : 'mouseenter',function(evt)
 	{
 		if (!canOpen) return;
+		canOpen = false;
+		setTimeout(function(){ canOpen = true;} , 200);
 		var self = this;
-		if ($(this).hasClass('active')) return;
-		$(this).addClass('active').find('.slidedown').slideDown(100);
+		if ($(evt.target).parent().find('ul').length == 0 && $(evt.target).find('ul').length == 0)
+		{
+			evt.stopPropagation();
+			return;
+		}
+		if ($(this).hasClass('active'))
+		{
+			$(self).removeClass('active').find('.slidedown').slideUp(50);
+			$(this).unbind('.vv');
+			canOpen = false;
+			setTimeout(function(){ canOpen = true;} , 200);
+			return;
+		}
+		$('nav ul.menu > li.active').removeClass('active').find('.slidedown').hide();
+		$(this).addClass('active').find('.slidedown').stop().slideDown(100);
 		if (SK.isTouchDevice)
 		{
+			$(self).find('*').add(self).bind('touchend',function(evt)
+			{
+				evt.stopPropagation();
+			});
+			
+			
 			setTimeout(function()
 			{
-				$('body').bind('click.vv touchend.vv',function()
+				$('body').bind('touchend.vv',function()
 				{
-					$(self).removeClass('active').find('.slidedown').slideUp(50);
-					$(this).unbind('.vv');
-					canOpen = false;
-					setTimeout(function(){ canOpen = true;} , 1000);
+					setTimeout(function()
+					{
+						$(self).removeClass('active').find('.slidedown').slideUp(50);
+						$(this).unbind('.vv');
+						canOpen = false;
+						setTimeout(function(){ canOpen = true;} , 200);
+					},0);
 				});
 			},0);
 		}
-	}).mouseleave(function()
+	});
+
+	if (!SK.isTouchDevice) lis.mouseleave(function()
 	{
 		$(this).removeClass('active').find('.slidedown').slideUp(50);
+		canOpen = true;
 	});
 };
 
@@ -601,6 +640,8 @@ SK.initPhotoGallery = function()
 		$(this).addClass('active');
 	});
 };
+
+
 
 
 

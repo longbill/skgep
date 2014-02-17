@@ -34,6 +34,19 @@
 					</div>
 
 					<div class="media-center-items-wrapper responsive-media clearfix">
+						{if($page == 'media-gallery')}
+							{foreach(range(1,14) as $i)}
+								<!-- INCLUDE parts/media-photo.html -->
+							{/foreach}
+						{elseif($page == 'media-press')}
+							{foreach(range(1,14) as $i)}
+								<!-- INCLUDE parts/media-news.html -->
+							{/foreach}
+						{elseif($page == 'media-video-gallery')}
+							{foreach(range(1,14) as $i)}
+								<!-- INCLUDE parts/media-video.html -->
+							{/foreach}
+						{else}
 						<!-- INCLUDE parts/media-photo.html -->
 						<!-- INCLUDE parts/media-video.html -->
 						<!-- INCLUDE parts/media-news.html -->
@@ -48,6 +61,7 @@
 						<!-- INCLUDE parts/media-video.html -->
 						<!-- INCLUDE parts/media-photo.html -->
 						<!-- INCLUDE parts/media-video.html -->
+						{/if}
 					</div>
 
 					<div class="pagination-section margin-b20 margin-t10">
