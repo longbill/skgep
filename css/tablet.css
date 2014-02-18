@@ -33,7 +33,7 @@
 	.page-content .inner-content { padding:20px; }
 	.page-information { padding:20px;}
 	
-	body { padding-top:185px; font-size:11px;}
+	body { padding-top: 35px; font-size:11px;}
 	header .line1 .block { padding:0; height: 35px;}
 	header .line1 .close-search { padding:8px 0; }
 	.head40 { line-height: 30px !important; height: 30px;}
@@ -250,7 +250,7 @@
 	.strange-block .slide-items-wrapper { height:222px; }
 	.photo-gallery-block { width:251px; }
 	#video-gallery-detail-big-image { margin-bottom:-21px;}
-	#top-bar { padding:10px 0;}
+	#top-bar { padding: 10px 0 60px;}
 	nav .slidedown .block.block2 { width: 49%; }
 	nav .slidedown.simple { width:330px; padding:20px;}
 	nav .slidedown.simple.study { width:450px; }
@@ -260,4 +260,6 @@
 	.search-page-results-form input {width: 360px;  }
 	.search-result { padding:10px 20px;}
 	.result-page-title { font-size:22px; }
+	nav { top:125px;}
+	nav.fixed { top:35px;}
 }

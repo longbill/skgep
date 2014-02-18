@@ -1,0 +1,100 @@
+<!-- INCLUDE parts/head.html -->
+<body>
+	<!-- INCLUDE parts/header.html -->
+
+
+	<div class="full-page-name margin-b20">
+		<div class="container relative">
+			<h1 class="page-title green upper">about the program</h1>
+		</div>
+	</div>
+
+	<div class="left-right-section">
+		<div class="container clearfix">
+			<div class="contentbar col3-2">
+				<div class="page-content">
+					<div class="page-information no-padding-top">
+						<!-- INCLUDE parts/page-tools.html -->
+						<!-- INCLUDE parts/social-buttons.html -->
+					</div>
+					<!-- INCLUDE parts/email-to-friend.html -->
+					
+
+					
+					<div class="accordion-block margin-b10 open">
+						<div class="block-title bfont dark font20">
+							<div class="table-wrapper">
+								<div class="middle-wrapper">
+									about the program
+								</div>
+							</div>
+						</div>
+						<div class="accordion-content-wrapper relative">
+							<div class="accordion-content">
+								<div class="bold font28">Program Framework</div>
+								<p>{phpsum(300)}</p>
+								<div class="bold font28">Program Establishment</div>
+								<p>{phpsum(30)}</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-block margin-b10 open">
+						<div class="block-title bfont dark font20">
+							<div class="table-wrapper">
+								<div class="middle-wrapper">
+									vision and mission
+								</div>
+							</div>
+						</div>
+						<div class="accordion-content-wrapper relative">
+							<div class="accordion-content">
+								<div class="bold font28">Vision</div>
+								<p>{phpsum(50)}</p>
+								<div class="bold font28">Mission</div>
+								<p>{phpsum(20)}</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="accordion-block margin-b10 open">
+						<div class="block-title bfont dark font20">
+							<div class="table-wrapper">
+								<div class="middle-wrapper">
+									Strategic objectives
+								</div>
+							</div>
+						</div>
+						<div class="accordion-content-wrapper relative">
+							<div class="accordion-content">
+								<ul class="ul2">
+									{foreach(range(1,6) as $i)}
+									<li>{phpsum(10,20)}</li>
+									{/foreach}
+								</ul>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="page-information bottom no-border-bottom">
+						<!-- INCLUDE parts/social-buttons.html -->
+					</div>
+
+				</div>
+			</div>
+			<div class="sidebar col3-1 margin-b20">
+				<!-- INCLUDE parts/events-slider.html -->
+			</div>
+		</div>
+	</div>
+
+
+	<!-- INCLUDE parts/media-update.html -->
+
+	<!-- INCLUDE parts/footer.html -->
+	<!-- INCLUDE parts/share-scripts.html -->
+</body>
+</html>
