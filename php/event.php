@@ -1,6 +1,6 @@
 <?php
 
-include('endskin.php');
+include_once('endskin.php');
 
 
 
@@ -10,7 +10,7 @@ $data['page'] = 'login';
 $data['nav'] = 'event';
 $t->assign($data);
 $s = $t->result('event-login.html');
-file_put_contents('../event-login.html',$s);
+file_put_contents(SAVE_TO.'event-login.html',$s);
 echo "event-login.html<br>";
 
 
@@ -21,7 +21,7 @@ $data['page_name'] = 'events';
 $data['nav'] = 'event';
 $t->assign($data);
 $s = $t->result('event-events.html');
-file_put_contents('../event-events.html',$s);
+file_put_contents(SAVE_TO.'event-events.html',$s);
 echo "event-events.html<br>";
 
 
@@ -33,7 +33,7 @@ $data['login'] = true;
 $data['nav'] = 'event';
 $t->assign($data);
 $s = $t->result('event-events.html');
-file_put_contents('../event-events-logged-in.html',$s);
+file_put_contents(SAVE_TO.'event-events-logged-in.html',$s);
 echo "event-events-logged-in.html<br>";
 
 
@@ -45,7 +45,7 @@ $data['login'] = true;
 $data['nav'] = 'event';
 $t->assign($data);
 $s = $t->result('event-manage.html');
-file_put_contents('../event-manage.html',$s);
+file_put_contents(SAVE_TO.'event-manage.html',$s);
 echo "event-manage.html<br>";
 
 
@@ -57,7 +57,7 @@ $data['login'] = true;
 $data['nav'] = 'event';
 $t->assign($data);
 $s = $t->result('event-detail.html');
-file_put_contents('../event-detail.html',$s);
+file_put_contents(SAVE_TO.'event-detail.html',$s);
 echo "event-detail.html<br>";
 
 
@@ -71,14 +71,6 @@ $data['login'] = true;
 $data['nav'] = 'event';
 $t->assign($data);
 $s = $t->result('event-register.html');
-file_put_contents('../event-register.html',$s);
+file_put_contents(SAVE_TO.'event-register.html',$s);
 echo "event-register.html<br>";
-
-
-
-echo 'ok';
-echo "\n<br><br>";
-
-
-include('list.php');
 

@@ -326,4 +326,5 @@
 	.block.email-to-friend .block-title { float:none; width:auto; }
 	.block.email-to-friend .block-title a.close { width: 67px; height: 67px;}
 	.search-page-results-form input {width: 330px;  }
+	.button.register-participation-button { font-size:12px; }
 }

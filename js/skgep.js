@@ -42,6 +42,11 @@ $(function()
 	}
 
 
+	if (location.href.match(/\/EN\//))
+		$('#change-language').attr('href', location.href.replace('EN','AR'));
+	else
+		$('#change-language').attr('href', location.href.replace('AR','EN'));
+
 
 	function getStickyHeadHeight()
 	{

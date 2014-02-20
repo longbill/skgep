@@ -1,92 +1,71 @@
 <!-- INCLUDE parts/head.html -->
 <body>
 	<!-- INCLUDE parts/header.html -->
-	<div class="visible-mobile">
-		<div class="container">
-			<div class="mobile-page-title bfont font24 grey">E-LIBRARY</div>
-			<div class="logo2-block margin-b10">
-			</div>
-		</div>
-	</div>
-	<div class="full-page-name margin-b20 e-library-page">
-		<div class="container clearfix">
-		 <h1 class="page-title green upper">Publications</h1>
-			<div class="contentbar col3-2">
-				<div class="page-content">
-					<div class="page-information">
-						<div class="page-tools clearfix">
-							<div class="function-button page-text-size" data-for=".page-content p">
-								<b class="bigger" data-size="14px">A</b>
-								<b class="normal active" data-size="13px">A</b>
-								<b class="smaller" data-size="12px">A</b>
-								Text size
-							</div>
-							<a href="#" class="function-button email-page-button">email to friend <i class="icon icon-mail"></i></a>
-							<a href="#" class="function-button print-page-button">print this page <i class="icon icon-print"></i></a>
-						</div>
-					</div>
-					
-
-					<!-- INCLUDE parts/email-to-friend.html -->
-
-
-
-					<div class="articles-library-detailed">
-					 <div class="about-publication">
-					  <div class="first-pane">
-					   <h4>
-					    Name of publication
-					   </h4>
-					   <h6>
-					    By Name of Author
-					   </h6>
-					   <p>
-					    Short synopsis of publication lorem ipsum dolor sit amet. Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. Donec lectus turpis. Cras et sem at odio porttitor mattis. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. Donec lectus turpis. Cras et  Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. sem at odio porttitor mattis.
-					   </p>
-					  </div>
-					  <div class="publication-article-visual">
-					   <div class="publication-article-image">
-					    <img src="images/publications-img.png" alt="" />
-					   </div>
-					   <span class="download-pdf">
-					    <a href="#">
-					     download pdf
-					    </a>
-					   </span>
-					  </div>
-					  <div class="publication-url">
-					   <p>url</p>
-					   <span>www.skgep.gov.ae/elibrary/publication12345/</span>
-					  </div>
-					 </div>
-					 <div class="publications-large-image">
-					  <img src="images/publications-large-image.gif" alt="" />
-					 </div>
-					</div>
-
-				</div>
-			</div>
-			<div class="sidebar col3-1">
-				<ul class="link-list with-left-angle hover-red-bg margin-b20 hidden-mobile">
-					<li><a href="e-library.html">e-library</a></li>
-					<li class="active"><a href="publications.html">publications</a></li>
-					<li><a href="javascript:void(0);">aricles</a></li>
-					<li><a href="javascript:void(0);">books</a></li>
-					<li><a href="javascript:void(0);">newsletter</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
 	
+  <div class="visible-mobile">
+   <div class="container">
+    <div class="mobile-page-title bfont font24 grey">{{Publications||المنشورات}}</div>
+    <div class="logo2-block margin-b10">
+    </div>
+   </div>
+  </div>
+  <div class="full-page-name margin-b20 e-library-page">
+   <div class="container clearfix">
+    <h1 class="page-title green upper">{{Publications||المنشورات}}</h1>
+    <div class="contentbar col3-2">
+     <div class="page-content">
+      <div class="page-information">
+       <!-- INCLUDE parts/page-tools.html -->
+      </div>
 
-	<!-- INCLUDE parts/footer.html -->
-	<script>
-	 $(document).ready(
-	  $('.articles-library ul li').hover(function() {
-	   $(this).find('.articles-more-copy-slide').stop().slideToggle('');
-	  })
-	 );
-	</script>
-</body>
+      <div class="articles-library-detailed">
+       <div class="about-publication">
+        <div class="first-pane">
+         <h4>
+          Name of publication
+         </h4>
+         <h6>
+          By Name of Author
+         </h6>
+         <p>
+          {{Short synopsis of publication lorem ipsum dolor sit amet. Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. Donec lectus turpis. Cras et sem at odio porttitor mattis. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet. Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. Donec lectus turpis. Cras et  Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. sem at odio porttitor mattis.}}
+         </p>
+        </div>
+        <div class="publication-article-visual">
+         <div class="publication-article-image">
+          <img src="../images/publications-img.png" alt="" />
+         </div>
+         <span class="download-pdf">
+          <a href="#">
+           download pdf
+          </a>
+         </span>
+        </div>
+        <div class="publication-url">
+         <p>url</p>
+         <span>www.skgep.gov.ae/elibrary/publication12345/</span>
+        </div>
+       </div>
+       <div class="publications-large-image">
+        <img src="../images/publications-large-image.gif" alt="" />
+       </div>
+      </div>
+
+     </div>
+    </div>
+    <!-- INCLUDE parts/e-sidebar.html -->
+   </div>
+  </div>
+
+
+  <!-- INCLUDE parts/footer.html -->
+
+  <script>
+   $(document).ready(
+   $('.articles-library ul li').hover(function() {
+    $(this).find('.articles-more-copy-slide').stop().slideToggle('');
+   })
+   );
+  </script>
+ </body>
 </html>

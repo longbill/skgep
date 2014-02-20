@@ -1,91 +1,71 @@
 <!-- INCLUDE parts/head.html -->
 <body>
-	<!-- INCLUDE parts/header.html -->
-	<div class="full-page-name margin-b20 contact-us-page">
-		<div class="container clearfix">
-		 <h1 class="page-title green upper">contact us</h1>
-		 <div class="sidebar col3-1">
-		  <h4>
-			  CONTACT US
-			 </h4>
-			 <div class="contact-enquiry">
-			  <p>
-			   Shiekh Khalifa Government Excellence Program
-Prime Minister's Office - Ministry of Cabinet Affairs
-Level 40 - Emirates Towers - Shiekh Zayed Road
-			  </p>
-			  <p>
-			   P.O.Box 212000, Dubai, UAE <br />
-Telephone: 00 !9714 330 4433 <br />
-Fax: 00 !9714!330 4044 <br />
-Email:!<a href="mailto:info@skgep.gov.ae">info@skgep.gov.ae</a>
-			  </p>
-			  <div class="map">
-			   <img src="images/map.gif" alt="" />
-			  </div>
-			 </div>
-			</div>
-			<div class="contentbar col3-2">
-				<div class="page-content">
-					<div class="page-information">
-						<div class="page-tools clearfix">
-							<div class="function-button page-text-size" data-for=".page-content p">
-								<b class="bigger" data-size="14px">A</b>
-								<b class="normal active" data-size="13px">A</b>
-								<b class="smaller" data-size="12px">A</b>
-								Text size
-							</div>
-							<a href="#" class="function-button email-page-button">email to friend <i class="icon icon-mail"></i></a>
-							<a href="#" class="function-button print-page-button">print this page <i class="icon icon-print"></i></a>
-						</div>
-					</div>
-					
-					<div class="contact-us-form">
-					 <h2>
-					  Do you have any questions?
-					 </h2>
-					 <fieldset>
-					  <label>
-					   Full Name*
-					  </label>
-					  <input type="text" placeholder="Full Name" />
-					 </fieldset>
-					 <fieldset>
-					  <label>
-					   Employer
-					  </label>
-					  <input type="text" placeholder="Employer" />
-					 </fieldset>
-					 <fieldset>
-					  <label>
-					   Mobile
-					  </label>
-					  <input type="text" placeholder="05x xxxxxxx" />
-					 </fieldset>
-					 <fieldset>
-					  <label>
-					   Email*
-					  </label>
-					  <input type="text" placeholder="Email" />
-					 </fieldset>
-					 <fieldset>
-					  <label>
-					   Message*
-					  </label>
-					  <textarea></textarea>
-					 </fieldset>
-					 <div class="submit-contact-form">
-					  <input type="button" id="submit" value="SUBMIT" />
-					  <input type="button" id="cancel" value="CANCEL" />
-					 </div>
-					</div>
+  <!-- INCLUDE parts/header.html -->
+  <div class="full-page-name margin-b20 contact-us-page">
+    <div class="container clearfix">
+     <h1 class="page-title green upper">{{contact us||اتصل بنا}}</h1>
+      <!-- INCLUDE parts/extra-sidebar.html -->
+      <div class="contentbar col3-2">
+        <div class="page-content">
+          <div class="page-information">
+            <div class="page-tools clearfix">
+              <div class="function-button page-text-size" data-for=".page-content p">
+                <b class="bigger" data-size="14px">A</b>
+                <b class="normal active" data-size="13px">A</b>
+                <b class="smaller" data-size="12px">A</b>
+                Text size
+              </div>
+              <a href="#" class="function-button email-page-button">email to friend <i class="icon icon-mail"></i></a>
+              <a href="#" class="function-button print-page-button">print this page <i class="icon icon-print"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-us-form">
+           <h2>
+            Do you have any questions?
+           </h2>
+           <fieldset>
+            <label>
+             Full Name*
+            </label>
+            <input type="text" placeholder="Full Name" />
+           </fieldset>
+           <fieldset>
+            <label>
+             Employer
+            </label>
+            <input type="text" placeholder="Employer" />
+           </fieldset>
+           <fieldset>
+            <label>
+             Mobile
+            </label>
+            <input type="text" placeholder="05x xxxxxxx" />
+           </fieldset>
+           <fieldset>
+            <label>
+             Email*
+            </label>
+            <input type="text" placeholder="Email" />
+           </fieldset>
+           <fieldset>
+            <label>
+             Message*
+            </label>
+            <textarea></textarea>
+           </fieldset>
+           <div class="submit-contact-form">
+            <input type="button" id="submit" value="SUBMIT" />
+            <input type="button" id="cancel" value="CANCEL" />
+           </div>
+          </div>
 
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	
-	<!-- INCLUDE parts/footer.html -->
+  
+  <!-- INCLUDE parts/footer.html -->
 </body>
 </html>

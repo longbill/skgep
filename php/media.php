@@ -1,6 +1,6 @@
 <?php
 
-include('endskin.php');
+include_once('endskin.php');
 
 
 
@@ -13,7 +13,7 @@ $data['page'] = 'media-center';
 $data['nav'] = 'media';
 $t->assign($data);
 $s = $t->result('media-center.html');
-file_put_contents('../media-center.html',$s);
+file_put_contents(SAVE_TO.'media-center.html',$s);
 echo "media-center.html<br>";
 
 
@@ -25,7 +25,7 @@ $data['page'] = 'media-gallery';
 $data['nav'] = 'media';
 $t->assign($data);
 $s = $t->result('media-center.html');
-file_put_contents('../media-gallery.html',$s);
+file_put_contents(SAVE_TO.'media-gallery.html',$s);
 echo "media-gallery.html<br>";
 
 
@@ -36,7 +36,7 @@ $data['page'] = 'media-video-gallery';
 $data['nav'] = 'media';
 $t->assign($data);
 $s = $t->result('media-center.html');
-file_put_contents('../media-video-gallery.html',$s);
+file_put_contents(SAVE_TO.'media-video-gallery.html',$s);
 echo "media-video-gallery.html<br>";
 
 
@@ -48,7 +48,7 @@ $data['page'] = 'media-press';
 $data['nav'] = 'media';
 $t->assign($data);
 $s = $t->result('media-center.html');
-file_put_contents('../media-press.html',$s);
+file_put_contents(SAVE_TO.'media-press.html',$s);
 echo "media-press.html<br>";
 
 
@@ -59,7 +59,7 @@ $data['page'] = 'media-press';
 $data['nav'] = 'media';
 $t->assign($data);
 $s = $t->result('media-news.html');
-file_put_contents('../media-news.html',$s);
+file_put_contents(SAVE_TO.'media-news.html',$s);
 echo "media-news.html<br>";
 
 
@@ -71,7 +71,7 @@ $data['page'] = 'media-testimonial';
 $data['nav'] = 'media';
 $t->assign($data);
 $s = $t->result('media-testimonial.html');
-file_put_contents('../media-testimonial.html',$s);
+file_put_contents(SAVE_TO.'media-testimonial.html',$s);
 echo "media-testimonial.html<br>";
 
 
@@ -83,7 +83,7 @@ $data['page'] = 'media-photo-gallery-detail';
 $data['nav'] = 'media';
 $t->assign($data);
 $s = $t->result('media-photo-gallery-detail.html');
-file_put_contents('../media-photo-gallery-detail.html',$s);
+file_put_contents(SAVE_TO.'media-photo-gallery-detail.html',$s);
 echo "media-photo-gallery-detail.html<br>";
 
 
@@ -94,14 +94,6 @@ $data['page'] = 'media-video-gallery-detail';
 $data['nav'] = 'media';
 $t->assign($data);
 $s = $t->result('media-video-gallery-detail.html');
-file_put_contents('../media-video-gallery-detail.html',$s);
+file_put_contents(SAVE_TO.'media-video-gallery-detail.html',$s);
 echo "media-video-gallery-detail.html<br>";
-
-
-
-echo 'ok';
-echo "\n<br><br>";
-
-
-include('list.php');
 

@@ -1,28 +1,28 @@
 <div class="sidebar col3-1">
 	<div class="logo2-block margin-b10 hidden-mobile">
-		<img src="images/logo2_white.png" alt="" class="logo2">
+		<img src="../images/logo2_white.png" alt="" class="logo2">
 	</div>
 	<ul class="link-list with-left-angle hover-red-bg margin-b20 hidden-mobile">
-		<li {if($page=='about')}class="active"{/if}><a href="award-about.html">About the award</a></li>
+		<li {if($page=='about')}class="active"{/if}><a href="award-about.html">{{About the award||نبذة عن الجائزة}}</a></li>
 		<li class="has-sub-items {if($page=='categories')}open{/if}">
-			<a href="javascript:;">Award categories</a>
+			<a href="javascript:;">{{Award categories||فئات الجائزة}}</a>
 			<ul class="sub-list">
-				<li {if($category=='all')}class="active"{/if}><a href="award-categories.html">All categories</a></li>
-				<li {if($category=='main')}class="active"{/if}><a href="award-main-category.html">main categories</a></li>
-				<li><a href="#">sub categories</a></li>
-				<li><a href="#">best practices categories</a></li>
-				<li><a href="#">team categories</a></li>
-				<li><a href="#">prime minister's categories</a></li>
+				<li {if($category=='all')}class="active"{/if}><a href="award-categories.html">{{All categories||كافة الفئات}}</a></li>
+				<li {if($category=='main')}class="active"{/if}><a href="award-main-category.html">{{main categories}}</a></li>
+				<li><a href="#">{{sub categories}}</a></li>
+				<li><a href="#">{{best practices categories}}</a></li>
+				<li><a href="#">{{team categories}}</a></li>
+				<li><a href="#">{{prime minister's categories}}</a></li>
 			</ul>
 		</li>
-		<li><a href="#">participation conditions</a></li>
-		<li><a href="#">participation benefits</a></li>
-		<li><a href="#">assessment methodology</a></li>
-		<li><a href="#">techinical requirements</a></li>
-		<li {if($page=='timeline')}class="active"{/if}><a href="award-timeline.html">timeline</a></li>
-		<li><a href="#">winners</a></li>
-		<li><a href="#">leaders category nominees</a></li>
-		<li><a href="#">participating entities</a></li>
+		<li><a href="#">{{participation conditions||شروط المشاركة}}</a></li>
+		<li><a href="#">{{participation benefits||مميزات المشاركة}}</a></li>
+		<li><a href="#">{{assessment methodology||منهجية التقييم}}</a></li>
+		<li><a href="#">{{techinical requirements||المتطلبات الفنية في إعداد تقارير المشاركة }}</a></li>
+		<li {if($page=='timeline')}class="active"{/if}><a href="award-timeline.html">{{timeline||الجدول الزمني}}</a></li>
+		<li {if($page=='winners')}class="active"{/if}><a href="award-winners.html">{{winners||الفائزون}}</a></li>
+		<li><a href="#">{{nominees||المترشحون}}</a></li>
+		<li><a href="#">{{participating entities||الجهات المشاركة}}</a></li>
 	</ul>
 	<!-- INCLUDE parts/events-slider.html -->
 </div>

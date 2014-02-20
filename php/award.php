@@ -1,6 +1,6 @@
 <?php
 
-include('endskin.php');
+include_once('endskin.php');
 
 
 
@@ -11,7 +11,7 @@ $data['page'] = 'about';
 $data['nav'] = 'award';
 $t->assign($data);
 $s = $t->result('award-about.html');
-file_put_contents('../award-about.html',$s);
+file_put_contents(SAVE_TO.'award-about.html',$s);
 echo "award-about.html<br>";
 
 $data = array();
@@ -20,7 +20,7 @@ $data['category'] = 'all';
 $data['nav'] = 'award';
 $t->assign($data);
 $s = $t->result('award-categories.html');
-file_put_contents('../award-categories.html',$s);
+file_put_contents(SAVE_TO.'award-categories.html',$s);
 echo "award-categories.html<br>";
 
 
@@ -30,7 +30,7 @@ $data['category'] = 'main';
 $data['nav'] = 'award';
 $t->assign($data);
 $s = $t->result('award-main-category.html');
-file_put_contents('../award-main-category.html',$s);
+file_put_contents(SAVE_TO.'award-main-category.html',$s);
 echo "award-main-category.html<br>";
 
 
@@ -40,7 +40,7 @@ $data['page'] = 'timeline';
 $data['nav'] = 'award';
 $t->assign($data);
 $s = $t->result('award-timeline.html');
-file_put_contents('../award-timeline.html',$s);
+file_put_contents(SAVE_TO.'award-timeline.html',$s);
 echo "award-timeline.html<br>";
 
 
@@ -50,7 +50,7 @@ $data['page'] = 'winners';
 $data['nav'] = 'award';
 $t->assign($data);
 $s = $t->result('award-winners.html');
-file_put_contents('../award-winners.html',$s);
+file_put_contents(SAVE_TO.'award-winners.html',$s);
 echo "award-winners.html<br>";
 
 
@@ -60,12 +60,6 @@ $data['page'] = 'winners';
 $data['nav'] = 'award';
 $t->assign($data);
 $s = $t->result('award-participating.html');
-file_put_contents('../award-participating.html',$s);
+file_put_contents(SAVE_TO.'award-participating.html',$s);
 echo "award-participating.html<br>";
-
-
-
-
-echo 'ok';
-echo "\n";
 

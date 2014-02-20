@@ -2,10 +2,10 @@
 
 echo "\n";
 $files = array();
-$h = opendir('../');
+$h = opendir(SAVE_TO);
 while($v = readdir($h))
 {
-	if ( is_file('../'.$v) && preg_match('/\.html$/',$v))
+	if ( is_file(SAVE_TO.$v) && preg_match('/\.html$/',$v))
 	{
 		$files[] = $v;
 	}
@@ -22,5 +22,5 @@ foreach($files as $f)
 	echo $f."<br>";
 }
 
-file_put_contents('../index.html',join($html,''));
+file_put_contents(SAVE_TO.'index.html',join($html,''));
 echo 'ok'."\n";

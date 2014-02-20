@@ -1,7 +1,7 @@
 <div class="sidebar col3-1">
 	<ul class="link-list with-left-angle hover-red-bg margin-b20 hidden-mobile">
 		<li {if($page=='media-center')}class="active"{/if}>
-			<a href="media-center.html">media center</a>
+			<a href="media-center.html">{{media center||المركز الإعلامي}}</a>
 		</li>
 		<li {if($page=='media-press')}class="active"{/if}>
 			<a href="media-press.html">press news</a>
@@ -13,9 +13,9 @@
 			<a href="media-video-gallery.html">video gallery</a>
 		</li>
 		<li {if($page=='media-testimonial')}class="active"{/if}>
-			<a href="media-testimonial.html">testimonials</a>
+			<a href="media-testimonial.html">{{testimonials||قالوا عن البرنامج}}</a>
 		</li>
-		<li class="last"><a href="#">logo usage guidelines</a></li>
+		<li class="last"><a href="#">{{logo usage guidelines||استخدام الشعار التوجيهات}}</a></li>
 	</ul>
 	<!-- INCLUDE parts/events-slider.html -->
 </div>
