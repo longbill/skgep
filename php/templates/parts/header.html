@@ -77,7 +77,7 @@
 					</ul>
 				</div>
 			</li>
-			<li>
+			<li {if($nav=='e-library')}class="on"{/if}>
 				<a href="e-library.html" class="nowrap">{{e-library||المكتبة الإلكترونية}}</a>
 				<div class="slidedown simple">
 					<ul class="block block1">
@@ -93,8 +93,8 @@
 				<a href="#">{{Initiatives||المبادرات}}</a>
 				<div class="slidedown simple study">
 					<ul class="block block1">
-						<li><a href="#"><i class="fa fa-angle-left"></i><span>{{customer satisfaction & Mystery shopper||رضا العملاء والمتسوق السري}}</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-left"></i><span>{{employee's opinions||آراء الموظفين}}</span></a></li>
+						<li><a href="customers-satisfaction.html"><i class="fa fa-angle-left"></i><span>{{customer satisfaction & Mystery shopper||رضا العملاء والمتسوق السري}}</span></a></li>
+						<li><a href="employees-opinion.html"><i class="fa fa-angle-left"></i><span>{{employee's opinions||آراء الموظفين}}</span></a></li>
 					</ul>
 				</div>
 			</li>
@@ -104,7 +104,7 @@
 				<!-- INCLUDE parts/slidedown.html -->
 			</li>
 			<li><a href="#">{{Program pillars||مرتكزات البرنامج}}</a></li>
-			<li class="last"><a href="#">{{About the program||نبذة عن البرنامج}}</a></li>
+			<li class="last"><a href="about-the-program.html">{{About the program||نبذة عن البرنامج}}</a></li>
 		</ul>
 	</div>
 </nav>

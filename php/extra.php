@@ -52,6 +52,7 @@ echo "contact-us.html<br>";
 
 $t = new EndSkin('templates/');
 $data = array();
+$data['nav'] = 'e-library';
 $t->assign($data);
 $s = $t->result('e-library.html');
 file_put_contents(SAVE_TO.'e-library.html',$s);
@@ -97,6 +98,7 @@ echo "about-the-program.html<br>";
 
 $t = new EndSkin('templates/');
 $data = array();
+$data['nav'] = 'satisfaction';
 $t->assign($data);
 $s = $t->result('customers-satisfaction.html');
 file_put_contents(SAVE_TO.'customers-satisfaction.html',$s);
@@ -105,6 +107,7 @@ echo "customers-satisfaction.html<br>";
 
 $t = new EndSkin('templates/');
 $data = array();
+$data['nav'] = 'opinion';
 $t->assign($data);
 $s = $t->result('employees-opinion.html');
 file_put_contents(SAVE_TO.'employees-opinion.html',$s);

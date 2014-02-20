@@ -79,8 +79,8 @@
 			</div>
 			<div class="sidebar col3-1 margin-b20">
 				<ul class="link-list with-left-angle hover-red-bg margin-b20 hidden-mobile">
-					<li class="active"><a href="#">{{Customer Satisfaction & Mystery Shopper||رضا العملاء والمتسوق السري}}</a></li>
-					<li><a href="#">{{employee's opinion||آراء الموظفين}}</a></li>
+					<li {if($nav=='satisfaction')}class="active"{/if}><a href="customers-satisfaction.html">{{Customer Satisfaction & Mystery Shopper||رضا العملاء والمتسوق السري}}</a></li>
+					<li {if($nav=='opinion')}class="active"{/if}><a href="employees-opinion.html">{{employee's opinion||آراء الموظفين}}</a></li>
 				</ul>
 				<!-- INCLUDE parts/events-slider.html -->
 			</div>
