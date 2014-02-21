@@ -1,7 +1,7 @@
 <div class="sidebar col3-1">
 	<ul class="link-list with-left-angle hover-red-bg margin-b20 hidden-mobile">
-		<li class="active"><a href="e-library.html">{{e-library||المكتبة الإلكترونية}}</a></li>
-		<li><a href="publications.html">{{publications||المنشورات}}</a></li>
+		<li {if($nav=='e-library')}class="active"{/if}><a href="e-library.html">{{e-library||المكتبة الإلكترونية}}</a></li>
+		<li {if($nav=='publications')}class="active"{/if}><a href="publications.html">{{publications||المنشورات}}</a></li>
 		<li><a href="javascript:void(0);">{{aricles||المقالات}}</a></li>
 		<li><a href="javascript:void(0);">{{books||الكتب}}</a></li>
 		<li><a href="javascript:void(0);">{{newsletter||النشرة الإخبارية}}</a></li>

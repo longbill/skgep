@@ -172,7 +172,7 @@ SK.initHead = function()
 				{
 					btn.removeClass('active');
 					$('header .mobile-menu').slideUp();
-					$(this).unbind('.aaa');
+					$('body').unbind('.aaa');
 					canOpenMobileMenu = false;
 					setTimeout(function(){ canOpenMobileMenu = true;} ,1000);
 				}
@@ -238,7 +238,7 @@ SK.initMenu = function()
 					setTimeout(function()
 					{
 						$(self).removeClass('active').find('.slidedown').slideUp(50);
-						$(this).unbind('.vv');
+						$('body').unbind('.vv');
 						canOpen = false;
 						setTimeout(function(){ canOpen = true;} , 200);
 					},0);
@@ -589,20 +589,28 @@ SK.initLoginButton = function()
 {
 	$('.events-login-wrapper .actions').click(function(evt)
 	{
-		evt.preventDefault();
 		var btn = $(this);
+		if ($(evt.target).is('a') && $(evt.target).attr('href') != '#') return;
+		evt.preventDefault();
 		if (btn.is('.active'))
 		{
 			btn.removeClass('active');
 			return;
 		}
 		btn.addClass('active');
+
+
+
+
 		setTimeout(function()
 		{
-			$(window).bind('click.loginbutton touchend.loginbutton scroll.loginbutton',function()
+			$('body').bind('touchend.loginbutton click.loginbutton',function()
 			{
-				btn.removeClass('active');
-				$(window).unbind('.loginbutton');
+				setTimeout(function()
+				{
+					btn.removeClass('active');
+					$('body').unbind('.loginbutton');
+				},0);
 			});
 		},0);
 	});

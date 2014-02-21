@@ -25,6 +25,20 @@ file_put_contents(SAVE_TO.'event-events.html',$s);
 echo "event-events.html<br>";
 
 
+
+
+$t = new EndSkin('templates/');
+$data = array();
+$data['page'] = 'events';
+$data['page_name'] = 'edit profile';
+$data['nav'] = 'event';
+$data['login'] = true;
+$t->assign($data);
+$s = $t->result('edit-profile.html');
+file_put_contents(SAVE_TO.'edit-profile.html',$s);
+echo "edit-profile.html<br>";
+
+
 $t = new EndSkin('templates/');
 $data = array();
 $data['page'] = 'events';

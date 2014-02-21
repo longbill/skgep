@@ -16,6 +16,7 @@ echo "register.html<br>";
 
 $t = new EndSkin('templates/');
 $data = array();
+$data['nav'] = 'publications';
 $t->assign($data);
 $s = $t->result('publications-detailed.html');
 file_put_contents(SAVE_TO.'publications-detailed.html',$s);
@@ -25,6 +26,7 @@ echo "publications-detailed.html<br>";
 
 $t = new EndSkin('templates/');
 $data = array();
+$data['nav'] = 'publications';
 $t->assign($data);
 $s = $t->result('publications.html');
 file_put_contents(SAVE_TO.'publications.html',$s);
@@ -59,13 +61,6 @@ file_put_contents(SAVE_TO.'e-library.html',$s);
 echo "e-library.html<br>";
 
 
-
-$t = new EndSkin('templates/');
-$data = array();
-$t->assign($data);
-$s = $t->result('edit-profile.html');
-file_put_contents(SAVE_TO.'edit-profile.html',$s);
-echo "edit-profile.html<br>";
 
 
 
