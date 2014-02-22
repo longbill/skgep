@@ -64,50 +64,7 @@
 </div>
 <nav class="hidden-mobile line3">
 	<div class="container">
-		{if(LANG=='EN')}
-		<ul class="upper font14 white menu">
-			<li class="last"><a href="about-the-program.html">{{About the program||نبذة عن البرنامج}}</a></li>
-			<li><a href="program-pillars.html">{{Program pillars||مرتكزات البرنامج}}</a></li>
-			<li {if($nav=='award')}class="on"{/if}>
-				<a href="award-about.html">{{Emirates Award||جائزة الإمارات}}</a>
-				<!-- INCLUDE parts/slidedown.html -->
-			</li>
-			<li><a href="studies.html">{{Studies||الدراسات}}</a></li>
-			<li>
-				<a href="initiatives.html">{{Initiatives||المبادرات}}</a>
-				<div class="slidedown simple study">
-					<ul class="block block1">
-						<li><a href="customers-satisfaction.html"><i class="fa fa-angle-left"></i><span>{{customer satisfaction & Mystery shopper||رضا العملاء والمتسوق السري}}</span></a></li>
-						<li><a href="employees-opinion.html"><i class="fa fa-angle-left"></i><span>{{employee's opinions||آراء الموظفين}}</span></a></li>
-					</ul>
-				</div>
-			</li>
-			<li {if($nav=='event')}class="on"{/if}><a href="event-events.html">{{events||الفعاليات}}</a></li>
-			<li {if($nav=='e-library')}class="on"{/if}>
-				<a href="e-library.html" class="nowrap">{{e-library||المكتبة الإلكترونية}}</a>
-				<div class="slidedown simple">
-					<ul class="block block1">
-						<li><a href="publications.html"><i class="fa fa-angle-left"></i><span>{{publications||المنشورات}}</span></a></li>
-						<li><a href="articles.html"><i class="fa fa-angle-left"></i><span>{{articles||المقالات}}</span></a></li>
-						<li><a href="books.html"><i class="fa fa-angle-left"></i><span>{{books||الكتب}}</span></a></li>
-						<li><a href="newsletter.html"><i class="fa fa-angle-left"></i><span>{{newsletter||النشرة الإخبارية}}</span></a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="first {if($nav=='media')}on{/if}">
-				<a href="media-center.html">{{media center||المركز الإعلامي}}</a>
-				<div class="slidedown simple">
-					<ul class="block block1">
-						<li><a href="media-press.html"><i class="fa fa-angle-left"></i><span>{{press news||الأخبار الصحفية}}</span></a></li>
-						<li><a href="media-gallery.html"><i class="fa fa-angle-left"></i><span>{{photo gallery||معرض الصور}}</span></a></li>
-						<li><a href="media-video-gallery.html"><i class="fa fa-angle-left"></i><span>{{video gallery||معرض الفيديو}}</span></a></li>
-						<li><a href="media-testimonial.html"><i class="fa fa-angle-left"></i><span>{{testimonials||قالوا عن البرنامج}}</span></a></li>
-						<li><a href="logo-usage.html"><i class="fa fa-angle-left"></i><span>{{logo usage guidelines||استخدام الشعار التوجيهات}}</span></a></li>
-					</ul>
-				</div>
-			</li>
-		</ul>
-		{else}
+		
 		<ul class="upper font14 white menu">
 			<li class="first {if($nav=='media')}on{/if}">
 				<a href="media-center.html">{{media center||المركز الإعلامي}}</a>
@@ -150,6 +107,5 @@
 			<li><a href="program-pillars.html">{{Program pillars||مرتكزات البرنامج}}</a></li>
 			<li class="last"><a href="about-the-program.html">{{About the program||نبذة عن البرنامج}}</a></li>
 		</ul>
-		{/if}
 	</div>
 </nav>

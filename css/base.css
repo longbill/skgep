@@ -561,6 +561,7 @@ ul.participating a { font:bold 14px / 1 "Arial"; }
 .events-manage-table .tr { margin:0; position:relative; clear:both; display:table-row; border-bottom:1px solid #ccc; }
 .events-manage-table .tr .cell { display:table-cell; vertical-align: middle; border-bottom:1px solid #ccc; position:relative; padding:20px;}
 .events-manage-table .tr .cell.no-padding-left { padding-left:0 !important;}
+.events-manage-table .tr .cell:last-child .line{ display:none;}
 .events-manage-table .cell.no-padding-right { padding-right:0 !important;}
 .events-manage-table .tr .cell .line { position:absolute; width:1px; top:20px; bottom:20px; background-color:#ccc; right:0; }
 .events-manage-table .tr.head .cell { padding:0 20px 5px 20px; font: bold 16px / 16px Arial; text-transform:uppercase; }
