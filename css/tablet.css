@@ -1,3 +1,4 @@
+
 @media (min-width: 768px) and (max-width: 992px)
 {
 	.col3-1 { width:246px;}
@@ -64,7 +65,7 @@
 	.arrows a { width:40px; height:40px; line-height:40px; background-position:15px -105px;}
 	.arrows a.prev { background-position:15px -66px; }
 	.arrows a.down { background-position: 10px -415px; }
-	.indicators a { width:40px; height:40px; line-height: 40px; font-size: 20px;}
+	.indicators a { width: 41px; height:40px; line-height: 40px; font-size: 20px;}
 	.spotlight .slideshow > .arrows { height:40px; right:20px; width:81px;}
 	.events-block .middle { width:264px;}
 	

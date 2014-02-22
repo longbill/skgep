@@ -14,7 +14,7 @@
 	.indicators a { width: 68px; height:67px; line-height:67px; font-size:30px;}
 	.arrows a.prev { background-position: 24px -83px; }
 	.arrows a.down { background-position: 21px -560px; }
-	.block-title { height:67px; line-height:67px !important; padding:0 60px 0 0; width: 325px; float: right;}
+	.block-title { height:67px; line-height:67px !important; padding: 0 60px 0 0; width: 325px; float: right;}
 	.block-title .icon { top:16px;}
 	.head40 { height:57px; line-height:57px !important;}
 	.head40 .fa { font-size:30px;}
@@ -114,6 +114,7 @@
 	footer a.back-to-top .fa { font-size:26px;}
 	
 	.events-block .middle .light { font-size:14px; }
+	.events-block .middle .line2 { height:auto;}
 	footer .block2 { width:460px; left:50%; margin-left:-230px; position: absolute !important; top:-100px; height:80px;}
 	footer .block2 .tab1 a { font-size:18px; line-height:1; width:160px; margin-left: 24%;}
 	footer .block2 .icon { right:30%; -webkit-transform:scale(1.3); -ms-transform:scale(1.3); transform:scale(1.3);  transform-origin:0 0;-ms-transform-origin:0 0;-webkit-transform-origin:0 0;}
@@ -166,7 +167,7 @@
 	.page-content { margin-left:0;}
 	.page-content .inner-content { padding:20px;}
 	.category-block .block-title { width:auto; padding-right: 20px;}
-	.category-block .block-title > a.more { width:87px; line-height:68px !important; background: #cc092f url(../images/angle-left-white.png) no-repeat 10px 50%; background-size: 9px; padding: 0 10px 0 0;}
+	.category-block .block-title > a.more { width: 95px; line-height:68px !important; background: #cc092f url(../images/angle-left-white.png) no-repeat 10px 50%; background-size: 9px; padding: 0 10px 0 0;}
 	.categories-wrapper .category-item { padding-right:20px;}
 	.categories-wrapper .category-item .category-left { position:static;width:auto; text-align:right; line-height:30px !important; }
 	.categories-wrapper .category-right { padding:0; margin:0; }
@@ -186,6 +187,7 @@
 	.input-group .text-input { float:none; width:420px; height:66px; display: inline-block;}
 	.input-group label { line-height:40px;}
 	.input-group .help-text { position:absolute; top:0; right:100px; line-height:40px; }
+	.participant .input-group .help-text.error { position:static; margin-left:10px; }
 	.input-group.buttons-line label { display:none;}
 	.events-login-wrapper { top:20%;}
 	.events-list-container { margin-right:0;}
@@ -274,7 +276,7 @@
 	.page-information.bottom { padding-bottom:10px; }
 /*** Styles added Abdul Wahhab ***/
 	.extra-page .col3-2, .faqs-page .col3-2, .publications-page .col3-2, .e-library-page .col3-2{width:auto;float: none;}
-	.publications-page .col3-2, .e-library-page .col3-2{width:auto;max-height:1447px;overflow:hidden;}
+	.publications-page .col3-2, .e-library-page .col3-2{width:auto;overflow:hidden;}
 	.extra-page .col3-1,.faqs-page .col3-1, .publications-page .col3-1, .e-library-page .col3-1{width:auto; float:none;}
 	.publications-library ul li, .e-library ul li{width:230px;}
 	.publications-more-copy, .e-library-more-copy{margin-right:9px;}
@@ -325,6 +327,7 @@
 	.register-form .input-group .help-text { position: absolute; line-height:40px; left: 20px; top: 0; text-align: left;}
 	.block.email-to-friend .block-title { float:none; width:auto; }
 	.block.email-to-friend .block-title a.close { width: 67px; height: 67px;}
-	.search-page-results-form input {width: 330px;  }
+	.search-page-results-form input {width: 320px;  }
 	.button.register-participation-button { font-size:12px; }
+	.edit-profile-form fieldset input.logo-upload { width:130px;}
 }
