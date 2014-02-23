@@ -221,6 +221,10 @@ nav > .container > ul > li.last { border-right:1px solid #de5f78;}
 .block.strange-block { margin-left:0; margin-right:10px; }
 nav > .container  { direction:rtl !important; }
 .events-manage-content .events-manage-table { direction:rtl !important; }
+
+ul.ul2 li {padding-left:20px;padding-right:0px; background:transparent url(../images/ul2.png) no-repeat 0 6px; }
+
+
 @media (max-width: 992px) and (min-width: 768px)
 {
     .block-title {padding: 13px 0px 0px 50px;}
