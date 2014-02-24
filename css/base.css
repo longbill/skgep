@@ -113,6 +113,7 @@ p { direction: rtl; }
 .arrows a { display:block; width:50px; height:50px; float:left; line-height: 50px; color: white; background: #cc092f url(../images/angles.png) no-repeat 21px -100px; outline: none;}
 .arrows a.prev { margin-right:1px; background-position: 20px -61px;}
 .arrows a.down { background-position: 15px -410px; }
+.arrows a:hover,.indicators a:hover { background-color:#b2b2b2;}
 .indicators a { display:block; width: 51px; height:50px; float:left; border-right: 1px solid white; line-height: 50px; text-align: center; font-size: 24px; color: white; background-color: #cc092f; outline: none;}
 .indicators a.active { background-color: #e3e4e4; color: black;}
 
@@ -131,6 +132,7 @@ p { direction: rtl; }
 .icon.icon-prize { background-position:-70px -132px; width:30px; height:30px;}
 .icon.icon-message { background-position:-70px -170px; width:30px; height:30px;}
 .icon.icon-download { background-position:0 -215px; width:30px; height:30px;}
+a:hover .icon.icon-download { background-position:-126px -172px;}
 .icon.icon-newsletter { background-position:-70px -29px;  width:30px; height:30px;}
 .icon.icon-mail { background-position: 0px -378px;  width:16px; height:12px;}
 .icon.icon-print { background-position: 0px -352px;  width:18px; height:16px; margin-bottom:-2px;}
@@ -202,7 +204,9 @@ header > .line1 { background-color:black;}
 #top-bar { padding: 20px 0 75px; }
 header .line1 .block { float:left; padding: 0 10px; height: 40px;}
 header .line1 .block a { color:white; text-transform: uppercase;}
-header .line1 .block.register { background-color:#cc092f; height: 30px; margin-top: 5px; line-height: 30px; width: 133px; text-align: center;}
+header .line1 .block.register { background-color:#cc092f; height: 30px; padding:0; margin-top: 5px; line-height: 30px; width: 133px; text-align: center; white-space:nowrap; overflow:hidden; }
+header .line1 .block.register a { display:block; height:100%; line-height:30px !important;}
+header .line1 .block.register a:hover { background-color:white; color:#cc092f !important; }
 header .line1 .block.block2 { width: 210px; border-right:2px solid #262626; padding: 0; display: table-row;}
 header .line1 .block.block2 a { line-height: 1; cursor:text; font-size:12px; display:block; text-align:center;  word-break: break-all;}
 header .line1 .block.search { border-right:2px solid #262626; }
@@ -299,7 +303,7 @@ footer .block1 .links { padding-top:15px; color:#b6b6b6; }
 footer .block1 .copyright { font-family:"Myriad Pro" Tahoma; line-height:12px; padding-top:8px; text-transform: none;}
 footer .block2 .icon { position:absolute; right: 20%; top: 25%;}
 footer .block2 .tab1 a { display:block; margin-left: 20%; width: 41%; text-align:right; line-height: 15px; margin-top: 5.1%; color: white;}
-
+footer .block2 .tab1 a:hover { color:black;}
 .events-block { overflow:hidden;}
 .events-block .container { margin-bottom:20px;}
 .events-block .left,.events-block .right,.events-block .middle { float:left; height:540px;}
@@ -315,6 +319,7 @@ footer .block2 .tab1 a { display:block; margin-left: 20%; width: 41%; text-align
 .events-block .middle .light { font-size:12px; font-family:"Arial"; line-height:20px; padding:26px 20px 10px 30px;  }
 .events-block .middle .seemore { padding-right: 20px; padding-bottom: 15px; background-color: #e3e4e4;}
 .events-block .middle .seemore a { color:#000; display:block; line-height: 30px !important; }
+.events-block .middle .seemore a:hover { color:#666; }
 .events-block .middle .seemore .fa { font-size:16px;}
 .events-block .middle .line2 { height: 176px; overflow: hidden; background-color: #e3e4e4;}
 .events-slider-block .title-line { float: none;}

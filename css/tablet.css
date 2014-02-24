@@ -41,8 +41,8 @@
 	.head40 .fa { font-size:20px;}
 	.spotlight .slideshow { height:287px; }
 	header.navbar-inverse { height: 35px; line-height:35px; min-height: 35px;} 
-	header .line1 .block.register  { font-size:12px; padding:0 5px; margin-top: 2px; width: 90px; overflow: hidden;}
-	header .line1 .block.block2 a{ }
+	header .line1 .block.register  { font-size:12px; padding: 0; margin-top: 2px; width: 110px; overflow: hidden;}
+	header .line1 .block.register a { font-size: 12px !important; }
 	header .line1 .block.search a { margin:0; width:44px; line-height:35px; background-position: 11px -187px;}
 	header .line1 .block.head-social a { height:35px; line-height:35px;}
 	header .line1 .search-form { width: 386px; height: 35px;}
@@ -265,4 +265,6 @@
 	.result-page-title { font-size:22px; }
 	nav { top: 135px;}
 	nav.fixed { top:35px;}
+	header .line1 .block.block2 { width: 177px; font-family:Arial; font-size:10px; }
+	header .line1 .block.block2 a { font-size:10px; } 
 }
