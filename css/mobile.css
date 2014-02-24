@@ -330,4 +330,6 @@
 	.search-page-results-form input {width: 320px;  }
 	.button.register-participation-button { font-size:12px; }
 	.edit-profile-form fieldset input.logo-upload { width:130px;}
+	.sitemap-content .left ,
+	.sitemap-content .right { float:none; width:auto; border:none;}
 }

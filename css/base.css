@@ -290,11 +290,12 @@ nav .slidedown .block.block3 { margin:30px; width: 438px;}
 
 
 /*footer*/
-footer { background-color:#000; color:white; text-transform:uppercase; border-bottom:10px solid #cc092f;}
-footer a { color:white; }
+footer {  background-color:#000; color: #B6B6B6; text-transform:uppercase; border-bottom:10px solid #cc092f;}
+footer .links a { color: #B6B6B6; transition:color ease .2s;}
+footer .links a:hover { color:#fff !important; }
 footer .block1 { text-align: left;}
 footer .block2 { background-color:#cc092f; height:60px; text-align: center; position: relative;}
-footer .block1 .links { padding-top:15px; }
+footer .block1 .links { padding-top:15px; color:#b6b6b6; }
 footer .block1 .copyright { font-family:"Myriad Pro" Tahoma; line-height:12px; padding-top:8px; text-transform: none;}
 footer .block2 .icon { position:absolute; right: 20%; top: 25%;}
 footer .block2 .tab1 a { display:block; margin-left: 20%; width: 41%; text-align:right; line-height: 15px; margin-top: 5.1%; color: white;}
@@ -478,7 +479,7 @@ footer .newsletter .tab.tab2 form input::-webkit-input-placeholder { color:black
 .categories-wrapper .category-right { list-style:none; margin: 0 0 0 27%; padding: 0;}
 .categories-wrapper .category-right a { font:bold 14px / 1.7 "Arial"; }
 
-.accordion-block .block-title { width:auto; float:none;  padding: 0 4% 0 14%; background: black url(../images/cross-white.png) no-repeat 2% 50%; cursor:pointer;}
+.accordion-block .block-title { width:auto; float:none;  padding: 0 4% 0 14%; background: black url(../images/cross-white.png) no-repeat 2% 50%; cursor:pointer;  font-size: 15px !important;}
 
 .accordion-content-wrapper { background-color:white; display:none; }
 .accordion-content-wrapper .accordion-content { padding:30px; font: 13px / 1.54 Arial; color:black;}
@@ -682,7 +683,6 @@ ul.participating a { font:bold 14px / 1 "Arial"; }
 
 /**styles added Abdul Wahhab**/
 .FAQsQ{
- font-size:.70em;
  text-transform:none;
  direction:rtl;
 }
@@ -837,3 +837,10 @@ ul.participating a { font:bold 14px / 1 "Arial"; }
 ul.ul2 { list-style:none; padding:0; margin:0; direction:rtl;}
 ul.ul2 li { position:relative; padding-right:20px; background:transparent url(../images/ul2.png) no-repeat 100% 6px; line-height:20px; margin-bottom:20px;}
 .block.add-participant { padding-top:20px; border-bottom:1px solid #ccc; padding-bottom:20px; width: 504px; float:right;}
+
+.sitemap-content { border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:30px 0; background-color:white;}
+.sitemap-content .left { width:58%; float:right;  border-left:1px solid #ccc;}
+.sitemap-content .right { float:right; width:42%;}
+.sitemap-content .inner > div > ul > li > a { font-weight:bold; }
+ul.sitemap { padding:0 30px 0 0; list-style:none; margin:0; line-height:20px; }
+ul.sitemap li a { background:transparent url(../images/angle-left.png) no-repeat 100% 50%; display:block; line-height:16px; padding:12px 30px; font-family:Arial; font-size:13px;} 

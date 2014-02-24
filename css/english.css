@@ -223,7 +223,12 @@ nav > .container  { direction:rtl !important; }
 .events-manage-content .events-manage-table { direction:rtl !important; }
 
 ul.ul2 li {padding-left:20px;padding-right:0px; background:transparent url(../images/ul2.png) no-repeat 0 6px; }
+.FAQsCopy { text-align:left; direction:ltr;}
 
+.sitemap-content .left {float:left;  border-right:1px solid #ccc; border-left:0;}
+.sitemap-content .right { float:left;}
+ul.sitemap { padding:0 0 0 30px; }
+ul.sitemap li a { background:transparent url(../images/angle-right.png) no-repeat 0% 50%; padding:12px 0 12px 30px;  }
 
 @media (max-width: 992px) and (min-width: 768px)
 {
@@ -308,4 +313,6 @@ ul.ul2 li {padding-left:20px;padding-right:0px; background:transparent url(../im
 	.green-blocks-section .arrows { float:left !important; }
 	.categories-wrapper .category-item .category-left { text-align:left; padding-left: 10px;}
 	.events-manage-table .with-icon { padding-right:0; margin-left:10px;}
+	.sitemap-content .left ,
+	.sitemap-content .right { float:none; width:auto; border:none;}
 }

@@ -109,3 +109,20 @@ file_put_contents(SAVE_TO.'employees-opinion.html',$s);
 echo "employees-opinion.html<br>";
 
 
+
+$t = new EndSkin('templates/');
+$data = array();
+$t->assign($data);
+$s = $t->result('sitemap.html');
+file_put_contents(SAVE_TO.'sitemap.html',$s);
+echo "sitemap.html<br>";
+
+
+$t = new EndSkin('templates/');
+$data = array();
+$t->assign($data);
+$s = $t->result('logo-usage.html');
+file_put_contents(SAVE_TO.'logo-usage.html',$s);
+echo "logo-usage.html<br>";
+
+

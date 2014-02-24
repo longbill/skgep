@@ -161,6 +161,8 @@
 	.green-blocks-section .green-hover-block .title { font-size:14px;}
 	.green-blocks-section .green-hover-block .slides-wrapper .tab .tab-inner { line-height: 1.2; padding: 15% 10% 0 10%;}
 	
+	.accordion-block .block-title {  font-size: 13px !important;}
+	
 	.category-block .block-title { padding-right:20px;}
 	.category-block .block-title > a.more { line-height: 40px !important; background: #cc092f url(../images/angle-left-white.png) no-repeat 10px 50%; padding-right: 16px; font-size: 12px; padding-left: 27px;}
 	.categories-wrapper .category-right a { font-size:12px;}
