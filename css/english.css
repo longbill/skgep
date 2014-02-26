@@ -173,7 +173,8 @@ header .line1 .close-search { border-right: 1px solid #4d4d4d; }
 .spotlight .slideshow > .arrows { right:auto; left:30px;}
 .spotlight .slideshow > .slide > .info .title { margin-left:0; margin-right:-14px; padding: 20px 50px 20px 25px;}
 
-.events-block .has-head .yin { right:auto; left:20px;}
+.events-block .has-head .yin { right:auto; left:20px; width:30px; overflow:hidden; white-space:nowrap;}
+.events-block .has-head .yin:before { content:"‟  "; font-size:80px; line-height: 80px;}
 .events-block .has-head .words { margin:40px 40px 0 60px; }
 .events-block .has-head .name { margin-right:0; margin-left:60px;}
 .events-block .middle .line1 { padding: 15px 0px 15px 20px; }
@@ -183,7 +184,7 @@ header .line1 .close-search { border-right: 1px solid #4d4d4d; }
 .series-block .block.block1 { float:right; margin-right:0;}
 .series-block .block.block2,.series-block .block.block6 { float:left;}
 .series-block .block.block3 { margin-right:0;}
-.series-block .block.green { float:right;}
+.series-block .block.green { float:right; position: relative;}
 .messages-block .slides-wrapper { border-right-color:white; border-left:1px solid #b6b6b6;}
 .messages-block .slides-wrapper .slide { right:auto; left:0;}
 .winners-block .item .line1,
@@ -250,6 +251,7 @@ header .line1 .block.block2 a { word-break:break-word;}
 	.messages-block .block-title { padding-left: 40px; padding-right:0;}
 	.block-title .icon { left:5px;}
 	.block.event-register { margin-right:0; margin-left:-80px}
+	.events-block .has-head .yin:before { font-size:70px;}
 }
 
 
@@ -278,8 +280,8 @@ header .line1 .block.block2 a { word-break:break-word;}
 	.spotlight .slideshow > .slide > .info .title {  margin-left:0; margin-right:135px; padding: 0; }
 	.events-block .has-head .words { margin:0; padding:20px 40px 0 225px; }
 	.events-block .has-head .name { margin-left:225px;}
-	.events-block .has-head .yin { left:200px; top:13px;width:20px; overflow:hidden; white-space:nowrap;}
-	.events-block .has-head .yin:before { content:"‟  ";}
+	.events-block .has-head .yin { left: 194px; top:13px;width:30px; }
+	
 	.events-block .right.has-head .words { padding:20px 225px 0 50px; }
 	.events-block .right.has-head .name { margin-left:50px;}
 	.events-block .right.has-head .yin { left:20px;}

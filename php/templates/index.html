@@ -34,8 +34,8 @@
 	</div>
 	<div class="events-block">
 		<div class="container">
-			<div class="left has-head col3-1" data-300-bottom="left:-500px;" data--100-bottom="left:0px;">
-				<div class="head" style="background-image:url(../images/head1.png);"></div>
+			<div class="left has-head col3-1" id="animation1">
+				<div class="head" style="background-image:url(../images/head1.png);" data-300-bottom="background-position-y:130%;" data--100-top="background-position-y:100%;"></div>
 				<span class="yin">”</span>
 				<div class="words font14 white">
 					{phpsum(25)}
@@ -60,8 +60,8 @@
 
 				<!-- INCLUDE parts/events-slider.html -->
 			</div>
-			<div class="right has-head col3-1" data-300-bottom="right:-500px;" data--100-bottom="right:0px;">
-				<div class="head" style="background-image:url(../images/head2.png);"></div>
+			<div class="right has-head col3-1" id="animation2">
+				<div class="head" style="background-image:url(../images/head2.png);" data-300-bottom="background-position-y:130%;" data--100-top="background-position-y:100%;"></div>
 				<span class="yin">”</span>
 				<div class="words white font14">
 					{phpsum(25)}
@@ -81,17 +81,17 @@
 
 	<div class="series-block">
 		<div class="container">
-			<div class="block block2 col3-1 grey relative" data-100-bottom="right:-100px; margin-bottom:50px;" data--312-bottom="right:0px; margin-bottom:10px;">
+			<div class="block block2 col3-1 grey relative">
 				<a href=""><img src="../images/logo2.png" alt=""></a>
 			</div>
-			<div class="block block1 col3-2 margin-rb10 dark relative" data-100-bottom="left:-100px; margin-bottom:50px;" data--312-bottom="left:0px; margin-bottom:10px;">
+			<div class="block block1 col3-2 margin-rb10 dark relative">
 				<a href="#">
 					<span class="line1 bfont font20">{{THIRD SERIES 2012-2013||الدورة الثالثة 2012 – 2013 }}</span>
 					<br>
 					<span class="line2 font18">{{SUBMISSION DEADLINE: <i class="lfont">JANUARY 30, 2014</i>||موعد تسليم الطلبات: <i class="lfont">30 يناير 2014</i>}}</span>
 				</a>
 			</div>
-			<div class="block block6 col3-1 grey font14 relative" data-200-bottom="right:-100px;" data--100-bottom="right:0px;">
+			<div class="block block6 col3-1 grey font14 relative">
 				HH Sheikh Mohamed bin Rashid Al Maktoum, Vice President of the UAE, Prime Minister and Ruler of Dubai launched on the 24th of June 2009 the Emirates Government Excellence Award under the umbrella of the SKGEP to be the highest award of corporate excellence in UAE, aiming to promote the role of the federal government institutions.
 			</div>
 			<!-- INCLUDE green-blocks/condition.html -->
@@ -283,5 +283,7 @@
 	<script src="../js/skrollr.ie.min.js"></script>
 	<![endif]-->
 	<!-- INCLUDE parts/footer.html -->
+	<script src="../js/jquery.transform.js"></script>
+	<script src="../js/index-animation.js"></script>
 </body>
 </html>
