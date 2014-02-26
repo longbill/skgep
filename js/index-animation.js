@@ -44,9 +44,9 @@ ANI.animations[0] =
 	},
 	run : function()
 	{
-		$('#animation1').animate({'left':0},1000);
-		$('#animation2').animate({'right':0},1000);
-		$('#animation3').animate({'bottom':0},1000);
+		$('#animation1').animate({'left':0},1500);
+		$('#animation2').animate({'right':0},1500);
+		$('#animation3').animate({'bottom':0},1500);
 	}
 };
 
