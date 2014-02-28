@@ -117,7 +117,7 @@ ANI.animations[2] =
 			{
 				var dim = $(self).data();
 				$(self).animate(dim,300);
-			},(ani.EN ? (3-i) : i )*200);
+			},(3-i)*200);
 		});
 	}
 };

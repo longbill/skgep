@@ -142,6 +142,8 @@ ul.link-list:hover > li.has-sub-items > ul > li.active > a:hover { background:#c
 .winner-block .winner-item .winner-logo { left:0; right:auto;}
 .winner-block .winner-item { padding-left:76px; padding-right:0;}
 
+.messages-block .download { border-left:0; border-right:1px solid #b6b6b6;}
+
 .events-login-wrapper { left:auto; right:3%;}
 .login-content form .input-group { padding-right:0; padding-left:30px;}
 
@@ -185,7 +187,7 @@ header .line1 .close-search { border-right: 1px solid #4d4d4d; }
 .series-block .block.block2,.series-block .block.block6 { float:left;}
 .series-block .block.block3 { margin-right:0;}
 .series-block .block.green { float:right; position: relative;}
-.messages-block .slides-wrapper { border-right-color:white; border-left:1px solid #b6b6b6;}
+.messages-block .slides-wrapper { border-right-color:white;}
 .messages-block .slides-wrapper .slide { right:auto; left:0;}
 .winners-block .item .line1,
 .winners-block .item .line2,
@@ -290,7 +292,7 @@ header .line1 .block.block2 a { word-break:break-word;}
 	.series-block .block.green { float:right !important;}
 	.series-block .block.green.block4 { width:146px; margin-right:10px;}
 	.green-hover-block .slides-wrapper .tab .tab-inner {padding: 10% 0px 0 10px;}
-	.messages-block .slides-wrapper { float:right; width: 398px;}
+	.messages-block .slides-wrapper { float: none; width: 100%;}
 	.messages-block .download { float:left; clear:left; border-left:none; }
 	.messages-block .indicators { left:auto; right:0;}
 	.indicators a { border-right:0; border-left:1px solid white;}

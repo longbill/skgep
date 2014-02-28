@@ -123,7 +123,7 @@
 	.series-block .block.green .slides-wrapper .tab .tab-inner { padding: 20px 20px 0 0px; line-height: 23px;}
 	
 	.messages-block { height:40px; line-height:40px;}
-	.messages-block .slides-wrapper { width: 347px; height:40px;}
+	.messages-block .slides-wrapper { width: 389px; height:40px;}
 	.messages-block .message {  font-size:15px; height:40px; }
 	.messages-block .arrows { width: 81px; }
 	.messages-block .download { width:42px; height: 40px; }
@@ -267,4 +267,5 @@
 	nav.fixed { top:35px;}
 	header .line1 .block.block2 { width: 177px; font-family:Arial; font-size:10px; }
 	header .line1 .block.block2 a { font-size:10px; } 
+	.messages-block .download a {  padding-right:2px; }
 }

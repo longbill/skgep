@@ -96,7 +96,7 @@
 	.messages-block .arrows { position:absolute; left:0; top:0;}
 	.messages-block .download { float:right; clear:right; width:62px; border-left:1px solid #b6b6b6; height:94px;}
 	.messages-block .download a { padding: 33px 15px 0 15px; }
-	.messages-block .slides-wrapper { width: 385px; border-right:0; }
+	.messages-block .slides-wrapper { width: 100%; border-right:0; }
 	.messages-block .message {  height:94px; line-height:20px; overflow:hidden; vertical-align: middle; position:relative;}
 	.messages-block .message .message-inner .time { white-space:nowrap;}
 	.messages-block .block-title { width: 256px; line-height: 25px !important; padding-top: 9px;}
