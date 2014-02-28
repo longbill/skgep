@@ -534,8 +534,8 @@ ul.participating a { font:bold 14px / 1 "Arial"; }
 .events-list-page-filter .block-title { width:233px; padding-right: 30px; text-align: right;}
 .events-list-page-filter form button { border:none;}
 
-.events-list-container { margin-right:-40px; }
-.event-item { float:left; width:233px; height:236px; margin:0 20px 20px 0; background-color:white; padding:20px;}
+.events-list-container { margin-left: -40px;}
+.event-item { float: right; width:233px; height:236px; margin: 0 0px 20px 20px; background-color:white; padding:20px;}
 .event-item .calendar { float:right; clear:both; }
 .event-item .title { clear:both; display: block; padding-top: 22px; height:100px; overflow:hidden; line-height:16px !important;}
 .event-item .title:hover { color:#666;}
