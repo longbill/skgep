@@ -419,7 +419,7 @@ footer .block2 .tab1 a:hover { color:black;}
 .series-block .block.block6 { margin:0 0 10px 0; font-family: "Arial"; line-height: 1.5; float: right;}
 
 
-.social-block { margin-bottom:20px; overflow: hidden;}
+.social-block { margin-bottom:20px;}
 .social { height:400px; overflow:hidden; float: right;}
 .social > .title { }
 .social > .content { padding: 6%; }

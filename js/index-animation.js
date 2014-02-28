@@ -69,7 +69,7 @@ ANI.animations[1] =
 	},
 	run : function()
 	{
-		$('#animation-media').animate({'margin-left':0},1000);
+		$('#animation-media').animate({'margin-left':0},3000,'easeOutExpo');
 	}
 };
 
@@ -162,14 +162,15 @@ ANI.animations[3] =
 	run : function()
 	{
 		var ani = this;
+		
 		this.doms.each(function(i)
 		{
 			var self = this;
 			setTimeout(function()
 			{
 				var dim = $(self).data();
-				$(self).animate(dim,300);
-			},(ani.EN ? i : (3-i) )*300);
+				$(self).animate(dim,1500,'easeOutBack');
+			},(ani.EN ? i : (3-i) )*500);
 		});
 	}
 };
