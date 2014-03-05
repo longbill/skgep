@@ -92,6 +92,7 @@ $data = array();
 $data['page_name'] = 'video gallery';
 $data['page'] = 'media-video-gallery-detail';
 $data['nav'] = 'media';
+$data['has_video'] = true;
 $t->assign($data);
 $s = $t->result('media-video-gallery-detail.html');
 file_put_contents(SAVE_TO.'media-video-gallery-detail.html',$s);

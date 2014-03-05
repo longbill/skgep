@@ -235,6 +235,16 @@ ul.sitemap li a { background:transparent url(../images/angle-right.png) no-repea
 header .line1 .block.block2 a { word-break:break-word;}
 .events-list-container { margin-left:0; margin-right:-40px;}
 .event-item { margin:0 20px 20px 0px; float:left; } 
+.event-register-head-left { float:right; padding-left: 20px; padding-right: 0;}
+.event-register-head-right { float:left; padding-left:0; padding-right:30px; border-left:0; border-right:1px solid #ccc;}
+.event-register-right-top { padding:0 0 0 80px;}
+.event-detail .event-register-right-top .calendar { right:auto !important; left:0 !important; }
+.event-register-head-right .block.event-register .block-content { padding-top:0; padding-bottom:0;}
+.event-register-head-left .screen1 ul li a { float:left;}
+.event-register-head-left .screen1 ul li b { float:left; margin-left:3px; margin-right:0;}
+.event-register-head-left .screen1 ul li .icon-left,
+.event-register-head-left ul.instructions li{ background-image:url(../images/angle-right.png);}
+.events-register-table tr td,.events-register-table tr th{ text-align:left;}
 
 @media (max-width: 992px) and (min-width: 768px)
 {
@@ -262,7 +272,8 @@ header .line1 .block.block2 a { word-break:break-word;}
 
 @media (max-width: 767px)
 {
-	
+	.events-list-container { margin-right:0;}
+	.event-item { margin-right:0;}
     .events-manage-table .tr {padding-right:0; padding-left: 76px; border-top:1px solid #ccc;}
     .events-manage-table .tr .cell.last .calendar { right:auto; left:-76px; top: 0px; }
     .events-manage-table .tr .cell:nth-child(5) { position: absolute; width: 344px; border-top:0; border-bottom: 1px solid #ccc;}

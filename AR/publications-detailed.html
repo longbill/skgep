@@ -14,7 +14,8 @@
 	<script src="../js/html5shiv.js"></script>
 	<script src="../js/respond.min.js"></script>
 	<![endif]-->
-</head>
+	<link rel="stylesheet" href="../css/print.css" media="print">
+	</head>
 <body>
 	<header class="navbar navbar-inverse navbar-fixed-top is-default" role="banner">
 		<div class="line1">
@@ -75,6 +76,7 @@
 	<div id="top-bar" class="clearfix line2">
 		<div class="container">
 			<div class="logo"><a href="/"><img src="../images/logo.png" alt=""></a></div>
+			<div class="logo-print hidden"><img src="../images/logo.png" alt=""></div>
 			<div class="banner pull-right">
 				<img src="../images/top-banner.gif" alt="">
 			</div>
@@ -200,7 +202,7 @@
         </div>
         <div class="publication-url">
          <p>url</p>
-         <span>www.skgep.gov.ae/elibrary/publication12345/</span>
+         <textarea class="url-area" id="auto-select-textarea">http://www.skgep.gov.ae/elibrary/publication12345/</textarea>
         </div>
        </div>
        <div class="publications-large-image">
@@ -258,13 +260,25 @@
   <script src="../js/jquery.placeholder.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/skgep.js"></script>
-
-  <script>
-   $(document).ready(
+<script>
+$(function()
+{
    $('.articles-library ul li').hover(function() {
     $(this).find('.articles-more-copy-slide').stop().slideToggle('');
-   })
-   );
+   });
+
+            var textBox = document.getElementById("auto-select-textarea");
+            textBox.onfocus = function() {
+                textBox.select();
+
+                // Work around Chrome's little problem
+                textBox.onmouseup = function() {
+                    // Prevent further mouseup intervention
+                    textBox.onmouseup = null;
+                    return false;
+                };
+            };
+});
   </script>
  </body>
 </html>

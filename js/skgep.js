@@ -663,8 +663,23 @@ SK.initPhotoGallery = function()
 		if ($(this).is('.active')) return;
 		var src = $(this).attr('data-src');
 		var number = $(this).attr('data-number');
-		bigImageContainer.html('');
-		$('<img>').attr('src',src).appendTo(bigImageContainer);
+		bigImageContainer.css('height',bigImageContainer.height()).html('');
+
+		var img = new Image();
+		img.src = src;
+		
+		var timer = setInterval(checkImgHeight,100);
+		function checkImgHeight()
+		{
+			if (img.width && img.height && img.height > 0)
+			{
+				bigImageContainer.append(img);
+				bigImageContainer.css('height','auto');
+				clearInterval(timer);
+			}
+		}
+
+
 		infoContainer.find('.current').html(number || '');
 		slides.find('img[data-src].active').removeClass('active');
 		$(this).addClass('active');

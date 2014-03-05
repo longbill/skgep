@@ -14,7 +14,8 @@
 	<script src="../js/html5shiv.js"></script>
 	<script src="../js/respond.min.js"></script>
 	<![endif]-->
-</head>
+	<link rel="stylesheet" href="../css/print.css" media="print">
+	</head>
 <body>
 	<header class="navbar navbar-inverse navbar-fixed-top is-default" role="banner">
 		<div class="line1">
@@ -75,6 +76,7 @@
 	<div id="top-bar" class="clearfix line2">
 		<div class="container">
 			<div class="logo"><a href="/"><img src="../images/logo.png" alt=""></a></div>
+			<div class="logo-print hidden"><img src="../images/logo.png" alt=""></div>
 			<div class="banner pull-right">
 				<img src="../images/top-banner.gif" alt="">
 			</div>
@@ -177,7 +179,7 @@
 	<div class="event-detail-section register">
 		<div class="container clearfix">
 			
-			<div class="right content-right-column">
+			<div class="event-register-form-content">
 				<div class="block event-detail border-b margin-b20">
 					<div class="block-head">
 						<div class="page-tools clearfix">
@@ -188,7 +190,7 @@
 								Text size
 							</div>
 							<a href="#" class="function-button email-page-button">email to friend <i class="icon icon-mail"></i></a>
-							<a href="#" class="function-button print-page-button">print this page <i class="icon icon-print"></i></a>
+							<a href="javascript:print();" class="function-button print-page-button">print this page <i class="icon icon-print"></i></a>
 						</div>
 						<div class="social-share-buttons clearfix">
 							<div class="share-button tw">
@@ -247,132 +249,263 @@
 							</form>
 						</div>
 					</div>
-					<div class="block-content">
-						<div class="calendar">
-							<div class="date">4</div>
-							<div class="month">OCT</div>
-							<div class="year">2013</div>
+					<div class="block-content event-register-head-block">
+
+
+						<div class="right event-register-head-right">
+							<div class="event-register-right-top">
+								<div class="calendar">
+									<div class="date">4</div>
+									<div class="month">OCT</div>
+									<div class="year">2013</div>
+								</div>
+								<h2 class="font28">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</h2>
+								<div class="info font14 bfont">zabeel palace dubai | 6:00PM | sunday</div>
+							</div>
+
+							<div class="block event-register">
+								<div class="block-content event-register-content-inner">
+									<h2 class="font28">Register participants for this event</h2>
+									<div class="event-desc font12">This event is by invitation only and you have an allotted number of participants. If you are a confirmed representative your registration shall be accepted.</div>
+									<div class="font28 green-text bold">Allotted Seats: 10</div>
+								</div>
+							</div>
 						</div>
-						<h2 class="font28">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</h2>
-						<div class="info font14 bfont">zabeel palace dubai | 6:00PM | sunday</div>
+						<div class="left event-register-head-left">
+							<div class="screen1 screen">
+								<h2 class="font20">Bulk Registration</h2>
+								<p>If you would like to enter participant data offline or already have a CSV file to import use this function.</p>
+								<ul class="bfont">
+									<li><a href="#" id="see-instructions">view import instructions</a><b class="icon icon-left"></b></li>
+									<li><a href="#">download sample CSV file</a><b class="icon icon-download-small"></b></li>
+									<li><a href="#">Import csv file</a><b class="icon icon-upload-small"></b></li>
+								</ul>
+								<form action="../EN/upload-success.html" target="csv-frame" class="upload-csv-form" id="upload-csv-form">
+									<div class="choose-file-button-wrapper">
+										<div class="choose-file-button">choose file</div>
+										<input type="file" name="csv">
+									</div>
+									<input type="submit" value="UPLOAD" class="upload-button">
+								</form>
+								<iframe src="about:blank" style="display:none;" name="csv-frame" id="csv-frame"></iframe>
+							</div>
+							<div class="screen2 uploading screen" style="display:none;">
+								<h2 class="font20">Importing File</h2>
+								<p>Please note that once you save the CSV file it will overwrite all the data currently in the registration form</p>
+								<div class="input-group">
+									<input type="submit" value="SAVE" class="button-input save-button">
+									<input type="button" value="CANCEL" class="button-input cancel-button">
+								</div>
+							</div>
+							<div class="screen3 error screen" style="display:none;">
+								<h2 class="font20">Importing File</h2>
+								<div class="alert"><img src="../images/icon-alert.png" alt=""></div>
+								<p>There was an error reading your file. Please make sure it is in the correct format and that you have filled in all the information correctly.</p>
+								<div class="input-group">
+									<input type="button" value="BACK" class="button-input back-button">
+								</div>
+							</div>
+							<div class="screen4 instructions screen" style="display:none;">
+								<h2 class="font20">Import Instructions</h2>
+								<ul class="instructions">
+									<li><a href="#">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص</a></li>
+									<li><a href="#">هذا النص للتجربة فقط. هذا النص للتجربة</a></li>
+									<li><a href="#">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا </a></li>
+									<li><a href="#">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص ل</a></li>
+								</ul>
+								<div class="input-group">
+									<input type="button" value="BACK" class="button-input back-button">
+								</div>
+							</div>
+						</div>
+						<div class="clearfix margin-b20"></div>
 
 
-						<div class="block event-register">
-							<div class="block-content event-register-content-inner">
-								<h2 class="font28">Register participants for this event</h2>
-								<div class="event-desc font12">This event is by invitation only and you have an allotted number of participants. If you are a confirmed representative your registration shall be accepted.</div>
-								<div class="font28 green-text bold">2 out of 25</div>
-								
-								<form action="" method="post" class="clearfix" id="register-form" onsubmit="return SK.check_form(this);">
-
-									<div class="clearfix">
-										<div id="participants">
-											<div class="block participant">
-												<div class="block-content">
-													<div class="title">participant 1</div>
-													<div class="input-group clearfix required">
-														<label>*Full Name</label>
-														<input type="text" name="a" class="text-input">
-														<div class="help-text error">Please input Full Name</div>
-													</div>
-													<div class="input-group clearfix required">
-														<label>*Job Title</label>
-														<input type="text" name="b" class="text-input">
-														<div class="help-text error">Please input job title</div>
-													</div>
-													<div class="input-group clearfix required">
-														<label>*Department</label>
-														<input type="text" name="c" class="text-input">
-														<div class="help-text error">Please input department</div>
-													</div>
-													<div class="input-group clearfix required">
-														<label>*Mobile Number</label>
-														<input type="text" name="d" class="text-input">
-														<div class="help-text error">Please input mobile number</div>
-													</div>
-													<div class="input-group clearfix required">
-														<label>*Email Address</label>
-														<input type="email" name="e" class="text-input">
-														<div class="help-text error">Please input valid email address</div>
-													</div>
+						<table class="events-register-table">
+							<thead>
+								<tr>
+									<th class="first-cell"></th>
+									<th>Email Address</th>
+									<th>Mobile Number</th>
+									<th>Department</th>
+									<th>Job Title</th>
+									<th>Full Name</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+																<tr class="has-data">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email">name@domain.com</td>
+									<td data-name="mobile">+973278372821</td>
+									<td data-name="department">Department</td>
+									<td data-name="jobtitle">Job Title</td>
+									<td data-name="name">Abdullah Khalfan</td>
+									<td data-name="order" class="center">1</td>
+								</tr>
+																<tr class="has-data">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email">name@domain.com</td>
+									<td data-name="mobile">+973278372821</td>
+									<td data-name="department">Department</td>
+									<td data-name="jobtitle">Job Title</td>
+									<td data-name="name">Abdullah Khalfan</td>
+									<td data-name="order" class="center">2</td>
+								</tr>
+																<tr class="has-data">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email">name@domain.com</td>
+									<td data-name="mobile">+973278372821</td>
+									<td data-name="department">Department</td>
+									<td data-name="jobtitle">Job Title</td>
+									<td data-name="name">Abdullah Khalfan</td>
+									<td data-name="order" class="center">3</td>
+								</tr>
+																								<tr class="">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email"></td>
+									<td data-name="mobile"></td>
+									<td data-name="department"></td>
+									<td data-name="jobtitle"></td>
+									<td data-name="name"></td>
+									<td data-name="order" class="center">4</td>
+								</tr>
+																<tr class="">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email"></td>
+									<td data-name="mobile"></td>
+									<td data-name="department"></td>
+									<td data-name="jobtitle"></td>
+									<td data-name="name"></td>
+									<td data-name="order" class="center">5</td>
+								</tr>
+																<tr class="">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email"></td>
+									<td data-name="mobile"></td>
+									<td data-name="department"></td>
+									<td data-name="jobtitle"></td>
+									<td data-name="name"></td>
+									<td data-name="order" class="center">6</td>
+								</tr>
+																<tr class="">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email"></td>
+									<td data-name="mobile"></td>
+									<td data-name="department"></td>
+									<td data-name="jobtitle"></td>
+									<td data-name="name"></td>
+									<td data-name="order" class="center">7</td>
+								</tr>
+																<tr class="">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email"></td>
+									<td data-name="mobile"></td>
+									<td data-name="department"></td>
+									<td data-name="jobtitle"></td>
+									<td data-name="name"></td>
+									<td data-name="order" class="center">8</td>
+								</tr>
+																<tr class="">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email"></td>
+									<td data-name="mobile"></td>
+									<td data-name="department"></td>
+									<td data-name="jobtitle"></td>
+									<td data-name="name"></td>
+									<td data-name="order" class="center">9</td>
+								</tr>
+																<tr class="">
+									<td>
+										<a class="edit-button" href="#">Edit</a>
+										<a class="add-button" href="#">Add</a>
+									</td>
+									<td data-name="email"></td>
+									<td data-name="mobile"></td>
+									<td data-name="department"></td>
+									<td data-name="jobtitle"></td>
+									<td data-name="name"></td>
+									<td data-name="order" class="center">10</td>
+								</tr>
+																<tr id="event-register-edit-form" style="display:none;">
+									<td colspan=7>
+										<div class="participant-form">
+											<div class="title">participant <span data-name="order">1</span></div>
+											<div class="form-fields margin-b20">
+												<div class="input-group clearfix required">
+													<label>Full Name</label>
+													<input type="text" name="name" class="text-input">
+													<div class="help-text error">Please input Full Name</div>
+												</div>
+												<div class="input-group clearfix required">
+													<label>Job Title</label>
+													<input type="text" name="jobtitle" class="text-input">
+													<div class="help-text error">Please input job title</div>
+												</div>
+												<div class="input-group clearfix required">
+													<label>Department</label>
+													<input type="text" name="department" class="text-input">
+													<div class="help-text error">Please input department</div>
+												</div>
+												<div class="input-group clearfix required">
+													<label>Mobile Number</label>
+													<input type="text" name="mobile" class="text-input">
+													<div class="help-text error">Please input mobile number</div>
+												</div>
+												<div class="input-group clearfix required">
+													<label>Email Address</label>
+													<input type="email" name="email" class="text-input">
+													<div class="help-text error">Please input valid email address</div>
 												</div>
 											</div>
+											<div class="input-group clearfix required">
+												<input type="button" value="Save" class="submit-form-button button-input red-button">
+												<input type="button" value="Cancel" class="close-form-button button-input">
+											</div>
 										</div>
-										<div class="block add-participant clearfix input-group">
-											<a class="button-input green" href="#" id="add-participant">add more</a>
-										</div>
-									</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 
-									
-								
+						<p class="bottom-tip">Once you have completed registering the participants 'Save Changes' it so as not to lose any data you have entered.</p>
 
-									<div class="input-group clearfix buttons-line">
-										<input type="submit" value="Submit" class="button-input red-button">
-										<input type="reset" value="Cancel" class="button-input">
-									</div>
-
-								</form>
-
-
-							</div>
+						<div class="buttons input-group clearfix">
+							<input type="submit" value="Save changes" class="button-input red-button">
+							<input type="button" value="Cancel" class="button-input">
 						</div>
-
-
-
 
 					</div>
 				</div>
 
 
-			</div>
-
-			<div class="left content-left-column">
-				<div class="accordion-block more-events open">
-					<div class="block-title bfont dark font20">
-						<div class="table-wrapper">
-							<div class="middle-wrapper">
-								more events
-							</div>
-						</div>
-					</div>
-					<div class="accordion-content-wrapper relative">
-						<div class="accordion-content">
-														<div class="event-item">
-								<div class="event-item-inner">
-									<div class="calendar">
-										<div class="date">4</div>
-										<div class="month">OCT</div>
-										<div class="year">2013</div>
-									</div>
-									<a class="title bfont font16" href="#">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</a>
-									<div class="name">Zabeel Palace Dubai</div>
-								</div>
-							</div>
-														<div class="event-item">
-								<div class="event-item-inner">
-									<div class="calendar">
-										<div class="date">4</div>
-										<div class="month">OCT</div>
-										<div class="year">2013</div>
-									</div>
-									<a class="title bfont font16" href="#">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</a>
-									<div class="name">Zabeel Palace Dubai</div>
-								</div>
-							</div>
-														<div class="event-item">
-								<div class="event-item-inner">
-									<div class="calendar">
-										<div class="date">4</div>
-										<div class="month">OCT</div>
-										<div class="year">2013</div>
-									</div>
-									<a class="title bfont font16" href="#">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</a>
-									<div class="name">Zabeel Palace Dubai</div>
-								</div>
-							</div>
-													</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -437,18 +570,85 @@
 <script>
 $(function()
 {
-	var $container = $('#participants');
-	$('#add-participant').click(function(evt)
+	//edit
+	$('.events-register-table .edit-button,.events-register-table .add-button').click(function(evt)
 	{
 		evt.preventDefault();
-		var $tmp = $container.find('.block.participant').eq(0).clone();
-		$tmp.find('input').val('');
-		$tmp.find('.help-text').hide();
-		var total = $container.find('.block.participant').length;
-		$tmp.find('.title').html('participant '+(total+1));
-		$container.append($tmp);
+		var form = $('#event-register-edit-form');
+		var tr = $(this).parents('tr').eq(0);
+		var data = {};
+		tr.find('[data-name]').each(function()
+		{
+			var name = $(this).attr('data-name');
+			var val = $(this).text();
+			form.find('[name='+name+']').val(val);
+			form.find('[data-name='+name+']').html(val);
+		});
+		tr.after(form);
+		form.show();
+
+	});
+
+
+
+	$('#event-register-edit-form .submit-form-button').click(function()
+	{
+		var form = $('#event-register-edit-form');
+		var tr = form.prev('tr').eq(0);
+		form.find('[name]').each(function()
+		{
+			tr.find('[data-name='+this.name+']').html( $(this).val() );
+		});
+		form.hide();
+		tr.addClass('has-data');
+	});
+
+	$('#event-register-edit-form .close-form-button').click(function()
+	{
+		var tr = $(this).parents('tr').eq(0);
+		tr.hide();
+	});
+
+	$('#upload-csv-form').submit(function(evt)
+	{
+		//evt.preventDefault();
+		$('.event-register-head-left .screen').hide();
+		$('.event-register-head-left .screen.screen2').show();
+	});
+
+	$('.event-register-head-left .screen2 .cancel-button').click(function()
+	{
+		$('.event-register-head-left .screen').hide();
+		$('.event-register-head-left .screen.screen1').show();
+		$('#csv-frame').attr('src','about:blank');
+	});
+
+	$('.event-register-head-left .back-button').click(function()
+	{
+		$('.event-register-head-left .screen').hide();
+		$('.event-register-head-left .screen.screen1').show();
+	});
+
+	$('#see-instructions').click(function(evt)
+	{
+		evt.preventDefault();
+		$('.event-register-head-left .screen').hide();
+		$('.event-register-head-left .screen.screen4').show();
 	});
 });
+
+function CSV_UPLOAD_COMPLETED(success)
+{
+	if (success)
+	{
+		location.reload();
+	}
+	else
+	{
+		$('.event-register-head-left .screen').hide();
+		$('.event-register-head-left .screen.screen3').show();
+	}
+}
 </script>
 </body>
 </html>

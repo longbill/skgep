@@ -1,5 +1,5 @@
 
-@media (min-width: 768px) and (max-width: 992px)
+@media screen and (min-width: 768px) and (max-width: 992px)
 {
 	.col3-1 { width:246px;}
 	.col2-1 { width:374px;}
@@ -174,7 +174,7 @@
 	.input-group { line-height:40px;}
 	.input-group .text-input { height:40px;}
 	.events-login-wrapper { top:21%; left:2%;}
-	.events-list-container .event-item { margin-right:29px;}
+	.events-list-container .event-item { margin-left: 29px;}
 	.pagination-section .pages a { width:40px; height:40px; line-height:40px; font-size:18px; }
 	.events-list-page-filter .select-wrapper .select-value { height:40px; line-height:40px;}
 	.events-list-page-filter .block-title { padding-top:0; padding-right: 20px;}
@@ -252,7 +252,7 @@
 	.photo-gallery-slideshow .arrows > a.next { right:0;}
 	.strange-block .slide-items-wrapper { height:222px; }
 	.photo-gallery-block { width:251px; }
-	#video-gallery-detail-big-image { margin-bottom:-21px;}
+	#video-gallery-detail-big-image { margin-bottom: 10px;}
 	#top-bar { padding: 10px 0 60px;}
 	nav .slidedown .block.block2 { width: 49%; }
 	nav .slidedown.simple { width:330px; padding:20px;}
@@ -268,4 +268,9 @@
 	header .line1 .block.block2 { width: 177px; font-family:Arial; font-size:10px; }
 	header .line1 .block.block2 a { font-size:10px; } 
 	.messages-block .download a {  padding-right:2px; }
+	.event-register-head-left { display:none;}
+	.event-register-head-right { float: none !important; border: none !important; padding: 0 !important; width: auto;}
+	.video-player { height:282px;}
+	.url-area { width:400px;}
+	.strange-form .line .cell {  width:135px; }
 }

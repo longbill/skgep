@@ -1,0 +1,195 @@
+<!-- INCLUDE parts/head.html -->
+<body>
+	<!-- INCLUDE parts/header.html -->
+
+
+	<div class="full-page-name margin-b20 ">
+	    <div class="container clearfix">
+	    	<h1 class="page-title green upper">{{Techinical requirements||المكتبة الإلكترونية}}</h1>
+	    </div>
+	</div>
+
+	<div class="left-right-section margin-b20 clearfix">
+		<div class="container clearfix">
+			<div class="contentbar col3-2">
+				<div class="page-content">
+					<div class="inner-content with-top-border with-bottom-border">
+
+
+
+						<form action="register3.html" method="get" id="register-form" class="clearfix">
+							<div class="error bold red hidden" id="page-has-error">{{please fill in all fields which has (*)}}</div>
+
+							<div class="font28 bold margin-b20">{{Techinical requirements}}</div>
+							<div class="register-form clearfix">
+
+								<div class="input-group radio-group clearfix required">
+									<div class="title">{{do you have children}}*</div>
+									<div class="line clearfix">
+										<label for="radio1">{{User name}}</label>
+										<input id="radio1" type="radio" name="a" class="radio-input">
+									</div>
+									<div class="line clearfix">
+										<label for="radio2">{{Usefdsar name}}</label>
+										<input id="radio2" type="radio" name="a" class="radio-input">
+									</div>
+								</div>
+
+								{foreach(range(1,10) as $i)}
+								<div class="input-group clearfix required">
+									<label>{phpsum(rand(2,4))}*</label>
+									<input type="text" class="text-input">
+								</div>
+								{/foreach}
+
+								
+
+								<div class="input-group radio-group clearfix required">
+									<div class="title">{{do you have children}}*</div>
+									<div class="line clearfix">
+										<label for="radio3">{{User name}}</label>
+										<input id="radio3" type="radio" name="b" class="radio-input">
+									</div>
+									<div class="line clearfix">
+										<label for="radio4">{{Usefdsar name}}</label>
+										<input id="radio4" type="radio" name="b" class="radio-input">
+									</div>
+								</div>
+							</div>
+
+							<div class="font28 bold margin-b20">{{Techinical requirements deadlines}}</div>
+							<div class="register-form clearfix">
+
+
+								{foreach(range(1,6) as $i)}
+								<div class="input-group clearfix">
+									<label>{phpsum(rand(2,4))}</label>
+									<input type="text" class="text-input">
+								</div>
+								{/foreach}
+
+							</div>
+
+
+
+							<div class="font28 bold margin-b20">{{Techinical requirements deadlines}}</div>
+							<div class="register-form clearfix">
+
+
+								<div class="input-group clearfix">
+									<label>{{User name}}</label>
+									<input type="text" class="text-input">
+								</div>
+
+								<div class="input-group clearfix required">
+									<label>{{User fdsafdfdssadas}}*</label>
+									<input type="text" class="text-input">
+								</div>
+
+								<div class="input-group clearfix">
+									<label>{{User fdsafsdafdas}}</label>
+									<input type="text" class="text-input">
+								</div>
+
+								<div class="input-group clearfix required">
+									<label>{{User fdsafsadaaaaaa}}*</label>
+									<input type="text" class="text-input">
+								</div>
+
+								<div class="input-group clearfix">
+									<label>{{User fda}}</label>
+									<input type="text" class="text-input">
+								</div>
+
+							</div>
+
+							<div class="register-form-bottom-line clearfix">
+								<div class="input-group clearfix">
+									<label>&nbsp;</label>
+									<input type="submit" class="button-input red-button" value="{{next page}}">
+								</div>
+							</div>
+						</form>
+
+
+					</div>
+					
+				</div>
+			</div>
+			<div class="sidebar col3-1">
+				<!-- INCLUDE parts/events-slider.html -->
+			</div>
+		</div>
+	</div>
+
+
+	<!-- INCLUDE parts/media-update.html -->
+
+	<!-- INCLUDE parts/footer.html -->
+	<!-- INCLUDE parts/share-scripts.html -->
+
+<script>
+$(function()
+{
+	$('#register-form').bind('submit',function(evt)
+	{
+		var valid = true;
+		$(this).find('input[type=text],input[type=file]').each(function()
+		{
+			var group = $(this).parents('.input-group');
+			if ($.trim($(this).val()) == '' && group.is('.required'))
+			{
+				valid = false;
+				group.addClass('has-error');
+			}
+			else
+			{
+				group.removeClass('has-error');
+			}
+		});
+
+		
+
+		$(this).find('input[type=radio]').each(function()
+		{
+			var group = $(this).parents('.input-group');
+			if ($('#register-form input[type=radio][name='+this.name+']:checked').length == 0 && group.is('.required'))
+			{
+				valid = false;
+				group.addClass('has-error');
+			}
+			else
+			{
+				group.removeClass('has-error');
+			}
+		});
+
+		$(this).find('input[type=checkbox]').each(function()
+		{
+			var group = $(this).parents('.input-group');
+			if (!$(this).is(':checked') && group.is('.required'))
+			{
+				valid = false;
+				group.addClass('has-error');
+			}
+			else
+			{
+				group.removeClass('has-error');
+			}
+		});
+
+		if (valid)
+		{
+			$('#page-has-error').hide();
+		}
+		else
+		{
+			$('#page-has-error').show();
+			$('html,body').animate({scrollTop: $('.left-right-section').offset().top-80 },300);
+		}
+		return valid;
+	});
+});
+</script>
+</body>
+</html>

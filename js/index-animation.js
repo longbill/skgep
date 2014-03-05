@@ -83,16 +83,11 @@ ANI.animations[2] =
 		this.doms = $('#animation-popup1').add('#animation-popup2').add('#animation-popup3');
 		this.doms.each(function()
 		{
-			$(this).data(
-			{
-				'transform':'scale(1)',
-				'opacity':1
-			});
 			$(this).css(
 			{
 				opacity:0,
-				'transform':'scale(0)'
-			});//.find('.slides-wrapper').css('opacity',0);
+				scale:0
+			});
 		});
 		this.EN = $('html').is('.EN');
 	},
@@ -115,8 +110,11 @@ ANI.animations[2] =
 			var self = this;
 			setTimeout(function()
 			{
-				var dim = $(self).data();
-				$(self).animate(dim,300);
+				$(self).transition(
+				{
+					scale:1,
+					opacity:1
+				},300);
 			},(3-i)*200);
 		});
 	}

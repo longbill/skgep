@@ -1,0 +1,211 @@
+<!-- INCLUDE parts/head.html -->
+<body>
+	<!-- INCLUDE parts/header.html -->
+
+
+	<div class="full-page-name margin-b20 ">
+	    <div class="container clearfix">
+	    	<h1 class="page-title green upper">{{register3||المكتبة الإلكترونية}}</h1>
+	    </div>
+	</div>
+
+	<div class="left-right-section margin-b20 clearfix">
+		<div class="container clearfix">
+			<div class="contentbar col3-2">
+				<div class="page-content">
+					<div class="inner-content with-top-border with-bottom-border">
+
+
+
+						<form action="register4.html" method="get" id="register-form" class="clearfix">
+							<div class="error bold red hidden" id="page-has-error">{{please fill in all fields which has (*)}}</div>
+
+
+
+							{foreach(range(1,6) as $i)}
+							<div class="font28 bold margin-b20">{{Techinical requirements}}</div>
+							<div class="register-form strange-form clearfix">
+								<div class="line1 line head">
+									<div class="cell">{phpsum(2)}</div>
+									<div class="cell">{phpsum(2)}</div>
+									<div class="cell">{phpsum(1)}</div>
+								</div>
+								<div class="line">
+									<div class="cell"><input type="text"></div>
+									<div class="cell"><input type="text"></div>
+									<div class="cell"><input type="text"></div>
+									<div class="cell info">{{fdaf}}</div>
+								</div>
+								<div class="line">
+									<div class="cell"><input type="text"></div>
+									<div class="cell"><input type="text"></div>
+									<div class="cell"><input type="text"></div>
+									<div class="cell info">{{fdaf}}</div>
+								</div>
+								<div class="line">
+									<div class="cell"><input type="text"></div>
+									<div class="cell"><input type="text"></div>
+									<div class="cell"><input type="text"></div>
+									<div class="cell info">{{fdaf}}</div>
+								</div>
+								<div class="line bottom">
+									<div class="cell">{phpsum(2)}</div>
+								</div>
+							</div>
+							{/foreach}
+
+							<div class="font28 bold margin-b10">
+								{{Tech fdsa fdsa fsad inical requirements}}<br>
+								{{Tech fdsa fdsa fsad inical}}
+							</div>
+
+							<div class="font20 bold margin-b10">
+								{{Tech fdsa fdsa fsad inical requirements}}
+							</div>
+
+
+							<div class="register-form clearfix">
+								{foreach(range(1,6) as $i)}
+								<div class="input-group checkbox-group clearfix">
+									<label><input type="checkbox">{phpsum(rand(2,5))}</label>
+								</div>
+								{/foreach}
+							
+								<div class="font20 bold margin-b10">
+									{{Tech fdsa fdsa fsad inical requirements}}
+								</div>
+
+							
+								{foreach(range(1,11) as $i)}
+								<div class="input-group checkbox-group clearfix">
+									<label><input type="checkbox">{phpsum(rand(2,5))}</label>
+								</div>
+								{/foreach}
+							</div>
+
+							
+							<div class="font28 bold ">{{files upload}}</div>
+							<div class="register-form clearfix">
+
+
+								
+								<div class="input-group file-group clearfix required">
+									<label>{phpsum(rand(2,3))}*</label>
+									<input type="file" class="text-input">
+								</div>
+								
+								<div class="input-group file-group clearfix required">
+									<label>{phpsum(rand(2,3))}*</label>
+									<input type="file" class="text-input">
+								</div>
+								
+								<div class="input-group file-group clearfix required">
+									<label>{phpsum(rand(2,3))}*</label>
+									<input type="file" class="text-input">
+								</div>
+								
+								<div class="input-group file-group clearfix ">
+									<label>{phpsum(rand(2,3))}</label>
+									<input type="file" class="text-input">
+								</div>
+								
+
+								<div class="input-group clearfix">
+									<label>{phpsum(rand(2,3))}</label>
+									<input type="text" class="text-input">
+								</div>
+
+							</div>
+
+
+							<div class="register-form-bottom-line clearfix">
+								<div class="input-group clearfix">
+									<label>&nbsp;</label>
+									<input type="submit" class="button-input red-button" value="{{next page}}">
+									<input type="button" class="button-input" value="{{cancel}}">
+								</div>
+							</div>
+						</form>
+
+
+					</div>
+					
+				</div>
+			</div>
+			<div class="sidebar col3-1">
+				<!-- INCLUDE parts/events-slider.html -->
+			</div>
+		</div>
+	</div>
+
+
+	<!-- INCLUDE parts/media-update.html -->
+
+	<!-- INCLUDE parts/footer.html -->
+	<!-- INCLUDE parts/share-scripts.html -->
+
+<script>
+$(function()
+{
+	$('#register-form').bind('submit',function(evt)
+	{
+		var valid = true;
+		$(this).find('input[type=text],input[type=file]').each(function()
+		{
+			var group = $(this).parents('.input-group');
+			if ($.trim($(this).val()) == '' && group.is('.required'))
+			{
+				valid = false;
+				group.addClass('has-error');
+			}
+			else
+			{
+				group.removeClass('has-error');
+			}
+		});
+
+		
+
+		$(this).find('input[type=radio]').each(function()
+		{
+			var group = $(this).parents('.input-group');
+			if ($('#register-form input[type=radio][name='+this.name+']:checked').length == 0 && group.is('.required'))
+			{
+				valid = false;
+				group.addClass('has-error');
+			}
+			else
+			{
+				group.removeClass('has-error');
+			}
+		});
+
+		$(this).find('input[type=checkbox]').each(function()
+		{
+			var group = $(this).parents('.input-group');
+			if (!$(this).is(':checked') && group.is('.required'))
+			{
+				valid = false;
+				group.addClass('has-error');
+			}
+			else
+			{
+				group.removeClass('has-error');
+			}
+		});
+
+		if (valid)
+		{
+			$('#page-has-error').hide();
+		}
+		else
+		{
+			$('#page-has-error').show();
+			$('html,body').animate({scrollTop: $('.left-right-section').offset().top-80 },300);
+		}
+		return valid;
+	});
+});
+</script>
+</body>
+</html>

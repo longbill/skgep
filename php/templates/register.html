@@ -3,53 +3,73 @@
 	<!-- INCLUDE parts/header.html -->
 
 
-	<div class="full-page-name">
-		<div class="container">
-			<h1 class="page-title green upper">registration form</h1>
-		</div>
+	<div class="full-page-name margin-b20 ">
+	    <div class="container clearfix">
+	    	<h1 class="page-title green upper">{{Register||المكتبة الإلكترونية}}</h1>
+	    </div>
 	</div>
-	
-	<div class="login-content margin-b20">
-		<div class="container">
-			<div class="login-content-inner">
-				<div class="title1 font28 bold black">Create your account</div>
-				<div class="title2 font12">Please fill in your details below to register with us.</div>
+
+	<div class="left-right-section margin-b20 clearfix">
+		<div class="container clearfix">
+			<div class="contentbar col3-2">
+				<div class="page-content">
+					<div class="page-information">
+						<!-- INCLUDE parts/page-tools.html -->
+						<!-- INCLUDE parts/social-buttons.html -->
+					</div>
+					<!-- INCLUDE parts/email-to-friend.html -->
+
+
+					<div class="accordion-block margin-b10 open">
+						<div class="block-title bfont dark font20">
+							<div class="table-wrapper">
+								<div class="middle-wrapper">
+									{{approaches to conduct the study}}
+								</div>
+							</div>
+						</div>
+						<div class="accordion-content-wrapper relative" style="display: block;">
+							<div class="accordion-content">
+								<p>{phpsum(300)}</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-block margin-b10 open">
+						<div class="block-title bfont dark font20">
+							<div class="table-wrapper">
+								<div class="middle-wrapper">
+									{{approaches to conduct the}}
+								</div>
+							</div>
+						</div>
+						<div class="accordion-content-wrapper relative" style="display: block;">
+							<div class="accordion-content">
+								<p>{phpsum(300)}</p>
+								<div class="input-group clearfix">
+									<a href="register2.html" class="button-input red-button">{{next page}}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="page-information bottom">
+						<!-- INCLUDE parts/social-buttons.html -->
+					</div>
+				</div>
 			</div>
-			<form action="" class="register-form" method="post" onsubmit="return SK.check_form(this);">
-				<div class="input-group clearfix required">
-					<label>*Name</label>
-					<input type="text" name="name" class="text-input">
-					<div class="help-text error">Please input Name</div>
-				</div>
-				<div class="input-group clearfix required">
-					<label>*Surname</label>
-					<input type="text"  name="surname" class="text-input">
-					<div class="help-text error">Please input Surname</div>
-				</div>
-				<div class="input-group clearfix required">
-					<label>*Position</label>
-					<input type="text"  name="position" class="text-input">
-					<div class="help-text error">Please input Position</div>
-				</div>
-				<div class="input-group clearfix required">
-					<label>*Description</label>
-					<textarea name="description"  class="text-input"></textarea>
-					<div class="help-text error">Please input Description</div>
-				</div>
-				<div class="input-group clearfix required">
-					<label>*Upload your resume</label>
-					<input type="file"  name="resume" class="text-input">
-					<div class="help-text error">Please choose your resume file to upload.</div>
-				</div>
-				<div class="input-group clearfix buttons-line">
-					<label>&nbsp;</label>
-					<input type="submit" value="Submit" class="button-input red-button">
-					<input type="reset" value="Cancel" class="button-input">
-				</div>
-			</form>
+			<div class="sidebar col3-1">
+				<!-- INCLUDE parts/events-slider.html -->
+			</div>
 		</div>
 	</div>
 
+
+	<!-- INCLUDE parts/media-update.html -->
+
 	<!-- INCLUDE parts/footer.html -->
+	<!-- INCLUDE parts/share-scripts.html -->
 </body>
 </html>

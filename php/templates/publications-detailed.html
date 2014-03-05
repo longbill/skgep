@@ -49,7 +49,7 @@
         </div>
         <div class="publication-url">
          <p>url</p>
-         <span>www.skgep.gov.ae/elibrary/publication12345/</span>
+         <textarea class="url-area" id="auto-select-textarea">http://www.skgep.gov.ae/elibrary/publication12345/</textarea>
         </div>
        </div>
        <div class="publications-large-image">
@@ -65,13 +65,25 @@
 
 
   <!-- INCLUDE parts/footer.html -->
-
-  <script>
-   $(document).ready(
+<script>
+$(function()
+{
    $('.articles-library ul li').hover(function() {
     $(this).find('.articles-more-copy-slide').stop().slideToggle('');
-   })
-   );
+   });
+
+            var textBox = document.getElementById("auto-select-textarea");
+            textBox.onfocus = function() {
+                textBox.select();
+
+                // Work around Chrome's little problem
+                textBox.onmouseup = function() {
+                    // Prevent further mouseup intervention
+                    textBox.onmouseup = null;
+                    return false;
+                };
+            };
+});
   </script>
  </body>
 </html>

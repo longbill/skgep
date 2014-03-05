@@ -1,4 +1,4 @@
-@media (max-width: 767px)
+@media screen and (max-width: 767px)
 {
 /* 	.navbar-fixed-top, .navbar-fixed-bottom { position:static; }
 	body { padding-top:0; } */
@@ -190,12 +190,12 @@
 	.participant .input-group .help-text.error { position:static; margin-left:10px; }
 	.input-group.buttons-line label { display:none;}
 	.events-login-wrapper { top:20%;}
-	.events-list-container { margin-right:0;}
+	.events-list-container { margin-left: 0;}
 
-	.event-item { padding-right: 92px; float:none; width:auto; height: auto; position:relative; padding-top: 30px; padding-bottom: 30px; margin: 0 0 10px 0;}
+	.event-item { padding-right: 92px; float:none; width: auto; height: auto; position:relative; padding-top: 30px; padding-bottom: 30px; margin: 0 0 10px 0;}
 	.event-item .calendar { position:absolute; right:20px; top:30px; }
 	.event-item .name { float:none; font-size:13px;font-weight:bold;}
-	.event-item .title { padding:0; min-height: 68px; font-size:20px; line-height:1 !important; height: auto;}
+	.event-item .title { padding:0; font-size:20px; line-height:1 !important; height: auto;}
 
 
 
@@ -321,7 +321,7 @@
 	.strange-block .media-item .info { height:83px; padding-top: 10px;}
 	.strange-block .media-item .info .title { padding-top:3px; font-size:14px; line-height:14px; height:46px; overflow:hidden; }
 	.strange-block .slide-items-wrapper { height:208px; }
-	#video-gallery-detail-big-image { margin-bottom:-21px;}
+	#video-gallery-detail-big-image { margin-bottom: 8px;}
 	.page-information.bottom { padding-bottom:10px; }
 	.events-list-page-filter.award-filter .select-wrapper .select-value { width: 200px; }
 	.register-form .input-group .help-text { position: absolute; line-height:40px; left: 20px; top: 0; text-align: left;}
@@ -332,4 +332,12 @@
 	.edit-profile-form fieldset input.logo-upload { width:130px;}
 	.sitemap-content .left ,
 	.sitemap-content .right { float:none; width:auto; border:none;}
+	.video-player { height:260px;}
+	.url-area { width:360px;}
+	.register-form-bottom-line label { display:none;}
+	.strange-form .line .cell {  width:122px; }
+	.input-group .text-input[type=file] { float:right; width:200px;}
 }
+
+
+

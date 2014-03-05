@@ -14,7 +14,8 @@
 	<script src="../js/html5shiv.js"></script>
 	<script src="../js/respond.min.js"></script>
 	<![endif]-->
-</head>
+	<link rel="stylesheet" href="../css/print.css" media="print">
+	</head>
 <body>
 	<header class="navbar navbar-inverse navbar-fixed-top is-default" role="banner">
 		<div class="line1">
@@ -75,6 +76,7 @@
 	<div id="top-bar" class="clearfix line2">
 		<div class="container">
 			<div class="logo"><a href="/"><img src="../images/logo.png" alt=""></a></div>
+			<div class="logo-print hidden"><img src="../images/logo.png" alt=""></div>
 			<div class="banner pull-right">
 				<img src="../images/top-banner.gif" alt="">
 			</div>
@@ -154,50 +156,766 @@
 
 
 
-	<div class="full-page-name">
-		<div class="container">
-			<h1 class="page-title green upper">registration form</h1>
+	<div class="full-page-name margin-b20 ">
+	    <div class="container clearfix">
+	    	<h1 class="page-title green upper">المكتبة الإلكترونية</h1>
+	    </div>
+	</div>
+
+	<div class="left-right-section margin-b20 clearfix">
+		<div class="container clearfix">
+			<div class="contentbar col3-2">
+				<div class="page-content">
+					<div class="page-information">
+						<div class="page-tools clearfix">
+							<div class="function-button page-text-size" data-for=".page-content p">
+								<b class="bigger" data-size="14px">A</b>
+								<b class="normal active" data-size="13px">A</b>
+								<b class="smaller" data-size="12px">A</b>
+								Text size
+							</div>
+							<a href="#" class="function-button email-page-button">email to friend <i class="icon icon-mail"></i></a>
+							<a href="javascript:print();" class="function-button print-page-button">print this page <i class="icon icon-print"></i></a>
+						</div>
+						<div class="social-share-buttons clearfix">
+							<div class="share-button tw">
+								<iframe src="https://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.skgep.gov.ae&amp;title=hello" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:21px;" allowTransparency="true"></iframe>
+							</div>
+							<div class="share-button fb">
+								<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.skgep.gov.ae&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=122700754593283" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:21px;" allowTransparency="true"></iframe>
+							</div>
+							<div class="share-button gp">
+								<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;hl=en-US&amp;url=http://www.skgep.gov.ae/&amp;parent=http://www.skgep.gov.ae/" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:21px;" allowTransparency="true"></iframe>
+							</div>
+							<div class="share-button linkedin">
+								<iframe src="../tmp-pages/linkedin.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:21px;" allowTransparency="true"></iframe>
+							</div>
+							<div class="share-button unknown">
+								<a class="addthis_button_expanded"><img src="../images/share-unknown.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="block email-to-friend">
+						<div class="block-title bfont dark font20">
+							Email to Friend
+							<a href="#" class="close"></a>
+						</div>
+						<div class="block-content">
+							<div class="login-content-inner">
+								<div class="title1 font28 bold black">Login to your account</div>
+								<div class="title2 font12">You must login to register participants for and manage events.</div>
+							</div>
+							<form action="" method="post" onsubmit="return SK.check_form(this);">
+								<div class="input-group clearfix required">
+									<label>*Your name</label>
+									<input type="text" name="name" class="text-input">
+									<div class="help-text error">Please input your name!</div>
+								</div>
+								<div class="input-group clearfix required">
+									<label>*Your e-mail</label>
+									<input type="email" name="email" class="text-input">
+									<div class="help-text error">Please input your e-mail!</div>
+								</div>
+								<div class="input-group clearfix required">
+									<label>*Recipient's e-mail</label>
+									<input type="email" name="r-email" class="text-input">
+									<div class="help-text error">Please input recipient's e-mail!</div>
+								</div>
+								<div class="input-group clearfix required">
+									<label>*Message</label>
+									<textarea class="text-input" name="message"></textarea>
+									<div class="help-text error">Please input your message!</div>
+								</div>
+								<div class="input-group clearfix buttons-line">
+									<label>&nbsp;</label>
+									<input type="submit" value="Submit" class="button-input red-button">
+									<input type="reset" value="Cancel" class="button-input">
+								</div>
+							</form>
+						</div>
+					</div>
+
+
+					<div class="accordion-block margin-b10 open">
+						<div class="block-title bfont dark font20">
+							<div class="table-wrapper">
+								<div class="middle-wrapper">
+									هذا النص للتجربة فقط. هذا النص 
+								</div>
+							</div>
+						</div>
+						<div class="accordion-content-wrapper relative" style="display: block;">
+							<div class="accordion-content">
+								<p>هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-block margin-b10 open">
+						<div class="block-title bfont dark font20">
+							<div class="table-wrapper">
+								<div class="middle-wrapper">
+									هذا النص للتجربة فقط. هذا
+								</div>
+							</div>
+						</div>
+						<div class="accordion-content-wrapper relative" style="display: block;">
+							<div class="accordion-content">
+								<p>هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا الن للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقطهذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة </p>
+								<div class="input-group clearfix">
+									<a href="register2.html" class="button-input red-button">هذا النص </a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="page-information bottom">
+						<div class="social-share-buttons clearfix">
+							<div class="share-button tw">
+								<iframe src="https://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.skgep.gov.ae&amp;title=hello" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:21px;" allowTransparency="true"></iframe>
+							</div>
+							<div class="share-button fb">
+								<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.skgep.gov.ae&amp;width=100&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=122700754593283" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:21px;" allowTransparency="true"></iframe>
+							</div>
+							<div class="share-button gp">
+								<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;hl=en-US&amp;url=http://www.skgep.gov.ae/&amp;parent=http://www.skgep.gov.ae/" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:21px;" allowTransparency="true"></iframe>
+							</div>
+							<div class="share-button linkedin">
+								<iframe src="../tmp-pages/linkedin.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:21px;" allowTransparency="true"></iframe>
+							</div>
+							<div class="share-button unknown">
+								<a class="addthis_button_expanded"><img src="../images/share-unknown.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sidebar col3-1">
+				<div class="relative events-slider-block slideshow" data-type="horizontal" data-interval="5000" id="animation3">
+					<div class="line4 dark bfont font20 title-line block-title">
+						<div class="arrows">
+							<a href="#" class="prev"></a>
+							<a href="#" class="next"></a>
+						</div>
+						<a href="event-events.html">الفعاليات<b class="icon icon-calendar"></b></a>
+					</div>
+					<div class="slides-wrapper">
+						<div class="slide">
+							<div class="line5 light">
+								<div class="calendar">
+									<div class="date">4</div>
+									<div class="month">OCT</div>
+									<div class="year">2013</div>
+								</div>
+								<a class="title bfont font16" href="event-detail-30830.html">Excellence with Sheikh Mohamed Bin Rashid </a>
+								<div class="name">Zabeel Palace Dubai</div>
+							</div>
+							<div class="line6 seemore"><a href="event-detail-82043.html" class="bfont black"><span class="angle-text angle-left">اطّلع على تفاصيل الفعاليات</span></a></div>
+						</div>
+						<div class="slide">
+							<div class="line5 light">
+								<div class="calendar">
+									<div class="date">5</div>
+									<div class="month">OCT</div>
+									<div class="year">2013</div>
+								</div>
+								<a class="title bfont font16" href="event-detail-49598.html">Excellence with Sheikh Mohamed Bin Rashid </a>
+								<div class="name">Zabeel Palace Dubai</div>
+							</div>
+							<div class="line6 seemore"><a href="event-detail-67124.html" class="bfont black"><span class="angle-text angle-left">اطّلع على تفاصيل الفعاليات</span></a></div>
+						</div>
+						<div class="slide">
+							<div class="line5 light">
+								<div class="calendar">
+									<div class="date">6</div>
+									<div class="month">OCT</div>
+									<div class="year">2013</div>
+								</div>
+								<a class="title bfont font16" href="event-detail-15068.html">Excellence with Sheikh Mohamed Bin Rashid </a>
+								<div class="name">Zabeel Palace Dubai</div>
+							</div>
+							<div class="line6 seemore"><a href="event-detail-53026.html" class="bfont black"><span class="angle-text angle-left">اطّلع على تفاصيل الفعاليات</span></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	
-	<div class="login-content margin-b20">
-		<div class="container">
-			<div class="login-content-inner">
-				<div class="title1 font28 bold black">Create your account</div>
-				<div class="title2 font12">Please fill in your details below to register with us.</div>
+
+
+	<div class="media-block" data-previous-columns="1" data-total-columns="10">
+		<div class="container title">
+			<a class="block-title col3-1 dark bfont font20" href="#">
+				التحديثات الإعلامية<b class="icon icon-media"></b>
+			</a>
+			<div class="arrows">
+				<a href="#" class="prev"></a>
+				<a href="#" class="next"></a>
 			</div>
-			<form action="" class="register-form" method="post" onsubmit="return SK.check_form(this);">
-				<div class="input-group clearfix required">
-					<label>*Name</label>
-					<input type="text" name="name" class="text-input">
-					<div class="help-text error">Please input Name</div>
-				</div>
-				<div class="input-group clearfix required">
-					<label>*Surname</label>
-					<input type="text"  name="surname" class="text-input">
-					<div class="help-text error">Please input Surname</div>
-				</div>
-				<div class="input-group clearfix required">
-					<label>*Position</label>
-					<input type="text"  name="position" class="text-input">
-					<div class="help-text error">Please input Position</div>
-				</div>
-				<div class="input-group clearfix required">
-					<label>*Description</label>
-					<textarea name="description"  class="text-input"></textarea>
-					<div class="help-text error">Please input Description</div>
-				</div>
-				<div class="input-group clearfix required">
-					<label>*Upload your resume</label>
-					<input type="file"  name="resume" class="text-input">
-					<div class="help-text error">Please choose your resume file to upload.</div>
-				</div>
-				<div class="input-group clearfix buttons-line">
-					<label>&nbsp;</label>
-					<input type="submit" value="Submit" class="button-input red-button">
-					<input type="reset" value="Cancel" class="button-input">
-				</div>
-			</form>
+		</div>
+		<div class="media-items">
+			<div class="media-items-wrapper clearfix" id="animation-media">
+													<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-33476.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																<img src="http://lorempixel.com/162/91/city/3" alt="">
+																<img src="http://lorempixel.com/162/91/city/4" alt="">
+																															</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-82886.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-16956.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																<img src="http://lorempixel.com/162/91/city/3" alt="">
+																<img src="http://lorempixel.com/162/91/city/4" alt="">
+																															</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-77156.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-66449.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																							</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-32608.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-18783.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																							</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-91702.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-79971.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																							</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-50650.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-68115.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																<img src="http://lorempixel.com/162/91/city/3" alt="">
+																															</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-76272.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-44113.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																							</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-61635.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-22713.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																<img src="http://lorempixel.com/162/91/city/3" alt="">
+																<img src="http://lorempixel.com/162/91/city/4" alt="">
+																															</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-68575.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-43495.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+															</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-50618.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item photo col3-1 margin-rb10 hoverslide" href="media-photo-gallery-detail-81982.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+							</div>
+							<div class="info">
+								<div class="icon icon-photo"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">
+									هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا
+								</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="thumb4">
+																<img src="http://lorempixel.com/162/91/city/1" alt="">
+																<img src="http://lorempixel.com/162/91/city/2" alt="">
+																<img src="http://lorempixel.com/162/91/city/3" alt="">
+																<img src="http://lorempixel.com/162/91/city/4" alt="">
+																															</div>
+							<div class="info red">
+								<div class="viewmore bfont font18 white">
+									<span class="angle-text angle-left">
+									VIEW GALLERY
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+																		<a class="media-item video col3-1 margin-rb10 hoverslide" href="media-video-gallery-detail-54575.html">
+					<div class="slides-wrapper">
+						<div class="slide defaut">
+							<div class="thumb video">
+								<img src="http://lorempixel.com/324/182/city/" alt="">
+								<span class="fa fa-play-circle"></span>
+							</div>
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black bold font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+							</div>
+						</div>
+						<div class="slide hover">
+							<div class="info">
+								<div class="icon icon-video"></div>
+								<div class="date">August 4, 2013</div>
+								<div class="title black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="description bold black font14">هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا النص للتجربة فقط. هذا ا</div>
+								<div class="viewmore bfont font14 black">
+									<span class="angle-text angle-left">VIEW DETAILS</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+												</div>
 		</div>
 	</div>
 
@@ -236,5 +954,24 @@
 	<script src="../js/jquery.placeholder.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/skgep.js"></script>
+	<script>
+	var addthis_config = {"data_track_addressbar":true};
+	addthis_config.data_track_addressbar = false;
+	
+	(function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=longbill';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	})();
+	
+	//fix add this close issue
+	$(document).delegate('#at3winheaderclose,#at3lb','click',function()
+	{
+		setTimeout(function()
+		{
+			$('#at3win').hide();
+		},500);
+	});
+	</script>
 </body>
 </html>

@@ -13,6 +13,27 @@ $s = $t->result('register.html');
 file_put_contents(SAVE_TO.'register.html',$s);
 echo "register.html<br>";
 
+$t = new EndSkin('templates/');
+$data = array();
+$t->assign($data);
+$s = $t->result('register2.html');
+file_put_contents(SAVE_TO.'register2.html',$s);
+echo "register2.html<br>";
+
+$t = new EndSkin('templates/');
+$data = array();
+$t->assign($data);
+$s = $t->result('register3.html');
+file_put_contents(SAVE_TO.'register3.html',$s);
+echo "register3.html<br>";
+
+$t = new EndSkin('templates/');
+$data = array();
+$t->assign($data);
+$s = $t->result('register4.html');
+file_put_contents(SAVE_TO.'register4.html',$s);
+echo "register4.html<br>";
+
 
 $t = new EndSkin('templates/');
 $data = array();
@@ -125,4 +146,15 @@ $s = $t->result('logo-usage.html');
 file_put_contents(SAVE_TO.'logo-usage.html',$s);
 echo "logo-usage.html<br>";
 
+
+
+
+$t = new EndSkin('templates/');
+$data = array();
+$t->assign($data);
+$s = $t->result('techinical-requirements.html');
+file_put_contents(SAVE_TO.'techinical-requirements.html',$s);
+echo "techinical-requirements.html<br>";
+
+file_put_contents(SAVE_TO.'techinical-requirements.html',$s);
 

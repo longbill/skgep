@@ -1,0 +1,152 @@
+<!-- INCLUDE parts/head.html -->
+<body>
+	<!-- INCLUDE parts/header.html -->
+
+
+	<!-- INCLUDE parts/events-page-name-with-login.html -->
+	
+	<div class="event-detail-section register">
+		<div class="container clearfix">
+			
+			<div class="right content-right-column">
+				<div class="block event-detail border-b margin-b20">
+					<div class="block-head">
+						<!-- INCLUDE parts/page-tools.html -->
+						<!-- INCLUDE parts/social-buttons.html -->
+					</div>
+					<!-- INCLUDE parts/email-to-friend.html -->
+					<div class="block-content">
+						<div class="calendar">
+							<div class="date">4</div>
+							<div class="month">OCT</div>
+							<div class="year">2013</div>
+						</div>
+						<h2 class="font28">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</h2>
+						<div class="info font14 bfont">zabeel palace dubai | 6:00PM | sunday</div>
+
+
+						<div class="block event-register">
+							<div class="block-content event-register-content-inner">
+								<h2 class="font28">Register participants for this event</h2>
+								<div class="event-desc font12">This event is by invitation only and you have an allotted number of participants. If you are a confirmed representative your registration shall be accepted.</div>
+								<div class="font28 green-text bold">2 out of 25</div>
+								
+								<form action="" method="post" class="clearfix" id="register-form" onsubmit="return SK.check_form(this);">
+
+									<div class="clearfix">
+										<div id="participants">
+											<div class="block participant">
+												<div class="block-content">
+													<div class="title">participant 1</div>
+													<div class="input-group clearfix required">
+														<label>*Full Name</label>
+														<input type="text" name="a" class="text-input">
+														<div class="help-text error">Please input Full Name</div>
+													</div>
+													<div class="input-group clearfix required">
+														<label>*Job Title</label>
+														<input type="text" name="b" class="text-input">
+														<div class="help-text error">Please input job title</div>
+													</div>
+													<div class="input-group clearfix required">
+														<label>*Department</label>
+														<input type="text" name="c" class="text-input">
+														<div class="help-text error">Please input department</div>
+													</div>
+													<div class="input-group clearfix required">
+														<label>*Mobile Number</label>
+														<input type="text" name="d" class="text-input">
+														<div class="help-text error">Please input mobile number</div>
+													</div>
+													<div class="input-group clearfix required">
+														<label>*Email Address</label>
+														<input type="email" name="e" class="text-input">
+														<div class="help-text error">Please input valid email address</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="block add-participant clearfix input-group">
+											<a class="button-input green" href="#" id="add-participant">add more</a>
+										</div>
+									</div>
+
+									
+								
+
+									<div class="input-group clearfix buttons-line">
+										<input type="submit" value="Submit" class="button-input red-button">
+										<input type="reset" value="Cancel" class="button-input">
+									</div>
+
+								</form>
+
+
+							</div>
+						</div>
+
+
+
+
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="left content-left-column">
+				<div class="accordion-block more-events open">
+					<div class="block-title bfont dark font20">
+						<div class="table-wrapper">
+							<div class="middle-wrapper">
+								more events
+							</div>
+						</div>
+					</div>
+					<div class="accordion-content-wrapper relative">
+						<div class="accordion-content">
+							{foreach(range(1,3) as $i)}
+							<div class="event-item">
+								<div class="event-item-inner">
+									<div class="calendar">
+										<div class="date">4</div>
+										<div class="month">OCT</div>
+										<div class="year">2013</div>
+									</div>
+									<a class="title bfont font16" href="#">Excellence with Sheikh Mohamed Bin Rashid Bin Rashid Bin Rashid</a>
+									<div class="name">Zabeel Palace Dubai</div>
+								</div>
+							</div>
+							{/foreach}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- INCLUDE parts/footer.html -->
+	<!-- INCLUDE parts/share-scripts.html -->
+
+
+
+<script>
+$(function()
+{
+	var $container = $('#participants');
+	$('#add-participant').click(function(evt)
+	{
+		evt.preventDefault();
+		var $tmp = $container.find('.block.participant').eq(0).clone();
+		$tmp.find('input').val('');
+		$tmp.find('.help-text').hide();
+		var total = $container.find('.block.participant').length;
+		$tmp.find('.title').html('participant '+(total+1));
+		$container.append($tmp);
+	});
+});
+</script>
+</body>
+</html>
+
+
