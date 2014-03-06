@@ -234,7 +234,7 @@ ul.ul2 li {padding-left:20px;padding-right:0px; background:transparent url(../im
 .sitemap-content .left {float:left;  border-right:1px solid #ccc; border-left:0;}
 .sitemap-content .right { float:left;}
 ul.sitemap { padding:0 0 0 30px; }
-ul.sitemap li a { background:transparent url(../images/angle-right.png) no-repeat 0% 50%; padding:12px 0 12px 30px;  }
+ul.sitemap li a { background:transparent url(../images/angle-right.png) no-repeat 0% 50%; padding: 12px 0 12px 30px;  }
 header .line1 .block.block2 a { word-break:break-word;}
 .events-list-container { margin-left:0; margin-right:-40px;}
 .event-item { margin:0 20px 20px 0px; float:left; } 
@@ -248,6 +248,12 @@ header .line1 .block.block2 a { word-break:break-word;}
 .event-register-head-left .screen1 ul li .icon-left,
 .event-register-head-left ul.instructions li{ background-image:url(../images/angle-right.png);}
 .events-register-table tr td,.events-register-table tr th{ text-align:left;}
+
+
+ul.ul3 { direction:ltr;}
+ul.ul3 > li { padding-left:17px; padding-right:0;background:transparent url(../images/angle-right.png) no-repeat 0 2px; }
+table.table3 { direction:ltr; }
+table.table3 td .with-left-angle { padding-right:0; padding-left:17px; background:transparent url(../images/angle-right.png) no-repeat 0 2px; }
 
 @media (max-width: 992px) and (min-width: 768px)
 {

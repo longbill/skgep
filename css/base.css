@@ -50,7 +50,7 @@ a.white:hover, .white a:hover{ color: #ccc;}
 .relative { position:relative;}
 .center { text-align:center; }
 
-.angle-text.angle-left { height:14px; line-height:14px !important; display:inline-block; padding-left:14px; background-image:url(../images/angles.png); background-repeat:no-repeat; background-position:0 0; }
+.angle-text.angle-left { height:14px; line-height:14px !important; display:inline-block; padding-left:14px; background-image:url(../images/angles.png); background-repeat:no-repeat; background-position:0 0;}
 .white .angle-text.angle-left { background-position:0 -161px; }
 .lh1 { line-height:1;}
 .lh11 { line-height:1.1;}
@@ -862,6 +862,7 @@ ul.ul2 li { position:relative; padding-right:20px; background:transparent url(..
 .sitemap-content .right { float:right; width:42%;}
 .sitemap-content .inner > div > ul > li > a { font-weight:bold; }
 ul.sitemap { padding:0 30px 0 0; list-style:none; margin:0; line-height:20px; }
+ul.sitemap.root-node { padding:0;}
 ul.sitemap li a { background:transparent url(../images/angle-left.png) no-repeat 100% 50%; display:block; line-height:16px; padding:12px 30px; font-family:Arial; font-size:13px;} 
 
 #index-content-wrapper { overflow:hidden;}
@@ -952,3 +953,9 @@ ul.sitemap li a { background:transparent url(../images/angle-left.png) no-repeat
 .accordion-content .bold{direction:rtl;}
 .accordion-content p{margin-top:10px;}
 .angle-text.angle-left {padding-right:75px;}
+
+ul.ul3 { list-style:none; padding:0; margin:0; direction:rtl;}
+ul.ul3 > li { padding-right:17px; line-height:1.6; font-size:12px; margin:20px 0; background:transparent url(../images/angle-left.png) no-repeat 100% 2px; }
+table.table3 { border-collapse:collapse; direction:rtl; }
+table.table3 td { border:1px solid #ccc; line-height:1.6; padding:10px 30px; font-weight:bold; font-size:12px; }
+table.table3 td .with-left-angle { padding-right:17px;background:transparent url(../images/angle-left.png) no-repeat 100% 2px; }
