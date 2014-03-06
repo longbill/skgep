@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+/*** ***/
+ul.with-left-angle > li > a,nav > .container > ul > li a{font-size:14px;}
+.spotlight .slideshow > .slide > .info p{line-height:18px !important;}
 html .page-content { margin-left:0; margin-right:10px;}
 html body { text-align:left;}
 
@@ -90,7 +92,8 @@ ul.link-list > li > a { padding: 13px 15% 13px 5%;  }
 .page-tools .function-button .icon { position:absolute; left: 0;top:3px; }
 .page-tools .function-button.print-page-button .icon { top:2px;}
 .page-tools .function-button.email-page-button { left: 150px;}
-.page-tools .function-button.page-text-size { left: 300px; padding-right:10px; text-align: left;}
+/*.page-tools .function-button.page-text-size { left: 300px; padding-right:10px; text-align: left;}*/
+.page-tools .function-button.page-text-size { left: 0; padding-right:10px; text-align: left;}
 .page-tools .function-button.page-text-size b { position:absolute; }
 .page-tools .function-button.page-text-size b.bigger { right:50px;}
 .page-tools .function-button.page-text-size b.normal { right:35px;}

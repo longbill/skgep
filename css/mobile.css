@@ -190,7 +190,7 @@
 	.participant .input-group .help-text.error { position:static; margin-left:10px; }
 	.input-group.buttons-line label { display:none;}
 	.events-login-wrapper { top:20%;}
-	.events-list-container { margin-left: 0;}
+	.events-list-container { margin-right:0;margin-left: 0;}
 
 	.event-item { padding-right: 92px; float:none; width: auto; height: auto; position:relative; padding-top: 30px; padding-bottom: 30px; margin: 0 0 10px 0;}
 	.event-item .calendar { position:absolute; right:20px; top:30px; }
@@ -338,6 +338,7 @@
 	.strange-form .line .cell {  width:122px; }
 	.input-group .text-input[type=file] { float:right; width:200px;}
 }
+
 
 
 
