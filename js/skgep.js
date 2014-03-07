@@ -11,6 +11,7 @@ $(function()
 	SK.initTab();
 	SK.initPhotoGallery();
 	SK.initEmailToFriend();
+	SK.initAutoSelectTextarea();
 
 	$('.slideshow').each(SK.initSlideshow);
 	$('.stepshow').each(SK.initStepshow);
@@ -735,6 +736,24 @@ SK.initEmailToFriend = function()
 	{
 		$('.email-to-friend').find('.close').trigger('click');
 	});
+};
+
+
+
+SK.initAutoSelectTextarea = function()
+{
+	var textBox = document.getElementById("auto-select-textarea");
+	if (!textBox) return;
+    textBox.onfocus = function() {
+        textBox.select();
+
+        // Work around Chrome's little problem
+        textBox.onmouseup = function() {
+            // Prevent further mouseup intervention
+            textBox.onmouseup = null;
+            return false;
+        };
+    };
 };
 
 

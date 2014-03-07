@@ -830,7 +830,7 @@ ul.participating a { font:bold 14px / 1 "Arial"; }
 .events-list-page-filter.award-filter .select-wrapper .select-value { width: 375px;}
 .event-names-wrapper { max-height:85px; overflow:hidden; line-height:17px;}
 .event-names-wrapper.all { max-height:none; }
-.register-form .input-group label { width:150px;}
+.register-form .input-group label { width:150px; direction: rtl;}
 .register-form.small-radio-form .input-group label { width:54px;}
 .register-form .input-group .help-text { float:right; line-height:50px; }
 .register-form { border-bottom:1px solid #ccc; margin-bottom: 20px;}
@@ -943,7 +943,7 @@ ul.sitemap li a { background:transparent url(../images/angle-left.png) no-repeat
 .strange-form .line.bottom { margin:-10px -10px 0 0;}
 
 .input-group.checkbox-group { height:44px; line-height:44px; margin:0; }
-.input-group.checkbox-group label { float:none;  width:auto !important;}
+.input-group.checkbox-group label { float:none;  width:auto !important; direction: rtl;}
 .input-group.checkbox-group input { height:24px; width:24px; margin:0; margin-left:20px; background-color:red;}
 .input-group.file-group  { margin:0;}
 .input-group.file-group input { background-color:white; font-size:12px; height:auto; line-height:1; padding: 0; margin: 15px 0;}

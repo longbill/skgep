@@ -266,18 +266,6 @@ $(function()
    $('.articles-library ul li').hover(function() {
     $(this).find('.articles-more-copy-slide').stop().slideToggle('');
    });
-
-            var textBox = document.getElementById("auto-select-textarea");
-            textBox.onfocus = function() {
-                textBox.select();
-
-                // Work around Chrome's little problem
-                textBox.onmouseup = function() {
-                    // Prevent further mouseup intervention
-                    textBox.onmouseup = null;
-                    return false;
-                };
-            };
 });
   </script>
  </body>
